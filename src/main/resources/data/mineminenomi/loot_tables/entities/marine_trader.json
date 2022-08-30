@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"count":1,"function":"minecraft:set_count"},{"belly_range":{"max":50.0,"min":5.0,"type":"minecraft:uniform"},"function":"mineminenomi:set_belly_in_pouch"}],"name":"mineminenomi:belly_pouch","type":"minecraft:item","weight":100}],"rolls":{"max":1.0,"min":0.0,"type":"minecraft:uniform"}}]}

@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"functions":[{"count":{"max":6.0,"min":3.0,"type":"minecraft:uniform"},"function":"minecraft:set_count"},{"enchantment":"minecraft:fortune","formula":"minecraft:ore_drops","function":"minecraft:apply_bonus"}],"name":"mineminenomi:kairoseki","type":"minecraft:item"}],"rolls":1}]}

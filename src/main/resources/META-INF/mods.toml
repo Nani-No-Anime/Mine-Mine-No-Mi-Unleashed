@@ -1,0 +1,264 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="mineminenomi"
+version="0.8.1"
+displayName="Mine Mine no Mi"
+displayURL="https://www.pixelatedw.xyz/mine-mine-no-mi"
+logoFile="mine-mine-no-mi.png"
+authors="Wynd, FGpisces, Zankrid, Varian, Kaiyo"
+description='''
+Mine Mine no Mi is a minecraft mod inspired by the famous anime/manga series One Piece written and illustrated by Eiichiro Oda. It aims to be an adventure oriented mod where exploration is one of the key features.
+
+Dev Team :
+    Wynd - Programmer
+    FGpisces - 2D Artist, QA
+    Zankrid - Programmer
+    Varian - Structures
+    Kaiyo - 3D Artist
+
+Testers
+    Softwetbread
+    Calment
+    FireFistK
+    LargeChild
+    Jake
+    jojo541
+    Drqonic 
+    Bronchus
+    Luigi
+    mail2003
+    GoldenRoger
+    Lancemowens
+
+Patreons :
+    Sergio Iucci
+    spacii
+    Kiessi 
+    井擎 井
+    Beosti
+    Oranran 
+    RinzoAyres 
+    Kyu
+    HoodedGTG
+    JoeySanfil
+    Ferrets Overlord
+    Matthew Summers
+    Hunter Platek
+    SH Ho
+    Byckslow
+    Raiden
+    Akimo
+    Frederik Jensen
+    SuuSuuka
+    VictorS
+    Williamtheshifter1234
+    DanZ
+    Ben Sanfilippo
+    Brenden Sanfilippo
+    90gg A
+    Oliver 
+    Owen Hansler
+    John Sanfilippo
+    Escooo 
+    Begemot
+    Bluehh 
+    Jack Douglass
+    Fed
+    Myrgana
+    Zelda 
+    Omen06
+    AkagiStan
+    Keeweiner
+    Emilio
+    Great Calf
+    Tiger
+    Caridos 
+    Ayo
+    Bread 
+    Nxght
+    Alexis THN
+    SuperDevilMadness
+    Joseph Manna
+    Mathew Gensel
+    Benanace Sart
+    Benjamin Schneider
+    Jon 
+    Litheromus
+    Andy The Otaku
+    ha sa
+    Feels Fishy
+    Damien Ogdun
+    Nicholas March
+    Wolfrage
+    Injustice Studios
+    Kameron Lindsey
+    chaos _killer_11
+    hope-osity
+    Gino Rocca
+    tab
+    Card Studios
+    Cools
+    Wizardly RR
+    asaf lepo
+    Zmor
+    cj131
+    VovanPo
+    Antoine Dedieu
+    Blaze
+    samuel mclellan
+    Flávio Melo
+    Armando Lopez
+    Eagershinyknight
+    SomeDesires
+    Jacob Worden
+    Chris Higgins
+    Kollan lindsey
+    Jordan Spears
+    Herobrine 
+    littlelizerf 
+    TrickyKaro
+    Henry Gross
+    Ozzy4Life
+    Niclas
+    alberto exposito
+    Luigi
+    Gerard
+    Axel Berthelard
+    Jonna
+    Namelessly 
+    Stax95
+    BADguy2169
+    Fred
+    Xander Gray
+    hazz sty
+    Saleh Killers
+    Sky Reaper
+    Ethan Chris
+    jesse
+    Mary Wiggles
+    き な
+    Argentaurium
+    Dee bu
+    Ryno
+    keshaun mouzon
+    Joshua Salters
+    Lance Johnson
+    BoxDeity
+    Bryce Hinken
+    Stupid Draws
+    Dan The Man
+    Questionably Sane
+    AtomicCarrot
+    dkallthewayyy
+    silverghst
+    jordan blevins
+    Ryan Gray
+    Nedokashtan TV
+    Neil Tucker
+    Ashton Levinov
+    ChrisLefto
+    Brxxklyn
+    zerks
+    Jeremiah Dupie
+    jay
+    Jaylin Martin
+    Sullivan Kastens
+    ZaneShadow 
+    OmegaMem3
+    Henry 
+    Charles Price
+    K1T
+    Jay 
+    Manuel García
+    Robert 
+    Connor
+    piiyu
+    Henry Mantel
+    Graug
+    John Redmond
+    ja ._.
+    Luís Lopes
+    Barooth
+    meibak
+    nik pvg
+    BloodyKnightLP
+    Flo
+    Luca Rizzo
+    איליי פטל
+    CaptainXfloW
+    Solomon Ibeh
+    tommy
+    Mike
+    Valentine Han
+    Lean
+    Trupek Trupczyński
+    TheMotanR0
+    Diego
+    こおり / ゲーム実況
+    Kody Wood
+    Ultimate Gamer
+    Zeo Kyoru
+    Ryan Smith
+    KanesAce
+    Ayden_Off
+    Andrés Ruiz Benito
+    Jonas 1.000
+    Caleb
+    archony
+    Maple
+    Saladify
+    Lewis Rusby
+    will w
+    BaconJesus 
+    Aidan 
+    77 go7
+    DANIEL PERDOMO
+    ikaika raines
+    JJ
+    Josh Hmen
+
+Other Credits :
+    Honorary Devs:
+    Kenryuu - QA
+    CalebBritannia - Programmer 
+    KitanicDemon - Builder
+    GeorgeTsakiridis - Programmer
+    Izako - Programmer 
+    DragonLuch - 3D Artist 
+    Acrogenous - Programmer
+    
+    Localization 1.15.2:
+    Arcmoon - Simplified Chinese
+    Imperialist - German
+    Akimo - Russian
+    
+    Localization 1.14.4:
+    BooTrinD - French
+    Abelatox - Spanish
+    Akimo - Russian
+    
+    Localization 1.7.10:
+    Abelatox - Spanish 
+    Ezequiel - Polish 
+    Moore5859 (阿烩丶) - Simplified Chinese 
+    Itz Nuk - Brazilian Portuguese 
+    Ytekk - French
+    tMakotoi - Russian
+
+'''
+    
+[[dependencies.mineminenomi]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31.2.47,)"
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.mineminenomi]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"

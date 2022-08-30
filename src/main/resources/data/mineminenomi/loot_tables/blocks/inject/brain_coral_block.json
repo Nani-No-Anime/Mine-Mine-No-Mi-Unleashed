@@ -1,0 +1,1 @@
+{"pools":[{"entries":[{"name":"mineminenomi:bubbly_coral","type":"item","weight":1},{"type":"empty","weight":63}],"name":"bubbly_coral","rolls":1},{"entries":[{"conditions":[{"condition":"minecraft:survives_explosion"}],"name":"minecraft:dead_brain_coral_block","type":"minecraft:item"}],"name":"dead_coral","rolls":1}]}
