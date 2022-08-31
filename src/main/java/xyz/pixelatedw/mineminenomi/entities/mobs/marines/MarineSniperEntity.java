@@ -1,5 +1,6 @@
 /*     */ package xyz.pixelatedw.mineminenomi.entities.mobs.marines;
 /*     */ import javax.annotation.Nullable;
+import net.minecraft.enchantment.EnchantmentHelper;
 /*     */ import net.minecraft.entity.Entity;
 /*     */ import net.minecraft.entity.ILivingEntityData;
 /*     */ import net.minecraft.entity.IRangedAttackMob;
@@ -19,10 +20,13 @@
 /*     */ import xyz.pixelatedw.mineminenomi.api.entities.ai.ISniper;
 /*     */ import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 /*     */ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.ImprovedMeleeAttackGoal;
+import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.KairosekiBulletProjectile;
 /*     */ import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.NormalBulletProjectile;
+import xyz.pixelatedw.mineminenomi.init.ModEnchantments;
 /*     */ import xyz.pixelatedw.mineminenomi.init.ModEntities;
 /*     */ import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 /*     */ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 /*     */ 
 /*     */ public class MarineSniperEntity extends AbstractMarineEntity implements IRangedAttackMob, ISniper {
 /*  28 */   private static final String[] DEFAULT_TEXTURES = new String[] { "marine1", "marine2", "marine3", "marine4", "marine5" };
@@ -99,16 +103,21 @@
 /*  99 */     if (getHeldItemMainhand() == null || !getHeldItemMainhand().getItem().equals(ModWeapons.SENRIKU)) {
 /*     */       return;
 /*     */     }
-/* 102 */     NormalBulletProjectile normalBulletProjectile = new NormalBulletProjectile(this.world, (LivingEntity)this);
-/* 103 */     normalBulletProjectile.setDamage(5.0F);
+			AbilityProjectileEntity projectileEntity = new NormalBulletProjectile(this.world, (LivingEntity)this);
+
+			if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.KAIROSEKI,getHeldItemMainhand()) != 0){
+			projectileEntity = new KairosekiBulletProjectile(this.world, (LivingEntity)this);
+			}
+
+/* 103 */     projectileEntity.setDamage(5.0F);
 /*     */     
 /* 105 */     double velX = target.getPosX() - getPosX();
-/* 106 */     double velY = (target.getBoundingBox()).minY - normalBulletProjectile.getPosY();
+/* 106 */     double velY = (target.getBoundingBox()).minY - projectileEntity.getPosY();
 /* 107 */     double velZ = target.getPosZ() - getPosZ();
 /* 108 */     double x = MathHelper.sqrt(velX * velX + velZ * velZ);
 /*     */     
-/* 110 */     normalBulletProjectile.shoot(velX, velY + x * 0.10000000149011612D, velZ, 3.0F, MathHelper.clamp(7 - this.world.getDifficulty().getId() * 4, 0, 100));
-/* 111 */     this.world.addEntity((Entity)normalBulletProjectile);
+/* 110 */     projectileEntity.shoot(velX, velY + x * 0.10000000149011612D, velZ, 3.0F, MathHelper.clamp(7 - this.world.getDifficulty().getId() * 4, 0, 100));
+/* 111 */     this.world.addEntity(projectileEntity);
 /*     */   }
 /*     */ }
 

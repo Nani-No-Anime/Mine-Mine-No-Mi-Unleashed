@@ -2,7 +2,6 @@
 /*    */ 
 /*    */ import java.util.function.Predicate;
 /*    */ import javax.annotation.Nullable;
-/*    */ import net.minecraft.entity.CreatureEntity;
 /*    */ import net.minecraft.entity.Entity;
 /*    */ import net.minecraft.entity.EntityPredicate;
 /*    */ import net.minecraft.entity.LivingEntity;

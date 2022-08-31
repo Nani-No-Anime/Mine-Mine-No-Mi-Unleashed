@@ -1,6 +1,7 @@
 /*     */ package xyz.pixelatedw.mineminenomi.entities.mobs.pirates;
 /*     */ 
 /*     */ import javax.annotation.Nullable;
+import net.minecraft.enchantment.EnchantmentHelper;
 /*     */ import net.minecraft.entity.Entity;
 /*     */ import net.minecraft.entity.ILivingEntityData;
 /*     */ import net.minecraft.entity.IRangedAttackMob;
@@ -20,10 +21,13 @@
 /*     */ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 /*     */ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
 /*     */ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.RunAwayGoal;
+import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.KairosekiBulletProjectile;
 /*     */ import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.NormalBulletProjectile;
+import xyz.pixelatedw.mineminenomi.init.ModEnchantments;
 /*     */ import xyz.pixelatedw.mineminenomi.init.ModEntities;
 /*     */ import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 /*     */ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 /*     */ 
 /*     */ public class PirateWithGunEntity extends AbstractPirateEntity implements IRangedAttackMob {
 /*  29 */   private static final String[] DEFAULT_TEXTURES = new String[] { "pirate1", "pirate2", "pirate3", "pirate4", "pirate5" };
@@ -87,23 +91,22 @@
 /*  87 */     if (getHeldItemMainhand() == null || !getHeldItemMainhand().getItem().equals(ModWeapons.FLINTLOCK)) {
 /*     */       return;
 /*     */     }
-/*  90 */     NormalBulletProjectile normalBulletProjectile = new NormalBulletProjectile(this.world, (LivingEntity)this);
-/*  91 */     normalBulletProjectile.setDamage(2.0F);
+AbilityProjectileEntity projectileEntity = new NormalBulletProjectile(this.world, (LivingEntity)this);
+
+if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.KAIROSEKI,getHeldItemMainhand()) != 0){
+projectileEntity = new KairosekiBulletProjectile(this.world, (LivingEntity)this);
+}
+
+/*  91 */     projectileEntity.setDamage(2.0F);
 /*  92 */     if (getAttackTarget() == null) {
 /*     */       return;
 /*     */     }
 /*  95 */     double velX = target.getPosX() - getPosX();
-/*  96 */     double velY = (target.getBoundingBox()).minY - normalBulletProjectile.getPosY();
+/*  96 */     double velY = (target.getBoundingBox()).minY - projectileEntity.getPosY();
 /*  97 */     double velZ = target.getPosZ() - getPosZ();
 /*  98 */     double x = MathHelper.sqrt(velX * velX + velZ * velZ);
 /*     */     
-/* 100 */     normalBulletProjectile.shoot(velX, velY + x * 0.20000000298023224D, velZ, 1.6F, (16 - this.world.getDifficulty().getId() * 4));
-/* 101 */     this.world.addEntity((Entity)normalBulletProjectile);
+/* 100 */     projectileEntity.shoot(velX, velY + x * 0.20000000298023224D, velZ, 1.6F, (16 - this.world.getDifficulty().getId() * 4));
+/* 101 */     this.world.addEntity(projectileEntity);
 /*     */   }
 /*     */ }
-
-
-/* Location:              C:\Users\4tuto\curseforge\minecraft\Instances\incontrol\mods\mine-mine-no-mi-1.15.2-0.8.1.jar!\xyz\pixelatedw\mineminenomi\entities\mobs\pirates\PirateWithGunEntity.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

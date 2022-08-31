@@ -220,7 +220,7 @@
 /* 220 */     this.destroySpawner = builder.comment("Destroys the spawner after all its spawns are killed\nDefault: true").define("Destroy Spawner", true);
 /* 221 */     this.destroyWater = builder.comment("Allows big explosions to destroy water \nDefault: false").define("Explosions can destroy water", false);
 /* 222 */     this.despawnWithNametags = builder.comment("Normally despawns traders and trainers even if they're nametagged \nDefault: false").define("Despawn NPCs with Nametags", false);
-/* 223 */     this.dorikiLimit = builder.comment("Sets a new limit for maximum doriki a player may obtain \nDefault: 10000").defineInRange("Doriki Limit", 10000, 0, 50000);
+/* 223 */     this.dorikiLimit = builder.comment("Sets a new limit for maximum doriki a player may obtain \nDefault: 10000").defineInRange("Doriki Limit", 10000, 0, 100000);
 /* 224 */     this.hakiExpLimit = builder.comment("Sets a new limit for maximum haki exp a player may obtain \nDefault: 100").defineInRange("Haki Exp Limit", 100, 0, 300);
 /* 225 */     this.randomizeRace = builder.comment("Randomizes the player's race at spawn (making the player unable to choose a race themselves) \nDefault: false").define("Race Randomizer", false);
 /* 226 */     this.combatPickup = builder.comment("Allows the players to pickup items while the combat bar is active \nDefault: true").define("Combat Bar Pickup", true);

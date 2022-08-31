@@ -8,7 +8,6 @@
 /*    */ import xyz.pixelatedw.mineminenomi.entities.mobs.pirates.kriegpirates.DonKriegEntity;
 /*    */ import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.NormalBulletProjectile;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
-import xyz.pixelatedw.mineminenomi.init.ModEffects;
 /*    */ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 /*    */ 
 /*    */ public class GunArrayGoal extends CooldownGoal {
