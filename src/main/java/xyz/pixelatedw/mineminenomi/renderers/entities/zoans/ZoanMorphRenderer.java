@@ -181,7 +181,7 @@
 /* 181 */     if (WyDebug.isDebug()) {
 /*     */       
 /* 183 */       ModelRenderer modelrenderer = ((PlayerModel)getEntityModel()).getRandomModelRenderer(entity.getRNG());
-/* 184 */       Field f = ObfuscationReflectionHelper.findField(ModelRenderer.class, "cubeList");
+/* 184 */       Field f = ObfuscationReflectionHelper.findField(ModelRenderer.class, "field_78804_l");
 /*     */       
 /*     */       try {
 /* 187 */         if (((ObjectList)f.get(modelrenderer)).size() <= 0) {

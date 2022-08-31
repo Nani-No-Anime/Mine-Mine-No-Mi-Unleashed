@@ -148,14 +148,14 @@
 /* 148 */         if (obj.isHidden()) {
 /*     */           
 /* 150 */           FontRenderer galacticFont = this.minecraft.getFontResourceManager().getFontRenderer(Minecraft.standardGalacticFontRenderer);
-/* 151 */           WyHelper.drawStringWithBorder(this.font, "• ", posX - 130, posY - 45 + yOffset, WyHelper.hexToRGB(textColor).getRGB());
+/* 151 */           WyHelper.drawStringWithBorder(this.font, '\u2022'+" ", posX - 130, posY - 45 + yOffset, WyHelper.hexToRGB(textColor).getRGB());
 /* 152 */           if (hiddenObjs.size() > 0) {
 /* 153 */             WyHelper.drawStringWithBorder(galacticFont, this.hiddenTexts.get(hiddenObjs.indexOf(obj)), posX - 123, posY - 45 + yOffset, WyHelper.hexToRGB(textColor).getRGB());
 /*     */           }
 /*     */         } else {
 /*     */           
 /* 157 */           String optional = obj.isOptional() ? "(Optional) " : "";
-/* 158 */           objectiveName = "• " + optional + "" + objectiveName + " " + progress;
+/* 158 */           objectiveName = '\u2022'+" " + optional + "" + objectiveName + " " + progress;
 /* 159 */           List<String> splitText = WyHelper.splitString(this.font, objectiveName, posX, 210);
 /* 160 */           for (int j = 0; j < splitText.size(); j++)
 /*     */           {

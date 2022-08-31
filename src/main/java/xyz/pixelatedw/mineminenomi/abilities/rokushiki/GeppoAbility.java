@@ -27,7 +27,7 @@
 /*     */   
 /*     */   public GeppoAbility() {
 /*  29 */     super("Geppo", AbilityHelper.getRacialCategory());
-/*  30 */     addInPool(new AbilityPool[] { AbilityPool.GEPPO_LIKE });
+/*  30 */     addInPool(AbilityPool.GEPPO_LIKE );
 /*  31 */     setMaxCooldown(1.0D);
 /*  32 */     setDescription("The user kicks the air beneath them to launch themselves into the air");
 /*     */     

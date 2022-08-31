@@ -4,6 +4,7 @@
 /*     */ import java.lang.reflect.Field;
 /*     */ import java.lang.reflect.Method;
 /*     */ import java.util.ArrayList;
+import java.util.Arrays;
 /*     */ import java.util.Collection;
 /*     */ import java.util.List;
 /*     */ import java.util.Objects;
@@ -133,7 +134,7 @@
 /*     */   public static IAnimatedAbility getActiveAnimationAbility(LivingEntity entity) {
 /* 134 */     IAbilityData abilityProps = AbilityDataCapability.get(entity);
 /* 135 */     List<Ability> abilities = new ArrayList<>();
-/* 136 */     //abilities.addAll(abilityProps.getEquippedAbilities(IAnimatedAbility.IS_ACTIVE));
+/* 136 */     abilities.addAll(Arrays.<Ability>asList(abilityProps.getEquippedAbilities(IAnimatedAbility.IS_ACTIVE)));
 /* 137 */     abilities.addAll(abilityProps.getUnlockedAbilities(IAnimatedAbility.IS_ACTIVE));
 /* 138 */     Optional<Ability> optional = abilities.stream().findFirst();
 /* 139 */     if (optional.isPresent()) {
@@ -822,7 +823,7 @@
 /*     */ 
 /*     */   
 /*     */   public static boolean isJumping(LivingEntity entity) {
-/* 825 */     Field f = ObfuscationReflectionHelper.findField(LivingEntity.class, "isJumping");
+/* 825 */     Field f = ObfuscationReflectionHelper.findField(LivingEntity.class, "field_70703_bu");
 /*     */     
 /*     */     try {
 /* 828 */       return f.getBoolean(entity);
@@ -836,7 +837,7 @@
 /*     */   }
 /*     */   
 /*     */   public static void setPose(LivingEntity entity, Pose pose) {
-/* 839 */     Method method = ObfuscationReflectionHelper.findMethod(Entity.class, "setPose", new Class[] { Pose.class });
+/* 839 */     Method method = ObfuscationReflectionHelper.findMethod(Entity.class, "func_213301_b", new Class[] { Pose.class });
 /*     */     
 /*     */     try {
 /* 842 */       method.setAccessible(true);

@@ -52,7 +52,7 @@ import java.util.HashMap;
 /*    */ 
 /*    */   
 /*    */   public static void initUnaddedEggs() {
-/* 54 */     Map<EntityType<?>, SpawnEggItem> EGGS =new HashMap<EntityType<?>, SpawnEggItem>();
+/* 54 */     Map<EntityType<?>, SpawnEggItem> EGGS = (Map<EntityType<?>, SpawnEggItem>)ObfuscationReflectionHelper.getPrivateValue(SpawnEggItem.class, null, "field_195987_b");
 /* 55 */     DefaultDispenseItemBehavior defaultDispenseItemBehavior = new DefaultDispenseItemBehavior()
 /*    */       {
 /*    */         

@@ -51,7 +51,7 @@
 /* 51 */     List<OcelotEntity> ocelots = WyHelper.getEntitiesNear(player.getPosition(), player.world, 10.0D, new Class[] { OcelotEntity.class });
 /* 52 */     for (OcelotEntity target : ocelots) {
 /*    */       
-/* 54 */       Method method = ObfuscationReflectionHelper.findMethod(OcelotEntity.class, "setTrusting", new Class[] { boolean.class });
+/* 54 */       Method method = ObfuscationReflectionHelper.findMethod(OcelotEntity.class, "func_213528_r", new Class[] { boolean.class });
 /*    */       
 /*    */       try {
 /* 57 */         method.setAccessible(true);

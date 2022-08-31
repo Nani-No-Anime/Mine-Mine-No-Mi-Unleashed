@@ -143,7 +143,8 @@
 /* 143 */             if (abl instanceof ContinuousAbility) {
 /*     */               
 /* 145 */               ContinuousAbility cAbility = (ContinuousAbility)abl;
-/* 146 */               threshold = cAbility.getContinueTime() / cAbility.getThreshold() * 23.0F;
+                        
+/* 146 */               threshold = cAbility.getContinueTime() / Math.max(cAbility.getThreshold(),1) * 23.0F;
 /* 147 */               if (cAbility.getThreshold() > 0 && abl.isContinuous() && cAbility.getContinueTime() > 0) {
 /* 148 */                 number = (cAbility.getThreshold() - cAbility.getContinueTime()) + " ";
 /*     */               }

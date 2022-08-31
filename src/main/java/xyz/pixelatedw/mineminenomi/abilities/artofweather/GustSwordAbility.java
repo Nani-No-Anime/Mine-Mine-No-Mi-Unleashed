@@ -1,5 +1,4 @@
 /*    */ package xyz.pixelatedw.mineminenomi.abilities.artofweather;
-/*    */ import java.lang.invoke.SerializedLambda;
 /*    */ import net.minecraft.entity.Entity;
 /*    */ import net.minecraft.entity.LivingEntity;
 /*    */ import net.minecraft.entity.player.PlayerEntity;
