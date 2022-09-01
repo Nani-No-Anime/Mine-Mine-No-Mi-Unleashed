@@ -28,6 +28,9 @@ then alot of the code broken by Java Decompiler and fixed with[FernFlower](https
 
     Allow Marines and Priates to spawn on more blocks. Also adding config option to add more blocks.
 
+* ### Global Trader
+    Trader that trades with everyone.
+
 ## Completed Modifications
 * Marines, Pirates, and Bandits with guns/snipers that are kiroseki enchant will fire kiroseki bullets
 * Improved doriki system so that the doriki nbt values on vinila mobs could be set and used instead of ( MaxHP + MaxAttack )/4
