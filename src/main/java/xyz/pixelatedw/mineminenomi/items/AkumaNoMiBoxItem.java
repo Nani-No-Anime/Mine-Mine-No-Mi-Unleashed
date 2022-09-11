@@ -40,7 +40,7 @@ public class AkumaNoMiBoxItem extends Item {
     }
     return -1;
   }
-  //[todo : make it so the key is not removed if there are no devil fuits left to sellect]
+  //[todo : add a config option to use default interaction of removing the box if the randomFruit returns null]
   public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player, Hand hand) {
     if (!world.isRemote) {
 
@@ -54,19 +54,15 @@ public class AkumaNoMiBoxItem extends Item {
       }
       ItemStack itemStack = player.getHeldItemMainhand();
 
-      player.inventory.decrStackSize(keySlot, 1);
-      player.inventory.deleteStack(itemStack);
 
       Item randomFruit = DevilFruitHelper.rouletteDevilFruits(world, this.tier);
       randomFruit = DevilFruitHelper.oneFruitPerWorldCheck(world, randomFruit);
 
       if (randomFruit == null) {
-
-        player.inventory.deleteStack(itemStack);
-        return new ActionResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
-      }
-      if (randomFruit != null) {
-
+        return new ActionResult(ActionResultType.FAIL, player.getHeldItem(hand));
+      } else {
+        player.inventory.decrStackSize(keySlot, 1);
+        player.inventory.deleteStack(itemStack);  
         if (!(randomFruit instanceof AkumaNoMiItem)) {
 
           player.inventory.addItemStackToInventory(new ItemStack((IItemProvider) randomFruit));
