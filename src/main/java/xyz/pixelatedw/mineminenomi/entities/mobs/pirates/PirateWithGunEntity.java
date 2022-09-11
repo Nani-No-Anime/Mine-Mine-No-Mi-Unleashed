@@ -20,6 +20,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
+import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntityTextureWeight;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.RunAwayGoal;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.KairosekiBulletProjectile;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.NormalBulletProjectile;
@@ -61,7 +62,7 @@ public class PirateWithGunEntity extends AbstractPirateEntity implements IRanged
 		setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack((IItemProvider) ModWeapons.FLINTLOCK));
 		IEntityStats props = EntityStatsCapability.get((LivingEntity) this);
 		if (props.isFishman()) {
-			this.textures = FISHMAN_TEXTURES;
+			this.textures = OPEntityTextureWeight.fromList(FISHMAN_TEXTURES);
 			chooseTexture();
 		}
 		return spawnData;

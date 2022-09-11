@@ -14,37 +14,18 @@ import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.init.ModLootTables;
 
 public class MarineTraderEntity extends TraderEntity {
-  private static final String[] DEFAULT_TEXTURES = new String[] { "marine_trader1", "marine_trader2" };
+	private static final String[] DEFAULT_TEXTURES = new String[] { "marine_trader1", "marine_trader2", "akainu", "aokiji", "coby", "garp", "kizaru", "smoker" };
 
-  
-  public MarineTraderEntity(World world) {
-    super(ModEntities.MARINE_TRADER, world, DEFAULT_TEXTURES);
-  }
+	public MarineTraderEntity(World world) { super(ModEntities.MARINE_TRADER, world, DEFAULT_TEXTURES); }
 
+	public boolean canTrade(PlayerEntity player) {
+		IEntityStats props = EntityStatsCapability.get((LivingEntity) player);
+		return (props.isMarine() || props.isBountyHunter());
+	}
 
-  
-  public boolean canTrade(PlayerEntity player) {
-    IEntityStats props = EntityStatsCapability.get((LivingEntity)player);
-    return (props.isMarine() || props.isBountyHunter());
-  }
+	public ResourceLocation getTradeTable() { return ModLootTables.MARINE_TRADER; }
 
+	public String getTradeFailMessage() { return (new TranslationTextComponent(ModI18n.TRADER_NO_PIRATE, new Object[0])).getFormattedText(); }
 
-  
-  public ResourceLocation getTradeTable() {
-    return ModLootTables.MARINE_TRADER;
-  }
-
-
-  
-  public String getTradeFailMessage() {
-    return (new TranslationTextComponent(ModI18n.TRADER_NO_PIRATE, new Object[0])).getFormattedText();
-  }
-
-
-  
-  public Currency getCurrency() {
-    return Currency.BELLY;
-  }
+	public Currency getCurrency() { return Currency.BELLY; }
 }
-
-

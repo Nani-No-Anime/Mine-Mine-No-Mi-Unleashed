@@ -19,6 +19,7 @@ import net.minecraft.entity.CreatureEntity;
 /*    */ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 /*    */ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
+import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntityTextureWeight;
 /*    */ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.ImprovedMeleeAttackGoal;
 /*    */ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.CleaveAttackGoal;
 /*    */ import xyz.pixelatedw.mineminenomi.init.ModAttributes;
@@ -73,7 +74,7 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 /* 70 */     IEntityStats props = EntityStatsCapability.get((LivingEntity)this);
 /* 71 */     if (props.isFishman()) {
 /*    */       
-/* 73 */       this.textures = FISHMAN_TEXTURES;
+/* 73 */       this.textures = OPEntityTextureWeight.fromList(FISHMAN_TEXTURES);
 /* 74 */       chooseTexture();
 /*    */     } 
 /*    */     

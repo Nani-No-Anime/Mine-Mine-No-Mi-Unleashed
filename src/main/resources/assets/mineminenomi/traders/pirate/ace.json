@@ -1,0 +1,8 @@
+{
+    "texture": "mineminenomi:textures/models/ace",
+    "loot_table":"default",
+    "armor" : [
+        {"id":"mineminenomi:aces_hat"},{"id":"mineminenomi:aces_hat"},{"id":"mineminenomi:aces_hat"},{"id":"mineminenomi:aces_hat"}
+    ],
+    "hands":[{"id":"mineminenomi:aces_hat"},{"id":"mineminenomi:aces_hat"}]
+}
