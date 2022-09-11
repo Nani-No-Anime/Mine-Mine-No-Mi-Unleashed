@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.wypi.abilities;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;

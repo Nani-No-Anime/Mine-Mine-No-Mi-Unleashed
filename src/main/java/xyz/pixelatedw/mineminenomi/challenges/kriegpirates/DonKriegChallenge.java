@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.challenges.kriegpirates;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ILivingEntityData;

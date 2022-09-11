@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.pero;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;

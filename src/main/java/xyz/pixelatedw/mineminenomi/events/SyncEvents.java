@@ -6,7 +6,6 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.network.IPacket;
 import net.minecraft.network.play.server.SUpdateHealthPacket;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -50,7 +49,7 @@ public class SyncEvents
       } else {
         maxHpAttribute.setBaseValue((props.getDoriki() / 100));
       } 
-      ((ServerPlayerEntity)event.getPlayer()).connection.sendPacket((IPacket)new SUpdateHealthPacket(event.getPlayer().getHealth(), event.getPlayer().getFoodStats().getFoodLevel(), event.getPlayer().getFoodStats().getSaturationLevel()));
+      ((ServerPlayerEntity)event.getPlayer()).connection.sendPacket(new SUpdateHealthPacket(event.getPlayer().getHealth(), event.getPlayer().getFoodStats().getFoodLevel(), event.getPlayer().getFoodStats().getSaturationLevel()));
     } 
   }
 
@@ -61,7 +60,7 @@ public class SyncEvents
       
       PlayerEntity player = (PlayerEntity)event.getEntityLiving();
       if (!player.world.isRemote && player.ticksExisted < 5) {
-        ((ServerPlayerEntity)player).connection.sendPacket((IPacket)new SUpdateHealthPacket(player.getHealth(), player.getFoodStats().getFoodLevel(), player.getFoodStats().getSaturationLevel()));
+        ((ServerPlayerEntity)player).connection.sendPacket(new SUpdateHealthPacket(player.getHealth(), player.getFoodStats().getFoodLevel(), player.getFoodStats().getSaturationLevel()));
       }
     } 
   }

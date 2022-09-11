@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.util.UUID;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;

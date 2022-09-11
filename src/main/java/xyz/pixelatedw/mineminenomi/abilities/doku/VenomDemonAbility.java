@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.doku;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.UUID;
 import net.minecraft.block.Block;
 import net.minecraft.entity.LivingEntity;

@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.pika;
 
 import java.awt.Color;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;

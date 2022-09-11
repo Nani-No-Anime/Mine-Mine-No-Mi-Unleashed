@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.quests.blackleg;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.function.Predicate;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

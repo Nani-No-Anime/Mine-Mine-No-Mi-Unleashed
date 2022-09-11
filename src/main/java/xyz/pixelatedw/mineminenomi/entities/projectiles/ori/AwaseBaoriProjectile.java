@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.ori;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.util.List;
 import javax.annotation.Nullable;
 import net.minecraft.entity.EntityType;

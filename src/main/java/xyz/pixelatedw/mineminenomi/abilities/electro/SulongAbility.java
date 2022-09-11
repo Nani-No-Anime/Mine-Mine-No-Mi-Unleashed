@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.electro;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;

@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.bane;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.abilities.ZoanAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;

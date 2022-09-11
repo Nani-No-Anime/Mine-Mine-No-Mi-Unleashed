@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.netsu;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;

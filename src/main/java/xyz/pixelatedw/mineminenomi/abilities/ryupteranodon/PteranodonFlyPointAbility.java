@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.ryupteranodon;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.util.UUID;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;

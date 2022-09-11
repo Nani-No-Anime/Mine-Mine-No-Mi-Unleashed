@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.kira;
 
 import java.awt.Color;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.UUID;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;

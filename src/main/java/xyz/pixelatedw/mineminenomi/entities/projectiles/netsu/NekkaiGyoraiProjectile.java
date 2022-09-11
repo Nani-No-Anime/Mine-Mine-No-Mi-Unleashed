@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.netsu;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.particles.ParticleType;

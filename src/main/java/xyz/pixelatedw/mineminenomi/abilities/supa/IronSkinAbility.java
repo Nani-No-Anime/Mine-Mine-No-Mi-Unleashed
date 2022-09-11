@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.supa;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.EffectInstance;

@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.goro;
 
 import java.awt.Color;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nullable;

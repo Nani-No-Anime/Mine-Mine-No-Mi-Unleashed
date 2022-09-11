@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.magu;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.SoundCategory;

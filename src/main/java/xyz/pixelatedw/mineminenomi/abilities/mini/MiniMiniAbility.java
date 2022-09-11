@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.mini;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Pose;
 import net.minecraft.entity.player.PlayerEntity;

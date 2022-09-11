@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.quests.doctor;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;

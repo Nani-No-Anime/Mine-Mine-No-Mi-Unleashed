@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.suna;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 import net.minecraft.block.BlockState;

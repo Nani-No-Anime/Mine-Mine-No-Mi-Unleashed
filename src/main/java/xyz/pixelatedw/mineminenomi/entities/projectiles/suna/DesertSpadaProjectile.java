@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.suna;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;

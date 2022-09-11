@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.bari;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.world.World;

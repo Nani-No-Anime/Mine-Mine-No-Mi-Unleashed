@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import net.minecraft.client.Minecraft;

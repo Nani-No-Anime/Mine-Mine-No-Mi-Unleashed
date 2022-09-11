@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities;
 
-import java.lang.invoke.SerializedLambda;
+
 import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;

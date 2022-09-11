@@ -44,12 +44,12 @@ public class BottomHalfBodyEntity
 
   
   public UUID getOwnerUUID() {
-    return ((Optional<UUID>)getDataManager().get(OWNER)).get();
+    return (getDataManager().get(OWNER)).get();
   }
 
   
   public PlayerEntity getOwner() {
-    return ((Optional)getDataManager().get(OWNER)).isPresent() ? this.world.getPlayerByUuid(((Optional<UUID>)getDataManager().get(OWNER)).get()) : null;
+    return (getDataManager().get(OWNER)).isPresent() ? this.world.getPlayerByUuid((getDataManager().get(OWNER)).get()) : null;
   }
 
 
@@ -118,7 +118,7 @@ public class BottomHalfBodyEntity
     super.writeAdditional(compound);
     if (this.dataManager.get(OWNER) != null)
     {
-      compound.putString("OwnerUUID", ((UUID)((Optional<UUID>)this.dataManager.get(OWNER)).get()).toString());
+      compound.putString("OwnerUUID", this.dataManager.get(OWNER).get().toString());
     }
   }
 

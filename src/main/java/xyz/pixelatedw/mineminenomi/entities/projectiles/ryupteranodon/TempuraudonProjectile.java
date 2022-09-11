@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.ryupteranodon;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

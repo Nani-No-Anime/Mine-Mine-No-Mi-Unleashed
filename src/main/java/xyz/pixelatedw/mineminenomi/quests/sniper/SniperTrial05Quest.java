@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.quests.sniper;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.util.function.Predicate;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.api.quests;
 
 import java.io.Serializable;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

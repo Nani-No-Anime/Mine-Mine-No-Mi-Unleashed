@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.supa;
 
 import java.awt.Color;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityOverlay;

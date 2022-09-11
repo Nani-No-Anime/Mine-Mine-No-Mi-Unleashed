@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
 import java.io.Serializable;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;

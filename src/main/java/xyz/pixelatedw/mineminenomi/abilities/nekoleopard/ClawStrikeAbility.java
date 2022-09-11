@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.nekoleopard;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.abilities.IFormRequiredAbility;

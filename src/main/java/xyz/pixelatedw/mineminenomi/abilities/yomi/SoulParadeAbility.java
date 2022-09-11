@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.yomi;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.text.ITextComponent;

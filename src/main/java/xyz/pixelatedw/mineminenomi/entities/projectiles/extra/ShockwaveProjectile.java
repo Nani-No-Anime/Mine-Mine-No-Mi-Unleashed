@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.extra;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;

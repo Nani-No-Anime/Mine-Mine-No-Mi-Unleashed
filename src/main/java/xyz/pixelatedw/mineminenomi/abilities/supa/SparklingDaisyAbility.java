@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.supa;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.util.List;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;

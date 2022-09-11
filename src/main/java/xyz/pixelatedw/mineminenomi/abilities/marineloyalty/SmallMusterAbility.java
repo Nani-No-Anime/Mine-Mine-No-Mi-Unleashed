@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.marineloyalty;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;

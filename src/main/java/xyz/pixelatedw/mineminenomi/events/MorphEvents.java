@@ -47,7 +47,7 @@ public class MorphEvents
   public static class Client
   {
     @SubscribeEvent
-    public static void onEntityRendered(RenderLivingEvent.Pre event) {
+    public static void onEntityRendered(RenderLivingEvent.Pre<?,?> event) {
       if (!(event.getEntity() instanceof AbstractClientPlayerEntity)) {
         return;
       }
@@ -65,7 +65,7 @@ public class MorphEvents
         if (info != null) {
           
           event.setCanceled(true);
-          ZoanMorphRenderer render = (ZoanMorphRenderer)info.getRendererFactory(entity).createRenderFor(Minecraft.getInstance().getRenderManager());
+          ZoanMorphRenderer<?,?> render = (ZoanMorphRenderer<?,?>)info.getRendererFactory(entity).createRenderFor(Minecraft.getInstance().getRenderManager());
           render.render(entity, entity.rotationYaw, event.getPartialRenderTick(), event.getMatrixStack(), event.getBuffers(), event.getLight());
         } 
       } 

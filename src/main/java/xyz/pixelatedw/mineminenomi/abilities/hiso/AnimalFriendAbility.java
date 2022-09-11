@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.hiso;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.lang.reflect.Method;
 import java.util.List;
 import net.minecraft.entity.LivingEntity;

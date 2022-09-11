@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.jiki;
 
-import java.lang.invoke.SerializedLambda;
+
 import java.util.List;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

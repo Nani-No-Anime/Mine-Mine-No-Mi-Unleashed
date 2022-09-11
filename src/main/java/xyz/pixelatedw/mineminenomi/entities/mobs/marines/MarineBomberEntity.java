@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.marines;
-import java.lang.invoke.SerializedLambda;
+
 import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ILivingEntityData;

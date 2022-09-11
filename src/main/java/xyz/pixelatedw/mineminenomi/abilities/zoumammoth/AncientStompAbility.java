@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.zoumammoth;
 import com.google.common.collect.ImmutableList;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.Predicate;

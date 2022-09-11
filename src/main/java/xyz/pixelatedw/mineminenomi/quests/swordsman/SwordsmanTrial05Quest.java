@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.quests.swordsman;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.enchantment.EnchantmentData;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;

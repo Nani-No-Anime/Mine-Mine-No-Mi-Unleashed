@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.kage;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.Map;
 import java.util.UUID;
 import net.minecraft.entity.Entity;

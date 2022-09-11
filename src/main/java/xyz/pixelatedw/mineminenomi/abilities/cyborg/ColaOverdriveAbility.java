@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.cyborg;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.player.PlayerEntity;

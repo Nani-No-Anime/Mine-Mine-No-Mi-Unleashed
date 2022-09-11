@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;

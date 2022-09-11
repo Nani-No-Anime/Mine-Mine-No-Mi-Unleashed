@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
 import java.io.Serializable;
-import java.lang.invoke.SerializedLambda;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;

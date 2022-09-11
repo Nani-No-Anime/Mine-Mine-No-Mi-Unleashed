@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.challenges;
 
 import java.io.Serializable;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nullable;

@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.quests.swordsman;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.abilities.swordsman.OTatsumakiAbility;

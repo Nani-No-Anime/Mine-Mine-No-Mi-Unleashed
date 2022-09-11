@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.giro;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.ITextComponent;

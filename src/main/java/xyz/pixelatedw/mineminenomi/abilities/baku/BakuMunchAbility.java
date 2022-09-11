@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.baku;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;

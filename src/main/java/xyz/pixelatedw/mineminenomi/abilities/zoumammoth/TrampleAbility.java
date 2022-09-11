@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.zoumammoth;
 import com.google.common.collect.ImmutableList;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.List;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

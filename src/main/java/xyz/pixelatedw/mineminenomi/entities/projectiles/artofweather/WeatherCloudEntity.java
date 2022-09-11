@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.artofweather;
 import java.awt.Color;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

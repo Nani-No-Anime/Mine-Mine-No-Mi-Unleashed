@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.MinecraftForge;

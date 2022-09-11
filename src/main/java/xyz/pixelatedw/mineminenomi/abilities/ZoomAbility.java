@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities;
 
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;

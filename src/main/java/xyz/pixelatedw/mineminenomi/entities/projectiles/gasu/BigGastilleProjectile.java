@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.gasu;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.Objects;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;

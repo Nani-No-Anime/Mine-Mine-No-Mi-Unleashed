@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.bomu;
-import java.lang.invoke.SerializedLambda;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.abilities.ExplosionAbility;

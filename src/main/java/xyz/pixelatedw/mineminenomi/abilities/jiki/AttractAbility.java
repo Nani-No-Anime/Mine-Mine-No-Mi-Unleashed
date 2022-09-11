@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
 import com.google.common.collect.Iterables;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;

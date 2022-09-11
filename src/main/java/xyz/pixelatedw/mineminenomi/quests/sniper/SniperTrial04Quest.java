@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.quests.sniper;
-import java.lang.invoke.SerializedLambda;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
