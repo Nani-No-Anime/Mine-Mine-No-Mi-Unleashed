@@ -18,110 +18,76 @@ import xyz.pixelatedw.mineminenomi.init.ModItems;
 
 public class AkumaNoMiBoxItem extends Item {
   private int tier;
-  
+
   public AkumaNoMiBoxItem(int tier) {
     super((new Item.Properties()).group(ModCreativeTabs.MISC).maxStackSize(1));
     this.tier = tier;
   }
 
-  
   public int getKeySlot(PlayerEntity player) {
-    if (!player.inventory.hasItemStack(new ItemStack((IItemProvider)ModItems.KEY))) {
-      
-      player.sendMessage((ITextComponent)new TranslationTextComponent(ModI18n.ITEM_MESSAGE_NEED_KEY, new Object[0]));
+    if (!player.inventory.hasItemStack(new ItemStack((IItemProvider) ModItems.KEY))) {
+
+      player.sendMessage((ITextComponent) new TranslationTextComponent(ModI18n.ITEM_MESSAGE_NEED_KEY, new Object[0]));
       return -1;
-    } 
-    
+    }
+
     for (int i = 0; i < player.inventory.getSizeInventory(); i++) {
-      
+
       ItemStack stack = player.inventory.getStackInSlot(i);
       if (stack != null && !stack.isEmpty() && stack.getItem() == ModItems.KEY) {
         return i;
       }
-    } 
+    }
     return -1;
   }
-
-
-  
+  //[todo : make it so the key is not removed if there are no devil fuits left to sellect]
   public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity player, Hand hand) {
     if (!world.isRemote) {
-      
+
       if (hand.equals(Hand.OFF_HAND)) {
         return new ActionResult(ActionResultType.FAIL, player.getHeldItem(hand));
       }
       int keySlot = getKeySlot(player);
-      
+
       if (keySlot < 0) {
         return new ActionResult(ActionResultType.FAIL, player.getHeldItem(hand));
       }
       ItemStack itemStack = player.getHeldItemMainhand();
-      
+
       player.inventory.decrStackSize(keySlot, 1);
       player.inventory.deleteStack(itemStack);
-      
+
       Item randomFruit = DevilFruitHelper.rouletteDevilFruits(world, this.tier);
       randomFruit = DevilFruitHelper.oneFruitPerWorldCheck(world, randomFruit);
-      
+
       if (randomFruit == null) {
-        
+
         player.inventory.deleteStack(itemStack);
         return new ActionResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
-      } 
+      }
       if (randomFruit != null) {
-        
+
         if (!(randomFruit instanceof AkumaNoMiItem)) {
-          
-          player.inventory.addItemStackToInventory(new ItemStack((IItemProvider)randomFruit));
+
+          player.inventory.addItemStackToInventory(new ItemStack((IItemProvider) randomFruit));
           return new ActionResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
-        } 
-        
+        }
+
         if (DevilFruitHelper.hasDFLimitInInventory(player)) {
-          
-          player.dropItem(new ItemStack((IItemProvider)randomFruit), true);
+
+          player.dropItem(new ItemStack((IItemProvider) randomFruit), true);
           return new ActionResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
-        } 
+        }
 
-        
-        player.inventory.addItemStackToInventory(new ItemStack((IItemProvider)randomFruit));
+        player.inventory.addItemStackToInventory(new ItemStack((IItemProvider) randomFruit));
         ExtendedWorldData worldProps = ExtendedWorldData.get(player.world);
-        worldProps.addDevilFruitInInventory(player.getUniqueID(), DevilFruitHelper.getDevilFruitKey((AkumaNoMiItem)randomFruit));
+        worldProps.addDevilFruitInInventory(player.getUniqueID(), DevilFruitHelper.getDevilFruitKey((AkumaNoMiItem) randomFruit));
         return new ActionResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
-      } 
-    } 
+      }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     return new ActionResult(ActionResultType.SUCCESS, player.getHeldItem(hand));
   }
 
-  
-  public int getTier() {
-    return this.tier;
-  }
+  public int getTier() { return this.tier; }
 }
