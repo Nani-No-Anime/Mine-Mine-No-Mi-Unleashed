@@ -1,53 +1,49 @@
-/*    */ package xyz.pixelatedw.mineminenomi.packets.server.ui;
-/*    */ 
-/*    */ import java.util.function.Supplier;
-/*    */ import net.minecraft.client.Minecraft;
-/*    */ import net.minecraft.client.entity.player.ClientPlayerEntity;
-/*    */ import net.minecraft.client.gui.screen.Screen;
-/*    */ import net.minecraft.entity.player.PlayerEntity;
-/*    */ import net.minecraft.network.PacketBuffer;
-/*    */ import net.minecraftforge.api.distmarker.Dist;
-/*    */ import net.minecraftforge.api.distmarker.OnlyIn;
-/*    */ import net.minecraftforge.fml.network.NetworkDirection;
-/*    */ import net.minecraftforge.fml.network.NetworkEvent;
-/*    */ import xyz.pixelatedw.mineminenomi.screens.QuestsTrackerScreen;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class SOpenQuestTrackerScreenPacket
-/*    */ {
-/*    */   public void encode(PacketBuffer buffer) {}
-/*    */   
-/*    */   public static SOpenQuestTrackerScreenPacket decode(PacketBuffer buffer) {
-/* 26 */     SOpenQuestTrackerScreenPacket msg = new SOpenQuestTrackerScreenPacket();
-/* 27 */     return msg;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public static void handle(SOpenQuestTrackerScreenPacket message, Supplier<NetworkEvent.Context> ctx) {
-/* 32 */     if (((NetworkEvent.Context)ctx.get()).getDirection() == NetworkDirection.PLAY_TO_CLIENT)
-/* 33 */       ((NetworkEvent.Context)ctx.get()).enqueueWork(() -> ClientHandler.handle(message)); 
-/* 34 */     ((NetworkEvent.Context)ctx.get()).setPacketHandled(true);
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public static class ClientHandler
-/*    */   {
-/*    */     @OnlyIn(Dist.CLIENT)
-/*    */     public static void handle(SOpenQuestTrackerScreenPacket message) {
-/* 42 */       ClientPlayerEntity clientPlayerEntity = (Minecraft.getInstance()).player;
-/*    */       
-/* 44 */       Minecraft.getInstance().displayGuiScreen((Screen)new QuestsTrackerScreen((PlayerEntity)clientPlayerEntity));
-/*    */     }
-/*    */   }
-/*    */ }
+package xyz.pixelatedw.mineminenomi.packets.server.ui;
+
+import java.util.function.Supplier;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.player.ClientPlayerEntity;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.network.PacketBuffer;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.fml.network.NetworkDirection;
+import net.minecraftforge.fml.network.NetworkEvent;
+import xyz.pixelatedw.mineminenomi.screens.QuestsTrackerScreen;
 
 
-/* Location:              C:\Users\4tuto\curseforge\minecraft\Instances\incontrol\mods\mine-mine-no-mi-1.15.2-0.8.1.jar!\xyz\pixelatedw\mineminenomi\packets\serve\\ui\SOpenQuestTrackerScreenPacket.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
+
+
+
+
+
+public class SOpenQuestTrackerScreenPacket
+{
+  public void encode(PacketBuffer buffer) {}
+  
+  public static SOpenQuestTrackerScreenPacket decode(PacketBuffer buffer) {
+    SOpenQuestTrackerScreenPacket msg = new SOpenQuestTrackerScreenPacket();
+    return msg;
+  }
+
+  
+  public static void handle(SOpenQuestTrackerScreenPacket message, Supplier<NetworkEvent.Context> ctx) {
+    if (((NetworkEvent.Context)ctx.get()).getDirection() == NetworkDirection.PLAY_TO_CLIENT)
+      ((NetworkEvent.Context)ctx.get()).enqueueWork(() -> ClientHandler.handle(message)); 
+    ((NetworkEvent.Context)ctx.get()).setPacketHandled(true);
+  }
+
+  
+  public static class ClientHandler
+  {
+    @OnlyIn(Dist.CLIENT)
+    public static void handle(SOpenQuestTrackerScreenPacket message) {
+      ClientPlayerEntity clientPlayerEntity = (Minecraft.getInstance()).player;
+      
+      Minecraft.getInstance().displayGuiScreen((Screen)new QuestsTrackerScreen((PlayerEntity)clientPlayerEntity));
+    }
+  }
+}
+
+

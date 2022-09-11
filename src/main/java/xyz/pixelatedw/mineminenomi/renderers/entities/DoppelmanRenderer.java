@@ -1,51 +1,47 @@
-/*    */ package xyz.pixelatedw.mineminenomi.renderers.entities;
-/*    */ 
-/*    */ import com.mojang.blaze3d.matrix.MatrixStack;
-/*    */ import net.minecraft.client.renderer.entity.EntityRenderer;
-/*    */ import net.minecraft.client.renderer.entity.EntityRendererManager;
-/*    */ import net.minecraft.client.renderer.entity.model.BipedModel;
-/*    */ import net.minecraft.entity.LivingEntity;
-/*    */ import net.minecraft.entity.MobEntity;
-/*    */ import net.minecraftforge.api.distmarker.Dist;
-/*    */ import net.minecraftforge.api.distmarker.OnlyIn;
-/*    */ import net.minecraftforge.fml.client.registry.IRenderFactory;
-/*    */ import xyz.pixelatedw.mineminenomi.entities.mobs.ability.DoppelmanEntity;
-/*    */ import xyz.pixelatedw.mineminenomi.models.entities.mobs.humanoids.HumanoidModel;
-/*    */ 
-/*    */ @OnlyIn(Dist.CLIENT)
-/*    */ public class DoppelmanRenderer
-/*    */   extends HumanoidRenderer<DoppelmanEntity, BipedModel<DoppelmanEntity>> {
-/*    */   public DoppelmanRenderer(EntityRendererManager renderManager) {
-/* 19 */     super(renderManager, new HumanoidModel(), "doppelman");
-/*    */   }
-/*    */ 
-/*    */ 
-/*    */   
-/*    */   public void preRenderCallback(DoppelmanEntity entity, MatrixStack matrixStack, float partialTickTime) {
-/* 25 */     float scale = 1.0F + entity.getShadows() / 7.0F;
-/*    */     
-/* 27 */     if (scale < 1.0F) {
-/* 28 */       scale = 1.0F;
-/*    */     }
-/* 30 */     matrixStack.scale(scale, scale, scale);
-/*    */   }
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */   
-/*    */   public static class Factory
-/*    */     implements IRenderFactory<DoppelmanEntity>
-/*    */   {
-/*    */     public EntityRenderer<? super DoppelmanEntity> createRenderFor(EntityRendererManager manager) {
-/* 42 */       return (EntityRenderer<? super DoppelmanEntity>)new DoppelmanRenderer(manager);
-/*    */     }
-/*    */   }
-/*    */ }
+package xyz.pixelatedw.mineminenomi.renderers.entities;
+
+import com.mojang.blaze3d.matrix.MatrixStack;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.model.BipedModel;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.MobEntity;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
+import xyz.pixelatedw.mineminenomi.entities.mobs.ability.DoppelmanEntity;
+import xyz.pixelatedw.mineminenomi.models.entities.mobs.humanoids.HumanoidModel;
+
+@OnlyIn(Dist.CLIENT)
+public class DoppelmanRenderer
+  extends HumanoidRenderer<DoppelmanEntity, BipedModel<DoppelmanEntity>> {
+  public DoppelmanRenderer(EntityRendererManager renderManager) {
+    super(renderManager, new HumanoidModel(), "doppelman");
+  }
 
 
-/* Location:              C:\Users\4tuto\curseforge\minecraft\Instances\incontrol\mods\mine-mine-no-mi-1.15.2-0.8.1.jar!\xyz\pixelatedw\mineminenomi\renderers\entities\DoppelmanRenderer.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
+  
+  public void preRenderCallback(DoppelmanEntity entity, MatrixStack matrixStack, float partialTickTime) {
+    float scale = 1.0F + entity.getShadows() / 7.0F;
+    
+    if (scale < 1.0F) {
+      scale = 1.0F;
+    }
+    matrixStack.scale(scale, scale, scale);
+  }
+
+
+
+
+
+  
+  public static class Factory
+    implements IRenderFactory<DoppelmanEntity>
+  {
+    public EntityRenderer<? super DoppelmanEntity> createRenderFor(EntityRendererManager manager) {
+      return (EntityRenderer<? super DoppelmanEntity>)new DoppelmanRenderer(manager);
+    }
+  }
+}
+
+

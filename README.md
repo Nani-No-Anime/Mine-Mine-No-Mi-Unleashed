@@ -7,7 +7,6 @@ then alot of the code broken by Java Decompiler and fixed with[FernFlower](https
 
 ## WARNING
 * Do not report any issues with this version of the mod back to the creators of Mine Mine No Mi. The modifications that have been made could be causeing an issues that are un-forceen.
-* [Java Decompiler](http://java-decompiler.github.io/) defualt settings add the /* */ on every line and i have not removed them yet.
 
 ## Modification Plans
 * ### Ability Use Log

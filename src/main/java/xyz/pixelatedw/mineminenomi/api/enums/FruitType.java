@@ -1,40 +1,36 @@
-/*    */ package xyz.pixelatedw.mineminenomi.api.enums;
-/*    */ 
-/*    */ import net.minecraft.util.text.TextFormatting;
-/*    */ 
-/*    */ public enum FruitType
-/*    */ {
-/*  7 */   PARAMECIA(TextFormatting.RED, "Paramecia"),
-/*  8 */   LOGIA(TextFormatting.YELLOW, "Logia"),
-/*  9 */   ZOAN(TextFormatting.GREEN, "Zoan"),
-/* 10 */   MYTHICAL_ZOAN(TextFormatting.AQUA, "Mythical Zoan"),
-/* 11 */   ANCIENT_ZOAN(TextFormatting.DARK_GREEN, "Ancient Zoan"),
-/* 12 */   ARTIFICIAL_LOGIA(TextFormatting.GOLD, "Artificial Logia"),
-/* 13 */   ARTIFICIAL_PARAMECIA(TextFormatting.GOLD, "Artificial Paramecia"),
-/* 14 */   ARTIFICIAL_ZOAN(TextFormatting.GOLD, "Artificial Zoan");
-/*    */   
-/*    */   private TextFormatting color;
-/*    */   
-/*    */   private String name;
-/*    */   
-/*    */   FruitType(TextFormatting color, String name) {
-/* 21 */     this.color = color;
-/* 22 */     this.name = name;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public TextFormatting getColor() {
-/* 27 */     return this.color;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getName() {
-/* 32 */     return this.name;
-/*    */   }
-/*    */ }
+package xyz.pixelatedw.mineminenomi.api.enums;
+
+import net.minecraft.util.text.TextFormatting;
+
+public enum FruitType
+{
+  PARAMECIA(TextFormatting.RED, "Paramecia"),
+  LOGIA(TextFormatting.YELLOW, "Logia"),
+  ZOAN(TextFormatting.GREEN, "Zoan"),
+  MYTHICAL_ZOAN(TextFormatting.AQUA, "Mythical Zoan"),
+  ANCIENT_ZOAN(TextFormatting.DARK_GREEN, "Ancient Zoan"),
+  ARTIFICIAL_LOGIA(TextFormatting.GOLD, "Artificial Logia"),
+  ARTIFICIAL_PARAMECIA(TextFormatting.GOLD, "Artificial Paramecia"),
+  ARTIFICIAL_ZOAN(TextFormatting.GOLD, "Artificial Zoan");
+  
+  private TextFormatting color;
+  
+  private String name;
+  
+  FruitType(TextFormatting color, String name) {
+    this.color = color;
+    this.name = name;
+  }
+
+  
+  public TextFormatting getColor() {
+    return this.color;
+  }
+
+  
+  public String getName() {
+    return this.name;
+  }
+}
 
 
-/* Location:              C:\Users\4tuto\curseforge\minecraft\Instances\incontrol\mods\mine-mine-no-mi-1.15.2-0.8.1.jar!\xyz\pixelatedw\mineminenomi\api\enums\FruitType.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

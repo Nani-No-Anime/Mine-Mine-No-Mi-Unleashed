@@ -26,3 +26,5 @@ run
 !README.*
 !.gitignore
 *.DS_Store*
+
+.factorypath
