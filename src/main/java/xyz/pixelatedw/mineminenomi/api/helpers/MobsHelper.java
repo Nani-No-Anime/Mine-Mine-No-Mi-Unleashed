@@ -2,6 +2,7 @@ package xyz.pixelatedw.mineminenomi.api.helpers;
 
 import java.util.Comparator;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.abilities.haki.HaoshokuHakiAbility;
 import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.DevilFruitCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.IDevilFruit;
@@ -29,9 +30,9 @@ public class MobsHelper
       }
     };
 
-  
+
   public static int getEntityThreatLevel(LivingEntity entity) {
-    if (entity instanceof net.minecraft.entity.player.PlayerEntity) {
+    if (entity instanceof PlayerEntity) {
       
       IHakiData hakiProps = HakiDataCapability.get(entity);
       IEntityStats statsProps = EntityStatsCapability.get(entity);
@@ -39,6 +40,9 @@ public class MobsHelper
       IAbilityData abilityProps = AbilityDataCapability.get(entity);
       
       int threat = (int)((statsProps.getDoriki() / 2000) + hakiProps.getTotalHakiExp() / 60.0F);
+      System.out.println("threat "+threat);
+      System.out.println(dfProps.hasDevilFruit());
+      System.out.println(dfProps.isLogia());
       if (dfProps.hasDevilFruit()) {
         
         threat += 2;
@@ -57,10 +61,10 @@ public class MobsHelper
     } 
     if (entity instanceof OPEntity)
     {
-      return ((OPEntity)entity).getThreat();
+      return ((OPEntity)entity).getTrueThreat();
     }
     
-    return (int)entity.getMaxHealth();
+    return 0;
   }
 }
 
