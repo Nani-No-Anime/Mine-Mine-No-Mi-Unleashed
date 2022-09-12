@@ -4,7 +4,6 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.TetsuBoshiAbility;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.TokuyoAburaBoshiAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.ItemsHelper;

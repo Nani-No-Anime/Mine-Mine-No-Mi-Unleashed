@@ -2,10 +2,6 @@ package xyz.pixelatedw.mineminenomi.screens;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.awt.Color;
-import java.util.Collection;
-import java.util.List;
-import java.util.stream.Collectors;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.Widget;
@@ -33,6 +29,11 @@ import xyz.pixelatedw.mineminenomi.screens.extra.NoTextureButton;
 import xyz.pixelatedw.mineminenomi.screens.extra.TexturedIconButton;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.awt.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 

@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -20,6 +18,9 @@ import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.IDevilFruit;
 import xyz.pixelatedw.mineminenomi.init.ModAbilities;
 import xyz.pixelatedw.mineminenomi.items.weapons.CoreSwordItem;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 

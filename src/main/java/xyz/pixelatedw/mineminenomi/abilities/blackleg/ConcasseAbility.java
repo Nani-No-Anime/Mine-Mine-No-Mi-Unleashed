@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.blackleg;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -28,6 +27,8 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.List;
 
 public class ConcasseAbility extends Ability implements IMultiTargetAbility, IFallDamageBlockingAbility, IExtraUpdateData, IAnimatedAbility {
   public static final ConcasseAbility INSTANCE = new ConcasseAbility();

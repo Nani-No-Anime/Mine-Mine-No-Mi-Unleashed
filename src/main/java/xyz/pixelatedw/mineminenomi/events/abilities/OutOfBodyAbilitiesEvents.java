@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.abilities;
 
-import java.util.Arrays;
-import java.util.Optional;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
@@ -22,6 +20,9 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.events.AbilityUseEvent;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.Arrays;
+import java.util.Optional;
 
 
 

@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.gomu;
-import java.awt.Color;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -27,6 +25,9 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.awt.*;
+import java.util.UUID;
 
 public class GearSecondAbility extends ContinuousAbility implements IBodyOverlayAbility, IParallelContinuousAbility {
   public static final GearSecondAbility INSTANCE = new GearSecondAbility();

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.swordsman;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -20,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.particles.effects.swordsman.HiryuKaenParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class HiryuKaenAbility extends Ability implements IMultiTargetAbility, IFallDamageBlockingAbility {
   public static final HiryuKaenAbility INSTANCE = new HiryuKaenAbility();

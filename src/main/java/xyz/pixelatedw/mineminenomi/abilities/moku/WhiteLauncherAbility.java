@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.moku;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -17,6 +16,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.moku.WhiteLauncherParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class WhiteLauncherAbility extends Ability implements IMultiTargetAbility {
   public static final Ability INSTANCE = new WhiteLauncherAbility();

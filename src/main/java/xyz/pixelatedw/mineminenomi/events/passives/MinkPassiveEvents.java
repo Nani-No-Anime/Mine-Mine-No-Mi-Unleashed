@@ -2,10 +2,6 @@ package xyz.pixelatedw.mineminenomi.events.passives;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.UUID;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
@@ -58,6 +54,11 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.UUID;
 
 
 

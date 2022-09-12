@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.gura;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -10,7 +9,6 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import xyz.pixelatedw.mineminenomi.api.abilities.IAnimatedAbility;
-import xyz.pixelatedw.mineminenomi.api.animations.IAnimation;
 import xyz.pixelatedw.mineminenomi.api.animations.TimeAnimation;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
@@ -27,6 +25,8 @@ import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
+
+import java.util.List;
 
 public class GekishinAbility extends ChargeableAbility implements IAnimatedAbility {
   public static final Ability INSTANCE = (Ability)new GekishinAbility();

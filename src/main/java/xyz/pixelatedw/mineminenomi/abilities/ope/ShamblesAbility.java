@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.ope;
 
 
-import java.util.Collections;
-import java.util.List;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
@@ -23,6 +21,9 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.Collections;
+import java.util.List;
 
 public class ShamblesAbility
   extends Ability {

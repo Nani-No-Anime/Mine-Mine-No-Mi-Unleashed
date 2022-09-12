@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.effects;
 
-import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.entity.Entity;
@@ -19,6 +18,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModRenderTypes;
 import xyz.pixelatedw.mineminenomi.init.ModSounds;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 public class ShinzoMassageEffect extends GuardingEffect {
   int duration;

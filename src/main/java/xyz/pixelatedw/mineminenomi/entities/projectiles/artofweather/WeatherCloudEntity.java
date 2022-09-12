@@ -1,9 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.artofweather;
-import java.awt.Color;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,7 +7,6 @@ import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos.RainTempo;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos.ThunderboltTempo;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos.ThunderstormTempo;
-import xyz.pixelatedw.mineminenomi.api.abilities.TempoAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.ItemsHelper;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.EntityCloud;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.goro.LightningEntity;
@@ -23,6 +18,11 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class WeatherCloudEntity extends EntityCloud {
   private static final ParticleEffect PARTICLES1 = (ParticleEffect)new WeatherCloudParticleEffect();

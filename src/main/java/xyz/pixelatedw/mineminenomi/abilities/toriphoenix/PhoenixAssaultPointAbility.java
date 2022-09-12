@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.toriphoenix;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,6 +15,8 @@ import xyz.pixelatedw.mineminenomi.entities.zoan.PhoenixAssaultZoanInfo;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.UUID;
 
 public class PhoenixAssaultPointAbility extends ZoanAbility {
   public static final PhoenixAssaultPointAbility INSTANCE = new PhoenixAssaultPointAbility();

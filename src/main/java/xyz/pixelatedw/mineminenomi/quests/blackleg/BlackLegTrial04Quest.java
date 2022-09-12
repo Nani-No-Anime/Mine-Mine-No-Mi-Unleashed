@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.quests.blackleg;
 
-import java.util.function.Predicate;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -15,6 +14,8 @@ import xyz.pixelatedw.mineminenomi.quests.objectives.TimedSurvivalObjective;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.function.Predicate;
 
 public class BlackLegTrial04Quest extends Quest {
   static {

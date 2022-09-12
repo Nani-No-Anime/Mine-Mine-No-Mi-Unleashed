@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.toriphoenix;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,6 +21,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.toriphoenix.TenseiNoSoen2Pa
 import xyz.pixelatedw.mineminenomi.particles.effects.toriphoenix.TenseiNoSoenParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.List;
 
 public class TenseiNoSoenAbility extends ChargeableAbility implements IFormRequiredAbility {
   public static final TenseiNoSoenAbility INSTANCE = new TenseiNoSoenAbility();

@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.hiso;
 
 
-import java.util.List;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.ITextComponent;
@@ -9,6 +8,8 @@ import net.minecraft.util.text.StringTextComponent;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class ForewarnAbility extends Ability {
   public static final ForewarnAbility INSTANCE = new ForewarnAbility();

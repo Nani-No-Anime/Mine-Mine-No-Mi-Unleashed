@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.challenges;
 
-import java.util.UUID;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
@@ -12,6 +11,8 @@ import xyz.pixelatedw.mineminenomi.init.ModArenas;
 import xyz.pixelatedw.mineminenomi.packets.server.ui.SOpenArenaSetupScreenPacket;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 
 public abstract class ArenaData

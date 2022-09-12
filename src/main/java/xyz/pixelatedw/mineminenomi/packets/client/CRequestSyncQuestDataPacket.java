@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.client;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.function.Supplier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -17,6 +14,10 @@ import xyz.pixelatedw.mineminenomi.data.entity.quests.QuestDataCapability;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncQuestDataPacket;
 import xyz.pixelatedw.mineminenomi.packets.server.ui.SOpenQuestTrackerScreenPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.function.Supplier;
 
 public class CRequestSyncQuestDataPacket
 {

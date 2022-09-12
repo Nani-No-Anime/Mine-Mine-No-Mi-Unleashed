@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items;
 
-import java.util.List;
-import javax.annotation.Nullable;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,6 +14,9 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 
 

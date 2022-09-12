@@ -1,16 +1,10 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.animals;
-import javax.annotation.Nullable;
+
 import net.minecraft.entity.AgeableEntity;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.PanicGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -28,6 +22,8 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.IDynamicRenderer;
 import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 
+import javax.annotation.Nullable;
+
 public class DenDenMushiEntity extends AnimalEntity implements IDynamicRenderer {
   private static final DataParameter<Integer> TEXTURE_ID = EntityDataManager.createKey(DenDenMushiEntity.class, DataSerializers.VARINT);
   private String[] textures = new String[] { "den_den_mushi1", "den_den_mushi2", "den_den_mushi3" };
@@ -38,8 +34,8 @@ public class DenDenMushiEntity extends AnimalEntity implements IDynamicRenderer 
     
     this.goalSelector.addGoal(1, (Goal)new PanicGoal(this, 0.75D));
     this.goalSelector.addGoal(6, (Goal)new WaterAvoidingRandomWalkingGoal(this, 1.0D));
-    this.goalSelector.addGoal(7, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 6.0F));
-    this.goalSelector.addGoal(8, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(7, (Goal)new LookAtGoal(this, PlayerEntity.class, 6.0F));
+    this.goalSelector.addGoal(8, (Goal)new LookRandomlyGoal(this));
   }
 
 

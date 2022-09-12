@@ -1,13 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.gura;
+
 import com.google.common.collect.ImmutableList;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -15,16 +8,11 @@ import net.minecraft.entity.item.FallingBlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.SoundCategory;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.EntityRayTraceResult;
-import net.minecraft.util.math.RayTraceContext;
-import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.*;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IWorld;
 import xyz.pixelatedw.mineminenomi.api.abilities.IAnimatedAbility;
-import xyz.pixelatedw.mineminenomi.api.animations.IAnimation;
 import xyz.pixelatedw.mineminenomi.api.animations.TimeAnimation;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
@@ -41,6 +29,12 @@ import xyz.pixelatedw.mineminenomi.renderers.animations.gura.KaishinAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ShimaYurashiAbility extends ChargeableAbility implements IAnimatedAbility {
   public static final Ability INSTANCE = (Ability)new ShimaYurashiAbility();

@@ -1,13 +1,10 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.hana;
-import com.google.common.collect.ImmutableList;
 
-import java.util.Iterator;
-import java.util.List;
+import com.google.common.collect.ImmutableList;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.particles.BlockParticleData;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
@@ -23,6 +20,9 @@ import xyz.pixelatedw.mineminenomi.init.ModDamageSource;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.Iterator;
+import java.util.List;
 
 public class HanaFeetEntity extends AbilityProjectileEntity {
   public HanaFeetEntity(World world) {

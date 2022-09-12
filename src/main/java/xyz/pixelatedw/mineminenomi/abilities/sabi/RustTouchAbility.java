@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.sabi;
 
 import com.google.common.collect.Iterables;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;

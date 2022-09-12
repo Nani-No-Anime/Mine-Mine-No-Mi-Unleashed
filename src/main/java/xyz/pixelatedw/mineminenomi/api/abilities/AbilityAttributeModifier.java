@@ -1,8 +1,9 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
-import java.util.UUID;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.UUID;
 
 
 

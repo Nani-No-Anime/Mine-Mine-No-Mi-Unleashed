@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
-import java.awt.Color;
-import java.text.DecimalFormat;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
 import net.minecraft.entity.LivingEntity;
@@ -18,6 +16,9 @@ import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.awt.*;
+import java.text.DecimalFormat;
 
 
 

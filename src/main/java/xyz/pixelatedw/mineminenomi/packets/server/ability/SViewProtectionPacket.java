@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.server.ability;
 
-import java.util.function.Supplier;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
@@ -16,6 +15,8 @@ import xyz.pixelatedw.mineminenomi.api.protection.block.AirBlockProtectionRule;
 import xyz.pixelatedw.mineminenomi.api.protection.block.ClientBlockProtectionRule;
 import xyz.pixelatedw.mineminenomi.api.protection.block.FoliageBlockProtectionRule;
 import xyz.pixelatedw.mineminenomi.api.protection.block.LiquidBlockProtectionRule;
+
+import java.util.function.Supplier;
 
 
 

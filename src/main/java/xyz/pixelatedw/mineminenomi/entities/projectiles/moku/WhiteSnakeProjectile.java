@@ -1,11 +1,8 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.moku;
 
 
-import java.util.List;
-import java.util.Optional;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.EntityPredicates;
@@ -18,6 +15,9 @@ import xyz.pixelatedw.mineminenomi.init.ModParticleTypes;
 import xyz.pixelatedw.mineminenomi.particles.data.GenericParticleData;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.List;
+import java.util.Optional;
 
 public class WhiteSnakeProjectile
   extends AbilityProjectileEntity

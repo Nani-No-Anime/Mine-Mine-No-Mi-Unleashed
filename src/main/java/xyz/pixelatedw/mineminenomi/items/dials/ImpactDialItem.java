@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items.dials;
 
-import javax.annotation.Nullable;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -18,6 +17,8 @@ import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
+
+import javax.annotation.Nullable;
 
 public class ImpactDialItem
   extends BlockItem {

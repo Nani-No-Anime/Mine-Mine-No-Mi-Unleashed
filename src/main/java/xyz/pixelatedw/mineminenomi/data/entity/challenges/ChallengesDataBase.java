@@ -1,12 +1,13 @@
 package xyz.pixelatedw.mineminenomi.data.entity.challenges;
 
+import net.minecraft.entity.player.PlayerEntity;
+import xyz.pixelatedw.mineminenomi.challenges.Challenge;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import net.minecraft.entity.player.PlayerEntity;
-import xyz.pixelatedw.mineminenomi.challenges.Challenge;
 
 public class ChallengesDataBase
   implements IChallengesData

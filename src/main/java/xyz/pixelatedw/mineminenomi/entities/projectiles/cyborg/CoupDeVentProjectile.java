@@ -3,7 +3,6 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.cyborg;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;

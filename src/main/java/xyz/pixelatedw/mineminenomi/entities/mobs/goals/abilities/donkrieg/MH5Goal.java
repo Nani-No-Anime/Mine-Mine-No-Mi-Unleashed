@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.donkrieg;
 
-import java.util.List;
 import net.minecraft.command.arguments.EntityAnchorArgument;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -21,6 +20,8 @@ import xyz.pixelatedw.mineminenomi.init.ModArmors;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 public class MH5Goal extends Goal {
   private DonKriegEntity entity;

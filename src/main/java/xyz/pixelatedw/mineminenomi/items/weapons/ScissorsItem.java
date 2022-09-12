@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items.weapons;
-import java.util.List;
-import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -27,6 +26,9 @@ import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncEntityStatsPacket;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.List;
+import java.util.Random;
 
 public class ScissorsItem extends CoreSwordItem {
   public ScissorsItem() {

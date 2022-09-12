@@ -5,7 +5,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Effect;
-import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.PotionUtils;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.IBrewPotionObjective;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;

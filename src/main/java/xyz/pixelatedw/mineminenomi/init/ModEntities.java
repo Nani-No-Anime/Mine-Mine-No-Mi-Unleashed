@@ -1,12 +1,9 @@
 package xyz.pixelatedw.mineminenomi.init;
 
-import java.util.Map;
-import java.util.function.Function;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraftforge.event.RegistryEvent;
@@ -20,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.entities.DummyEntity;
 import xyz.pixelatedw.mineminenomi.wypi.ModdedSpawnEggItem;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.WyRegistry;
+
+import java.util.Map;
 
 
 

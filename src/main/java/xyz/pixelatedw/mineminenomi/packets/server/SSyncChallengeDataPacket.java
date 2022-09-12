@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.server;
 
-import java.util.function.Supplier;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,6 +12,8 @@ import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 import xyz.pixelatedw.mineminenomi.data.entity.challenges.ChallengesDataCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.challenges.IChallengesData;
+
+import java.util.function.Supplier;
 
 
 

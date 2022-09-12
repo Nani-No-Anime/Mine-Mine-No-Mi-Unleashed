@@ -1,10 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.command.arguments.EntityAnchorArgument;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -13,7 +8,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.IPacket;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.Vec3d;
@@ -24,6 +18,12 @@ import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.init.ModItems;
 import xyz.pixelatedw.mineminenomi.items.VivreCardItem;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class VivreCardEntity extends Entity {
   @Nullable

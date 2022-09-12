@@ -3,7 +3,6 @@ package xyz.pixelatedw.mineminenomi.abilities.kachi;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityOverlay;
 import xyz.pixelatedw.mineminenomi.api.abilities.IPunchOverlayAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;

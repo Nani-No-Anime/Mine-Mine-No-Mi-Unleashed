@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MoverType;
@@ -15,6 +12,10 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class SpikeEntity

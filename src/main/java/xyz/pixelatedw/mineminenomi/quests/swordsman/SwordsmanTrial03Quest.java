@@ -1,14 +1,11 @@
 package xyz.pixelatedw.mineminenomi.quests.swordsman;
 
 
-import java.util.function.Predicate;
-
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.swordsman.SanbyakurokujuPoundHoAbility;
 import xyz.pixelatedw.mineminenomi.abilities.swordsman.ShiShishiSonsonAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.ItemsHelper;
@@ -20,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.quests.objectives.ObtainItemObjective;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.function.Predicate;
 
 public class SwordsmanTrial03Quest extends Quest {
   private static final Predicate<ItemStack> ITEM_WITH_UNBREAKING;

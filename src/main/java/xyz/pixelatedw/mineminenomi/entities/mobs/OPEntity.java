@@ -1,16 +1,8 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs;
 
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.nbt.CompoundNBT;
@@ -19,11 +11,7 @@ import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.World;
+import net.minecraft.world.*;
 import net.minecraftforge.common.IExtensibleEnum;
 import xyz.pixelatedw.mineminenomi.api.entities.TraderEntity;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
@@ -34,6 +22,9 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.pirates.PirateTraderEntity;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncEntityStatsPacket;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import javax.annotation.Nullable;
+import java.util.UUID;
 
 
 

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.init;
 
-import java.util.function.Supplier;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.common.Mod;

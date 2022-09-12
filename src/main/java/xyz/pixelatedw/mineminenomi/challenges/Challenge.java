@@ -1,10 +1,5 @@
 package xyz.pixelatedw.mineminenomi.challenges;
 
-import java.io.Serializable;
-
-import java.util.ArrayList;
-import java.util.List;
-import javax.annotation.Nullable;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -31,6 +26,11 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import javax.annotation.Nullable;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Challenge
   extends ForgeRegistryEntry<Challenge> {

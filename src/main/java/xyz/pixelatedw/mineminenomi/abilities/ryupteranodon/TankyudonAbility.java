@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.ryupteranodon;
 
-import java.util.Optional;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,6 +26,8 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.Optional;
 
 public class TankyudonAbility extends ContinuousAbility implements IFormRequiredAbility, IAnimatedAbility, IExtraUpdateData {
   public static final TankyudonAbility INSTANCE = new TankyudonAbility();

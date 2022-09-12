@@ -1,1 +1,26 @@
-{"client":["client.ActiveRenderInfoMixin","client.BlockRendererDispatcherMixin","client.EntityRendererManagerMixin","client.GameRendererMixin","client.WorldRendererMixin","client.DeathScreenMixin","client.BipedModelMixin","client.LivingRendererMixin","client.ILivingRendererMixin","client.ItemRendererMixin","client.HeldItemLayerMixin","client.ModelRendererMixin"],"compatibilityLevel":"JAVA_8","injectors":{"defaultRequire":-1},"minVersion":"0.8","mixins":["ServerPlayNetHandlerMixin","TemplateMixin","ITemplateMixin","FillCommandMixin","PlayerEntityMixin","EffectInstanceMixin","EffectMixin","ContainerMixin","MobEntityMixin","ItemStackMixin","SuffixArrayMixin"],"package":"xyz.pixelatedw.mineminenomi.mixins","refmap":"mine-mine-no-mi.refmap.json","required":true,"server":[]}
+{"client": [
+  "client.ActiveRenderInfoMixin",
+  "client.BipedModelMixin",
+  "client.BlockRendererDispatcherMixin",
+  "client.DeathScreenMixin",
+  "client.EntityRendererManagerMixin",
+  "client.GameRendererMixin",
+  "client.HeldItemLayerMixin",
+  "client.ILivingRendererMixin",
+  "client.ItemRendererMixin",
+  "client.LivingRendererMixin",
+  "client.ModelRendererMixin",
+  "client.WorldRendererMixin"
+],"compatibilityLevel":"JAVA_8","injectors":{"defaultRequire":-1},"minVersion":"0.8","mixins": [
+  "ContainerMixin",
+  "EffectInstanceMixin",
+  "EffectMixin",
+  "FillCommandMixin",
+  "ITemplateMixin",
+  "ItemStackMixin",
+  "MobEntityMixin",
+  "PlayerEntityMixin",
+  "ServerPlayNetHandlerMixin",
+  "SuffixArrayMixin",
+  "TemplateMixin"
+],"package":"xyz.pixelatedw.mineminenomi.mixins","refmap":"mine-mine-no-mi.refmap.json","required":true,"server":[]}

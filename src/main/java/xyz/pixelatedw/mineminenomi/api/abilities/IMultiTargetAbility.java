@@ -1,8 +1,9 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
+import net.minecraft.entity.LivingEntity;
+
 import java.util.ArrayList;
 import java.util.List;
-import net.minecraft.entity.LivingEntity;
 
 
 

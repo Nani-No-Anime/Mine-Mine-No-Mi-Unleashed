@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.mera;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -10,7 +9,6 @@ import net.minecraft.network.play.server.SEntityVelocityPacket;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import xyz.pixelatedw.mineminenomi.api.abilities.IMultiTargetAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
@@ -20,6 +18,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.mera.HeatDashParticleEffect
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.events.SetOnFireEvent;
+
+import java.util.List;
 
 public class HeatDashAbility extends Ability implements IMultiTargetAbility {
   public static final HeatDashAbility INSTANCE = new HeatDashAbility();

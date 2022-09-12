@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.mane;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -33,6 +30,10 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 public class ManeManeMemoryAbility extends PunchAbility implements IExtraUpdateData, IMorphAbility {
   public static final ManeManeMemoryAbility INSTANCE = new ManeManeMemoryAbility();

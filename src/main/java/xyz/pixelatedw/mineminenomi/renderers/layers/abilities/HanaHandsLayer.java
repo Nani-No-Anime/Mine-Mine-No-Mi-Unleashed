@@ -1,6 +1,4 @@
 package xyz.pixelatedw.mineminenomi.renderers.layers.abilities;
-import java.util.Optional;
-
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
@@ -14,7 +12,6 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.model.IHasHead;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.ResourceLocation;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.hana.HanaHandsEntity;
@@ -22,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModRenderTypes;
 import xyz.pixelatedw.mineminenomi.models.abilities.EntityArmModel;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.Optional;
 
 public class HanaHandsLayer<T extends LivingEntity, M extends EntityModel<T>>
   extends LayerRenderer<T, M> {

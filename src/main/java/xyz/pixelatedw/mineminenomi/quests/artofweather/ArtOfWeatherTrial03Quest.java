@@ -1,14 +1,9 @@
 package xyz.pixelatedw.mineminenomi.quests.artofweather;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos.ThunderLanceTempo;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos.ThunderstormTempo;
 import xyz.pixelatedw.mineminenomi.api.quests.Quest;
@@ -22,6 +17,11 @@ import xyz.pixelatedw.mineminenomi.quests.objectives.UseAbilityObjective;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.UUID;
 
 public class ArtOfWeatherTrial03Quest
   extends Quest {

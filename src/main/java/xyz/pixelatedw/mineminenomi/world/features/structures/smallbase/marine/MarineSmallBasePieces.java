@@ -1,9 +1,6 @@
 package xyz.pixelatedw.mineminenomi.world.features.structures.smallbase.marine;
 
 import com.google.common.collect.ImmutableMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.ResourceLocation;
@@ -16,15 +13,15 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.feature.structure.StructurePiece;
 import net.minecraft.world.gen.feature.structure.TemplateStructurePiece;
-import net.minecraft.world.gen.feature.template.BlockIgnoreStructureProcessor;
-import net.minecraft.world.gen.feature.template.PlacementSettings;
-import net.minecraft.world.gen.feature.template.StructureProcessor;
-import net.minecraft.world.gen.feature.template.Template;
-import net.minecraft.world.gen.feature.template.TemplateManager;
+import net.minecraft.world.gen.feature.template.*;
 import xyz.pixelatedw.mineminenomi.api.helpers.StructuresHelper;
 import xyz.pixelatedw.mineminenomi.init.ModFeatures;
 import xyz.pixelatedw.mineminenomi.init.ModLootTables;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 
 

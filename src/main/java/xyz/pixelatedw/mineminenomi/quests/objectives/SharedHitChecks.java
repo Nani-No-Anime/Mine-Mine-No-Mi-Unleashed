@@ -1,8 +1,7 @@
 package xyz.pixelatedw.mineminenomi.quests.objectives;
+
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.api.damagesource.AbilityDamageSource;
 import xyz.pixelatedw.mineminenomi.api.helpers.ItemsHelper;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;

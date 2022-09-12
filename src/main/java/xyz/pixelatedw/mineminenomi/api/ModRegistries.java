@@ -7,10 +7,6 @@ import net.minecraftforge.registries.RegistryManager;
 import xyz.pixelatedw.mineminenomi.api.crew.JollyRogerElement;
 import xyz.pixelatedw.mineminenomi.challenges.Challenge;
 import xyz.pixelatedw.mineminenomi.wypi.APIRegistries;
-
-
-
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 @EventBusSubscriber(modid = "mineminenomi")
 public class ModRegistries
 {

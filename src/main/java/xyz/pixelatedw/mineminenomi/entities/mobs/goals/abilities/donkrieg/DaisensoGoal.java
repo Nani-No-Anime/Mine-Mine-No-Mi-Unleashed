@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.donkrieg;
 
-import java.util.UUID;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -13,6 +12,8 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.pirates.kriegpirates.DonKriegEn
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModWeapons;
+
+import java.util.UUID;
 
 public class DaisensoGoal
   extends Goal {

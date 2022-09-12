@@ -1,10 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.suna;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
@@ -19,11 +14,7 @@ import net.minecraft.world.IBlockReader;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.api.protection.BlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.AirBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.CoreBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.FoliageBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.LiquidBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.OreBlockProtectionRule;
+import xyz.pixelatedw.mineminenomi.api.protection.block.*;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
@@ -33,6 +24,11 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 
 public class GroundDeathAbility extends ChargeableAbility {
   public static final Ability INSTANCE = (Ability)new GroundDeathAbility();

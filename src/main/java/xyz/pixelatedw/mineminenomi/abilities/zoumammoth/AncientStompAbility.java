@@ -1,15 +1,11 @@
 package xyz.pixelatedw.mineminenomi.abilities.zoumammoth;
-import com.google.common.collect.ImmutableList;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.function.Predicate;
+import com.google.common.collect.ImmutableList;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particles.BlockParticleData;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.DamageSource;
@@ -30,6 +26,10 @@ import xyz.pixelatedw.mineminenomi.particles.effects.zou.GreatStompParticleEffec
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.Predicate;
 
 public class AncientStompAbility extends RepeaterAbility implements IFormRequiredAbility {
   public static final AncientStompAbility INSTANCE = new AncientStompAbility();

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.brawler;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,6 +23,8 @@ import xyz.pixelatedw.mineminenomi.renderers.animations.PointBothArmsAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.List;
 
 public class SpinningBrawlAbility extends ChargeableAbility implements IAnimatedAbility {
   public static final SpinningBrawlAbility INSTANCE = new SpinningBrawlAbility();

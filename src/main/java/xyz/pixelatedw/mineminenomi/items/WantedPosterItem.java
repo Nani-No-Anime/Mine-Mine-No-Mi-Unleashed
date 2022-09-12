@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items;
 
-import javax.annotation.Nullable;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -17,6 +16,8 @@ import xyz.pixelatedw.mineminenomi.blocks.tileentities.WantedPosterTileEntity;
 import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.packets.server.ui.SOpenWantedPosterScreenPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import javax.annotation.Nullable;
 
 
 public class WantedPosterItem

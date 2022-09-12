@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.jiki;
 
 
-import java.util.List;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -10,6 +9,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.abilities.jiki.JikiHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.List;
 
 public class PunkGibsonProjectile
   extends AbilityProjectileEntity

@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.kuku;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -31,6 +28,10 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.baku.BakuMunchParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class GourmetSnipeAbility extends Ability implements IMultiTargetAbility {
   public static final GourmetSnipeAbility INSTANCE = new GourmetSnipeAbility();

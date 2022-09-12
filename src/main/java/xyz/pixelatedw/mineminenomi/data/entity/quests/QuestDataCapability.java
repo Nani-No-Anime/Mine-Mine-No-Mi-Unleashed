@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.data.entity.quests;
 
-import java.util.concurrent.Callable;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;

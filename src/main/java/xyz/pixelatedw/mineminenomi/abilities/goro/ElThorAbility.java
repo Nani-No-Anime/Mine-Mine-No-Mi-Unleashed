@@ -1,10 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.goro;
 
-import java.awt.Color;
-
-import java.util.ArrayList;
-import java.util.List;
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,6 +17,11 @@ import xyz.pixelatedw.mineminenomi.particles.effects.goro.ElThorParticleEffect;
 import xyz.pixelatedw.mineminenomi.renderers.animations.RaiseArmAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import javax.annotation.Nullable;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ElThorAbility extends ChargeableAbility implements IAnimatedAbility {
   public static final ElThorAbility INSTANCE = new ElThorAbility();

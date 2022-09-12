@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.baku;
 
-import java.util.ArrayList;
-import java.util.List;
-import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,6 +11,9 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.baku.BeroCannonProjectile;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BeroCannonAbility extends Ability {
   public static final BeroCannonAbility INSTANCE = new BeroCannonAbility();

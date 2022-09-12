@@ -1,13 +1,11 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.goro;
 
 
-import java.util.List;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
-
 import net.minecraft.particles.ParticleType;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
@@ -18,16 +16,14 @@ import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.api.protection.BlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.AirBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.CoreBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.FoliageBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.LiquidBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.OreBlockProtectionRule;
+import xyz.pixelatedw.mineminenomi.api.protection.block.*;
 import xyz.pixelatedw.mineminenomi.init.ModDamageSource;
 import xyz.pixelatedw.mineminenomi.init.ModParticleTypes;
 import xyz.pixelatedw.mineminenomi.particles.data.GenericParticleData;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.List;
 
 public class RaigoProjectile extends AbilityProjectileEntity {
   private boolean explodedOnBlock = false;

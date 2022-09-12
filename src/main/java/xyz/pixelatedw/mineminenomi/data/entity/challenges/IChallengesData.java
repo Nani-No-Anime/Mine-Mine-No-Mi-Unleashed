@@ -1,10 +1,11 @@
 package xyz.pixelatedw.mineminenomi.data.entity.challenges;
 
+import net.minecraft.entity.player.PlayerEntity;
+import xyz.pixelatedw.mineminenomi.challenges.Challenge;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import net.minecraft.entity.player.PlayerEntity;
-import xyz.pixelatedw.mineminenomi.challenges.Challenge;
 
 public interface IChallengesData {
   boolean addChallenge(Challenge paramChallenge);

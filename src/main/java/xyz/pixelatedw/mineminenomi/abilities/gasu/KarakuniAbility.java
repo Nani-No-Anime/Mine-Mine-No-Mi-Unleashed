@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.gasu;
 
 
-import java.util.List;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,6 +18,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
+
+import java.util.List;
 
 public class KarakuniAbility extends ContinuousAbility implements IParallelContinuousAbility {
   public static final KarakuniAbility INSTANCE = new KarakuniAbility();

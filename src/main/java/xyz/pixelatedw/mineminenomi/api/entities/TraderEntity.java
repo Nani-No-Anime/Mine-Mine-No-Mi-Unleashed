@@ -1,18 +1,11 @@
 package xyz.pixelatedw.mineminenomi.api.entities;
-import java.util.ArrayList;
-import java.util.List;
-import javax.annotation.Nullable;
+
 import net.minecraft.command.arguments.EntityAnchorArgument;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
@@ -37,6 +30,10 @@ import xyz.pixelatedw.mineminenomi.packets.server.ui.SOpenTraderScreenPacket;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class TraderEntity extends OPEntity {
   protected List<TradeEntry> tradeEntries = new ArrayList<>();
   private boolean isTrading = false;
@@ -56,10 +53,10 @@ public abstract class TraderEntity extends OPEntity {
   
   protected void registerGoals() {
     super.registerGoals();
-    this.goalSelector.addGoal(1, (Goal)new SwimGoal((MobEntity)this));
+    this.goalSelector.addGoal(1, (Goal)new SwimGoal(this));
     this.goalSelector.addGoal(3, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-    this.goalSelector.addGoal(5, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 8.0F));
-    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(5, (Goal)new LookAtGoal(this, PlayerEntity.class, 8.0F));
+    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal(this));
   }
 
 

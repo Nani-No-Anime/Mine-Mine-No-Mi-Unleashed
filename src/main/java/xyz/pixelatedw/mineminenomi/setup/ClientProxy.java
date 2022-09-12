@@ -1,13 +1,9 @@
 package xyz.pixelatedw.mineminenomi.setup;
 
-import java.util.function.BiFunction;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraftforge.fml.ExtensionPoint;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
 import xyz.pixelatedw.mineminenomi.config.ClientConfig;
-import xyz.pixelatedw.mineminenomi.screens.ConfigScreen;
 
 public class ClientProxy {
   public ClientProxy() {

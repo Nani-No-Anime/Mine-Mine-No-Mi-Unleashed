@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.bara;
 
-import java.util.Optional;
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,6 +10,10 @@ import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
+
+import javax.annotation.Nullable;
+import java.util.Optional;
+import java.util.UUID;
 
 
 public class BaraFestivalEntity

@@ -1,4 +1,5 @@
 package xyz.pixelatedw.mineminenomi.commands;
+
 import com.google.common.collect.Lists;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.ArgumentType;
@@ -7,7 +8,6 @@ import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import java.util.Collection;
 import net.minecraft.command.CommandSource;
 import net.minecraft.command.Commands;
 import net.minecraft.command.arguments.EntityArgument;
@@ -16,6 +16,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.Event;
 import xyz.pixelatedw.mineminenomi.api.commands.HakiTypeArgument;
@@ -26,7 +27,8 @@ import xyz.pixelatedw.mineminenomi.data.entity.haki.HakiDataCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.haki.IHakiData;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncHakiDataPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
-import net.minecraft.util.text.TextFormatting;
+
+import java.util.Collection;
 
 public class HakiExpCommand {
   public static void register(CommandDispatcher<CommandSource> dispatcher) {

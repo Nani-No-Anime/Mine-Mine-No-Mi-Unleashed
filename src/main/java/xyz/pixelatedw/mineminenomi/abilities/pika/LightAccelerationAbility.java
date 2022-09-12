@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.pika;
 
-import java.awt.Color;
-
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -22,6 +19,9 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IChangeDamageSourceAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
+
+import java.awt.*;
+import java.util.UUID;
 
 public class LightAccelerationAbility extends ContinuousAbility implements IChangeDamageSourceAbility, IPunchOverlayAbility, IParallelContinuousAbility {
   public static final Ability INSTANCE = (Ability)new LightAccelerationAbility();

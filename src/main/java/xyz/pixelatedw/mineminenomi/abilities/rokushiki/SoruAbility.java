@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.rokushiki;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -18,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.packets.server.ability.SUpdateEquippedAbility
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 public class SoruAbility extends ContinuousAbility {
   public static final Ability INSTANCE = (Ability)new SoruAbility();

@@ -1,17 +1,8 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.animals;
 
 import net.minecraft.entity.AgeableEntity;
-import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.goal.BreatheAirGoal;
-import net.minecraft.entity.ai.goal.FindWaterGoal;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
@@ -24,10 +15,10 @@ public class SeaKingEntity extends AnimalEntity {
     this.goalSelector.addGoal(1, (Goal)new RandomSwimmingGoal(this, 1.0D, 10));
     this.goalSelector.addGoal(3, (Goal)new MeleeAttackGoal(this, 1.0D, false));
     this.goalSelector.addGoal(4, (Goal)new BreatheAirGoal(this));
-    this.goalSelector.addGoal(6, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(6, (Goal)new LookRandomlyGoal(this));
     
     this.targetSelector.addGoal(0, (Goal)new HurtByTargetGoal(this, new Class[0]));
-    this.targetSelector.addGoal(0, (Goal)new NearestAttackableTargetGoal((MobEntity)this, PlayerEntity.class, false));
+    this.targetSelector.addGoal(0, (Goal)new NearestAttackableTargetGoal(this, PlayerEntity.class, false));
   }
 
 

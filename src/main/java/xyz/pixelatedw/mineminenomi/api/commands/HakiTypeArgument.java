@@ -6,12 +6,13 @@ import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.suggestion.Suggestions;
 import com.mojang.brigadier.suggestion.SuggestionsBuilder;
+import net.minecraft.command.ISuggestionProvider;
+import xyz.pixelatedw.mineminenomi.api.enums.HakiType;
+
 import java.util.Collection;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import net.minecraft.command.ISuggestionProvider;
-import xyz.pixelatedw.mineminenomi.api.enums.HakiType;
 
 
 

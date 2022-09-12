@@ -1,5 +1,4 @@
 package xyz.pixelatedw.mineminenomi.abilities.beta;
-import java.awt.Color;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -12,6 +11,8 @@ import xyz.pixelatedw.mineminenomi.entities.projectiles.beta.BetaBetaChainProjec
 import xyz.pixelatedw.mineminenomi.entities.projectiles.goro.LightningEntity;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchTriggerAbility;
+
+import java.awt.*;
 
 public class BetaBetaChainAbility extends PunchTriggerAbility {
   public static final BetaBetaChainAbility INSTANCE = new BetaBetaChainAbility();

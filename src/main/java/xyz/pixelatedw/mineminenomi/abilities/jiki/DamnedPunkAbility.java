@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,6 +17,9 @@ import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchTriggerAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DamnedPunkAbility extends PunchTriggerAbility implements IFormRequiredAbility, IMorphAbility {
   public static final DamnedPunkAbility INSTANCE = new DamnedPunkAbility();

@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
 import net.minecraft.entity.LivingEntity;
@@ -18,7 +16,6 @@ import net.minecraftforge.client.event.EntityViewRenderEvent;
 import net.minecraftforge.client.event.RenderBlockOverlayEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import xyz.pixelatedw.mineminenomi.abilities.LogiaInvulnerabilityAbility;
@@ -29,6 +26,9 @@ import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.IDevilFruit;
 import xyz.pixelatedw.mineminenomi.init.ModAbilities;
 import xyz.pixelatedw.mineminenomi.init.ModParticleTypes;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.events.SetOnFireEvent;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 @EventBusSubscriber(modid = "mineminenomi")
 public class MaguPassiveEvents

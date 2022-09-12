@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.doctor;
 
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -18,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.doctor.MedicBagExplosionParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class MedicBagExplosionAbility extends Ability {
   public static final MedicBagExplosionAbility INSTANCE = new MedicBagExplosionAbility();

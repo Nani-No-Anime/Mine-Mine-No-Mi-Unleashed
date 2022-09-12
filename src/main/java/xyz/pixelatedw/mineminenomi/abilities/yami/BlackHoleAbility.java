@@ -1,9 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.yami;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -23,6 +19,11 @@ import xyz.pixelatedw.mineminenomi.particles.effects.yami.BlackHoleParticleEffec
 import xyz.pixelatedw.mineminenomi.wypi.BlockPlacingHelper;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 
 public class BlackHoleAbility extends ChargeableAbility {
   public static final BlackHoleAbility INSTANCE = new BlackHoleAbility();

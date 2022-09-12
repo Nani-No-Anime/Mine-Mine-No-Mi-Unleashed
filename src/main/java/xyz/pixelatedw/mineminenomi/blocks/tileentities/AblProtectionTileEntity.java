@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.blocks.tileentities;
 
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
@@ -9,6 +7,9 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import xyz.pixelatedw.mineminenomi.data.world.ExtendedWorldData;
 import xyz.pixelatedw.mineminenomi.init.ModTileEntities;
+
+import javax.annotation.Nullable;
+import java.util.UUID;
 
 
 public class AblProtectionTileEntity

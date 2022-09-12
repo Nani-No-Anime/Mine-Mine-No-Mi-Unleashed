@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.goro;
 
-import java.awt.Color;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.goro.GenericUseLightningEff
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.awt.*;
 
 public class SparkStepAbility extends ChargeableAbility implements IFallDamageBlockingAbility {
   public static final Ability INSTANCE = (Ability)new SparkStepAbility();

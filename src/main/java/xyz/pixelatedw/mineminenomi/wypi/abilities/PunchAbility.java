@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.wypi.abilities;
 
-import java.io.Serializable;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
@@ -10,6 +8,8 @@ import xyz.pixelatedw.mineminenomi.init.ModDamageSource;
 import xyz.pixelatedw.mineminenomi.packets.server.ability.SAnimeScreamPacket;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.io.Serializable;
 
 public abstract class PunchAbility
   extends ContinuousAbility

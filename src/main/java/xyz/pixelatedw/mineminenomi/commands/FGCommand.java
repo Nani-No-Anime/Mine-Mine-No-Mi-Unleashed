@@ -1,18 +1,10 @@
 package xyz.pixelatedw.mineminenomi.commands;
+
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.ArgumentType;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -52,11 +44,7 @@ import xyz.pixelatedw.mineminenomi.data.entity.quests.IQuestData;
 import xyz.pixelatedw.mineminenomi.data.entity.quests.QuestDataCapability;
 import xyz.pixelatedw.mineminenomi.data.world.ExtendedWorldData;
 import xyz.pixelatedw.mineminenomi.entities.WantedPosterPackageEntity;
-import xyz.pixelatedw.mineminenomi.init.ModAbilities;
-import xyz.pixelatedw.mineminenomi.init.ModBlocks;
-import xyz.pixelatedw.mineminenomi.init.ModChallenges;
-import xyz.pixelatedw.mineminenomi.init.ModEntities;
-import xyz.pixelatedw.mineminenomi.init.ModValues;
+import xyz.pixelatedw.mineminenomi.init.*;
 import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncChallengeDataPacket;
 import xyz.pixelatedw.mineminenomi.world.spawners.AmbushSpawner;
@@ -66,6 +54,11 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.io.File;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FGCommand {
   public static boolean NO_COOLDOWN = false;

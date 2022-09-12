@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.wypi.data.ability;
 
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.stream.Collectors;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;
@@ -23,6 +20,9 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PassiveAbility;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 

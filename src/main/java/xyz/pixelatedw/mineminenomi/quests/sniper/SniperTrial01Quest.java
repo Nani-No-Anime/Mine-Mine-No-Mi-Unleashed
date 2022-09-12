@@ -1,12 +1,10 @@
 package xyz.pixelatedw.mineminenomi.quests.sniper;
 
-import java.util.function.Predicate;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.KaenBoshiAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.ItemsHelper;
 import xyz.pixelatedw.mineminenomi.api.quests.Quest;
@@ -15,6 +13,8 @@ import xyz.pixelatedw.mineminenomi.quests.objectives.KillEntityObjective;
 import xyz.pixelatedw.mineminenomi.quests.objectives.ObtainItemObjective;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.function.Predicate;
 
 public class SniperTrial01Quest extends Quest {
   private static final Predicate<ItemStack> ITEM_IS_BOW;

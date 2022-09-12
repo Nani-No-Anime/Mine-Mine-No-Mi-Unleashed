@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.screens.config;
 
-import net.minecraft.client.GameSettings;
 import net.minecraft.client.settings.IteratableOption;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.common.ForgeConfigSpec;

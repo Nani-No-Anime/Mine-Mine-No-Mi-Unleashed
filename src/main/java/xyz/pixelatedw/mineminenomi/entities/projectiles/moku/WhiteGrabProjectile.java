@@ -2,7 +2,6 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.moku;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.abilities.moku.WhiteGrabAbility;

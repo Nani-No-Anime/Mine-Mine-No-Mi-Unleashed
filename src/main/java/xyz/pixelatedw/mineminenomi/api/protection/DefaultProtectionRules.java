@@ -1,10 +1,6 @@
 package xyz.pixelatedw.mineminenomi.api.protection;
 
-import xyz.pixelatedw.mineminenomi.api.protection.block.AirBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.CoreBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.FoliageBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.LiquidBlockProtectionRule;
-import xyz.pixelatedw.mineminenomi.api.protection.block.OreBlockProtectionRule;
+import xyz.pixelatedw.mineminenomi.api.protection.block.*;
 
 public class DefaultProtectionRules
 {

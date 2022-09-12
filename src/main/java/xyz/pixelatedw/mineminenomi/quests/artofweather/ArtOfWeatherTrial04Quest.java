@@ -1,12 +1,9 @@
 package xyz.pixelatedw.mineminenomi.quests.artofweather;
 
 
-
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.IItemProvider;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.GustSwordAbility;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.WeatherEggAbility;

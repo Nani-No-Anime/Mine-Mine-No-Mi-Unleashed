@@ -1,11 +1,8 @@
 package xyz.pixelatedw.mineminenomi.wypi.abilities;
 
-import java.io.Serializable;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.packets.server.ability.SAnimeScreamPacket;
 import xyz.pixelatedw.mineminenomi.packets.server.ability.SUpdateEquippedAbilityPacket;
@@ -15,6 +12,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.events.AbilityUseEvent;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
+
+import java.io.Serializable;
 
 public abstract class ContinuousAbility
   extends Ability

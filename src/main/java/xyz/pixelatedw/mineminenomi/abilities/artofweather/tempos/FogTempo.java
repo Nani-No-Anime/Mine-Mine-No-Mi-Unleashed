@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +11,8 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.artofweather.MirageTempoCloudEntity;
 import xyz.pixelatedw.mineminenomi.items.weapons.ClimaTactItem;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 public class FogTempo extends TempoAbility {
   public static final FogTempo INSTANCE = new FogTempo();

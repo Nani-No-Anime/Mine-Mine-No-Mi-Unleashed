@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.nekoleopard;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -18,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.entities.zoan.LeopardWalkZoanInfo;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class FerociousLeapAbility extends Ability implements IMultiTargetAbility, IFallDamageBlockingAbility, IFormRequiredAbility {
   public static final FerociousLeapAbility INSTANCE = new FerociousLeapAbility();

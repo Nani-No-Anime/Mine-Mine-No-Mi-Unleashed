@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.sube;
 
 
-import java.util.Arrays;
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
@@ -10,6 +8,9 @@ import xyz.pixelatedw.mineminenomi.api.abilities.IOnDamageAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class SubeSubeDeflectAbility
   extends ContinuousAbility implements IOnDamageAbility {

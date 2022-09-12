@@ -1,11 +1,12 @@
 package xyz.pixelatedw.mineminenomi.api.enums;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Supplier;
 import net.minecraftforge.common.IExtensibleEnum;
 import xyz.pixelatedw.mineminenomi.init.ModAbilities;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Supplier;
 
 public enum AbilityCommandGroup
   implements IExtensibleEnum

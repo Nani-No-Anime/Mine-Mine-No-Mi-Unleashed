@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.blackleg;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,7 +11,6 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.api.abilities.IAnimatedAbility;
 import xyz.pixelatedw.mineminenomi.api.abilities.IMultiTargetAbility;
-import xyz.pixelatedw.mineminenomi.api.animations.IAnimation;
 import xyz.pixelatedw.mineminenomi.api.animations.TimeAnimation;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
@@ -24,6 +22,8 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.List;
 
 public class PartyTableKickCourseAbility extends ContinuousAbility implements IMultiTargetAbility, IAnimatedAbility {
   public static final PartyTableKickCourseAbility INSTANCE = new PartyTableKickCourseAbility();

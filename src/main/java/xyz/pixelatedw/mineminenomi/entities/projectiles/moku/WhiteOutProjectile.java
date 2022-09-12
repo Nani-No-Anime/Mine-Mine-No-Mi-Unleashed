@@ -3,7 +3,6 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.moku;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;

@@ -1,22 +1,10 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.quest.givers;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import javax.annotation.Nullable;
-import net.minecraft.entity.CreatureEntity;
+
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
@@ -45,6 +33,11 @@ import xyz.pixelatedw.mineminenomi.init.ModQuests;
 import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class SwordsmanTrainerEntity extends TrainerEntity implements IHakiTrainer, IHakiUser, ISwordsman {
   private static final String[] DEFAULT_TEXTURES = new String[] { "dojosensei1", "dojosensei2", "dojosensei3" };
   
@@ -59,14 +52,14 @@ public class SwordsmanTrainerEntity extends TrainerEntity implements IHakiTraine
   
   public void registerGoals() {
     super.registerGoals();
-    this.goalSelector.addGoal(1, (Goal)new SwimGoal((MobEntity)this));
+    this.goalSelector.addGoal(1, (Goal)new SwimGoal(this));
     this.goalSelector.addGoal(1, (Goal)new MeleeAttackGoal(this, 1.0D, true));
     this.goalSelector.addGoal(3, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-    this.goalSelector.addGoal(5, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 8.0F));
-    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(5, (Goal)new LookAtGoal(this, PlayerEntity.class, 8.0F));
+    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal(this));
     
-    this.targetSelector.addGoal(1, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractPirateEntity.class, true));
-    this.targetSelector.addGoal(1, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractBanditEntity.class, true));
+    this.targetSelector.addGoal(1, (Goal)new NearestAttackableTargetGoal(this, AbstractPirateEntity.class, true));
+    this.targetSelector.addGoal(1, (Goal)new NearestAttackableTargetGoal(this, AbstractBanditEntity.class, true));
     this.targetSelector.addGoal(2, (Goal)new HurtByTargetGoal(this, new Class[0]));
     
     addSwordsmanAbilities((OPEntity)this, 4);

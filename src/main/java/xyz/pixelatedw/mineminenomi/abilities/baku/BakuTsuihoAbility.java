@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.baku;
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -15,6 +13,9 @@ import xyz.pixelatedw.mineminenomi.entities.projectiles.baku.BeroCannonProjectil
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BakuTsuihoAbility extends ChargeableAbility {
   public static final BakuTsuihoAbility INSTANCE = new BakuTsuihoAbility();

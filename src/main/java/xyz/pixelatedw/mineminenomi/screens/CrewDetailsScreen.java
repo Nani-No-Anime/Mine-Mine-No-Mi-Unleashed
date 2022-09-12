@@ -2,7 +2,6 @@ package xyz.pixelatedw.mineminenomi.screens;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.UUID;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.Widget;
@@ -25,6 +24,8 @@ import xyz.pixelatedw.mineminenomi.packets.client.crew.CLeaveCrewPacket;
 import xyz.pixelatedw.mineminenomi.screens.extra.NoTextureButton;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 
 

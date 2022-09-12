@@ -1,11 +1,8 @@
 package xyz.pixelatedw.mineminenomi.items.weapons;
 
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
 
 

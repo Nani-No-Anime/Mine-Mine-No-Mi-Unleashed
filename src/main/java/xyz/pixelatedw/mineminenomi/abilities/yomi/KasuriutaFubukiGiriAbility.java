@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.yomi;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -23,6 +22,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.yomi.KasuriutaFubukiGiriParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class KasuriutaFubukiGiriAbility extends Ability implements IMultiTargetAbility {
   public static final KasuriutaFubukiGiriAbility INSTANCE = new KasuriutaFubukiGiriAbility();

@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.models.entities.mobs.humanoids;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IItemProvider;

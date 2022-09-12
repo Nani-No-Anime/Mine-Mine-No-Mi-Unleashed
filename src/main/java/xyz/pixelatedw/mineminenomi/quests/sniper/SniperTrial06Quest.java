@@ -1,12 +1,9 @@
 package xyz.pixelatedw.mineminenomi.quests.sniper;
 
-import java.util.function.Predicate;
-
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.RenpatsuNamariBoshiAbility;
 import xyz.pixelatedw.mineminenomi.api.quests.Quest;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
@@ -19,6 +16,8 @@ import xyz.pixelatedw.mineminenomi.quests.objectives.TimedKillEntityObjective;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.function.Predicate;
 
 public class SniperTrial06Quest extends Quest {
   private static final Predicate<ItemStack> IMPACT_DIAL_BOW;

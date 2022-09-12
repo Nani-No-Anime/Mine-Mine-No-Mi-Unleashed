@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.screens.extra;
 
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
@@ -12,6 +9,10 @@ import net.minecraftforge.client.gui.ScrollPanel;
 import xyz.pixelatedw.mineminenomi.api.TradeEntry;
 import xyz.pixelatedw.mineminenomi.screens.TraderScreen;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ItemListScreenPanel
   extends ScrollPanel

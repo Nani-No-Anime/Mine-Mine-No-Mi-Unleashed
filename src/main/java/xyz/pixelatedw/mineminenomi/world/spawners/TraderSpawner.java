@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.world.spawners;
 
-import java.util.List;
-import java.util.Random;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
@@ -17,6 +15,9 @@ import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import java.util.List;
+import java.util.Random;
 
 public class TraderSpawner {
   private Random random = new Random();

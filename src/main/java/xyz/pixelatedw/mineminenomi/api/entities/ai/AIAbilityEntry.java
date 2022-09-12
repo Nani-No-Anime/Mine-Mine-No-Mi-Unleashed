@@ -1,8 +1,9 @@
 package xyz.pixelatedw.mineminenomi.api.entities.ai;
 
-import java.util.function.Function;
 import net.minecraft.entity.ai.goal.Goal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
+
+import java.util.function.Function;
 
 
 

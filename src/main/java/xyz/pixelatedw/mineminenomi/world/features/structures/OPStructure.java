@@ -1,9 +1,6 @@
 package xyz.pixelatedw.mineminenomi.world.features.structures;
 
 import com.mojang.datafixers.Dynamic;
-import java.util.Iterator;
-import java.util.Random;
-import java.util.function.Function;
 import net.minecraft.block.Block;
 import net.minecraft.util.SharedSeedRandom;
 import net.minecraft.util.math.BlockPos;
@@ -19,6 +16,10 @@ import net.minecraft.world.gen.feature.structure.Structure;
 import net.minecraft.world.gen.feature.structure.StructurePiece;
 import net.minecraft.world.gen.feature.structure.StructureStart;
 import xyz.pixelatedw.mineminenomi.api.helpers.StructuresHelper;
+
+import java.util.Iterator;
+import java.util.Random;
+import java.util.function.Function;
 
 
 public abstract class OPStructure<C extends IFeatureConfig>

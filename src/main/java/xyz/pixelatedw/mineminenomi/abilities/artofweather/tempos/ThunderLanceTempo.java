@@ -1,12 +1,9 @@
 package xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos;
 
-import java.awt.Color;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.play.server.SAnimateHandPacket;
-
 import net.minecraft.particles.ParticleType;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
@@ -22,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.init.ModParticleTypes;
 import xyz.pixelatedw.mineminenomi.items.weapons.ClimaTactItem;
 import xyz.pixelatedw.mineminenomi.particles.data.GenericParticleData;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
 
 public class ThunderLanceTempo extends TempoAbility {
 	public static final ThunderLanceTempo INSTANCE = new ThunderLanceTempo();

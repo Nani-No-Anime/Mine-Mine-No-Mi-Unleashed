@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.fishmankarate;
 
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -9,6 +8,8 @@ import xyz.pixelatedw.mineminenomi.api.abilities.AbilityAttributeModifier;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.util.UUID;
 
 public class TwoFishEngineAbility extends ContinuousAbility {
   public static final TwoFishEngineAbility INSTANCE = new TwoFishEngineAbility();

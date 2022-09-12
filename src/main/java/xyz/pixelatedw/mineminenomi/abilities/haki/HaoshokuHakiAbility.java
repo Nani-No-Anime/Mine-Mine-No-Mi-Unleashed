@@ -1,9 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.haki;
 
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ai.goal.PrioritizedGoal;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.IPacket;
@@ -24,6 +22,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.haki.HaoshokuHakiParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.List;
 
 public class HaoshokuHakiAbility extends ChargeableAbility {
   public static final HaoshokuHakiAbility INSTANCE = new HaoshokuHakiAbility();

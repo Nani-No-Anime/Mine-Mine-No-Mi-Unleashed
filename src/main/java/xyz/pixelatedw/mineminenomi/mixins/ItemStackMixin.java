@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.mixins;
 
-import java.util.function.Consumer;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -8,6 +7,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import xyz.pixelatedw.mineminenomi.api.helpers.HakiHelper;
+
+import java.util.function.Consumer;
 
 
 

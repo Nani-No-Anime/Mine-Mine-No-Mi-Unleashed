@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.client.challenge;
 
-import java.util.List;
-import java.util.function.Supplier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.PacketBuffer;
@@ -13,6 +11,9 @@ import xyz.pixelatedw.mineminenomi.data.entity.challenges.ChallengesDataCapabili
 import xyz.pixelatedw.mineminenomi.data.entity.challenges.IChallengesData;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncChallengeDataPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.List;
+import java.util.function.Supplier;
 
 
 public class CResetChallengesPacket

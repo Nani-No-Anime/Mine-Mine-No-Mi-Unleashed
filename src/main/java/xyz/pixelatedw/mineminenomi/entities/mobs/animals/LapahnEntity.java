@@ -1,20 +1,10 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.animals;
-import java.util.List;
-import java.util.UUID;
-import net.minecraft.entity.CreatureEntity;
+
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
@@ -33,6 +23,9 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.zou.GreatStompParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 
+import java.util.List;
+import java.util.UUID;
+
 public class LapahnEntity extends OPEntity {
   private static final AttributeModifier RAGE_MODIFIER = (new AttributeModifier(UUID.fromString("4b03a4b4-1eb5-464a-8312-0f9079044462"), "Rage Mode Multiplier", 10.0D, AttributeModifier.Operation.ADDITION)).setSaved(false);
   private static final DataParameter<Boolean> IS_ENRAGED = EntityDataManager.createKey(LapahnEntity.class, DataSerializers.BOOLEAN);
@@ -41,20 +34,20 @@ public class LapahnEntity extends OPEntity {
   
   public LapahnEntity(World world) {
     super(ModEntities.LAPAHN, world);
-    this.goalSelector.addGoal(0, (Goal)new SwimGoal((MobEntity)this));
+    this.goalSelector.addGoal(0, (Goal)new SwimGoal(this));
     this.goalSelector.addGoal(0, (Goal)new MeleeAttackGoal(this, 1.0D, true));
     this.goalSelector.addGoal(1, (Goal)new JumpAttackGoal(this));
     this.goalSelector.addGoal(1, (Goal)new LapahnRageGoal(this));
     this.goalSelector.addGoal(3, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-    this.goalSelector.addGoal(4, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 8.0F));
-    this.goalSelector.addGoal(4, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(4, (Goal)new LookAtGoal(this, PlayerEntity.class, 8.0F));
+    this.goalSelector.addGoal(4, (Goal)new LookRandomlyGoal(this));
     
     this.targetSelector.addGoal(1, (Goal)new HurtByTargetGoal(this, new Class[0]));
-    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, PlayerEntity.class, true));
-    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractPirateEntity.class, true));
-    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractBanditEntity.class, true));
-    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractMarineEntity.class, true));
-    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, HumandrillEntity.class, true));
+    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, PlayerEntity.class, true));
+    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, AbstractPirateEntity.class, true));
+    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, AbstractBanditEntity.class, true));
+    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, AbstractMarineEntity.class, true));
+    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, HumandrillEntity.class, true));
   }
 
 

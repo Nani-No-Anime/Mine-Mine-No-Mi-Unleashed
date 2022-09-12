@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.ori;
 
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,6 +13,9 @@ import xyz.pixelatedw.mineminenomi.api.protection.block.LiquidBlockProtectionRul
 import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GreatCageAbility
   extends ContinuousAbility implements IParallelContinuousAbility {

@@ -1,10 +1,11 @@
 package xyz.pixelatedw.mineminenomi.init;
 
-import java.util.ArrayList;
-import java.util.List;
 import xyz.pixelatedw.mineminenomi.challenges.ArenaData;
 import xyz.pixelatedw.mineminenomi.challenges.arenas.BaratieArena;
 import xyz.pixelatedw.mineminenomi.challenges.arenas.Marine153rdArena;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class ModArenas

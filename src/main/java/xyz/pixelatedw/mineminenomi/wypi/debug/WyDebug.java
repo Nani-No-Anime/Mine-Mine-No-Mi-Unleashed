@@ -1,9 +1,10 @@
 package xyz.pixelatedw.mineminenomi.wypi.debug;
 
+import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
+
 import java.lang.management.ManagementFactory;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 
 
 public class WyDebug

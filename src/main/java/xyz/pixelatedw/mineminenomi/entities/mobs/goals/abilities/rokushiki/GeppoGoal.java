@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.projectile.ThrowableEntity;
@@ -8,6 +7,8 @@ import xyz.pixelatedw.mineminenomi.abilities.rokushiki.GeppoAbility;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.CooldownGoal;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 public class GeppoGoal
   extends CooldownGoal {

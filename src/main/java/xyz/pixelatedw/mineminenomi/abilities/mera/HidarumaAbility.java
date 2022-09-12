@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.mera;
 
 
-import java.util.List;
-import java.util.Optional;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,6 +13,9 @@ import xyz.pixelatedw.mineminenomi.entities.projectiles.mera.HidarumaProjectile;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.mera.MeraProjectiles;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
+import java.util.Optional;
 
 public class HidarumaAbility extends Ability {
   public static final Ability INSTANCE = new HidarumaAbility();

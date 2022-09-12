@@ -1,12 +1,9 @@
 package xyz.pixelatedw.mineminenomi.packets.client.trade;
 
-import java.util.Optional;
-import java.util.function.Supplier;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.IItemProvider;
@@ -20,6 +17,9 @@ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncEntityStatsPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.Optional;
+import java.util.function.Supplier;
 
 public class CBuyFromTraderPacket {
 	private int traderId;

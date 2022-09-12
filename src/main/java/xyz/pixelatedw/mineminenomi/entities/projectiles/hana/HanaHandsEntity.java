@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.hana;
 
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -20,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.init.ModSounds;
 import xyz.pixelatedw.mineminenomi.packets.server.entities.SUpdateEntityOwnerPacket;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 public class HanaHandsEntity
   extends Entity {

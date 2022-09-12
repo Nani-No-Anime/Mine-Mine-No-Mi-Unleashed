@@ -7,7 +7,6 @@ import net.minecraft.potion.EffectType;
 import xyz.pixelatedw.mineminenomi.api.effects.ModEffect;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
-import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 
 public class AbilityOffEffect
   extends ModEffect

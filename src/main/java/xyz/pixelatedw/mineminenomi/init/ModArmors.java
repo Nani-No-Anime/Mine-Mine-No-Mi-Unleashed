@@ -9,19 +9,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import xyz.pixelatedw.mineminenomi.api.GenericArmorMaterial;
-import xyz.pixelatedw.mineminenomi.items.armors.AcesHatItem;
-import xyz.pixelatedw.mineminenomi.items.armors.BandanaArmorItem;
-import xyz.pixelatedw.mineminenomi.items.armors.BasicArmorItem;
-import xyz.pixelatedw.mineminenomi.items.armors.CaptainCapeItem;
-import xyz.pixelatedw.mineminenomi.items.armors.ChoppersHatItem;
-import xyz.pixelatedw.mineminenomi.items.armors.ColaBackpackItem;
-import xyz.pixelatedw.mineminenomi.items.armors.MH5GasMaskItem;
-import xyz.pixelatedw.mineminenomi.items.armors.MedicBagItem;
-import xyz.pixelatedw.mineminenomi.items.armors.SenorPinkBonnetItem;
-import xyz.pixelatedw.mineminenomi.items.armors.SniperGogglesItem;
-import xyz.pixelatedw.mineminenomi.items.armors.StrawHatItem;
-import xyz.pixelatedw.mineminenomi.items.armors.TomoeDrumsItem;
-import xyz.pixelatedw.mineminenomi.items.armors.WootzSteelArmorItem;
+import xyz.pixelatedw.mineminenomi.items.armors.*;
 import xyz.pixelatedw.mineminenomi.wypi.WyRegistry;
 
 @EventBusSubscriber(modid = "mineminenomi", bus = Mod.EventBusSubscriber.Bus.MOD)

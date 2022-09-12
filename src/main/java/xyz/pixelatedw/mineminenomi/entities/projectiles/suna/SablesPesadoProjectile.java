@@ -2,7 +2,6 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.suna;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;

@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.items;
 
 import com.google.common.base.Strings;
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,6 +14,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.entities.VivreCardEntity;
 import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
+
+import java.util.UUID;
 
 
 

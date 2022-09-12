@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.goro;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.world.World;
@@ -13,6 +10,10 @@ import xyz.pixelatedw.mineminenomi.particles.effects.goro.DeathpiaCloudParticleE
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class DeathpiaCloudEntity

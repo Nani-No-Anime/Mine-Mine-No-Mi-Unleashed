@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.kame;
 
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -15,6 +14,8 @@ import xyz.pixelatedw.mineminenomi.entities.zoan.KameGuardZoanInfo;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.UUID;
 
 public class KameGuardPointAbility extends ZoanAbility {
   public static final KameGuardPointAbility INSTANCE = new KameGuardPointAbility();

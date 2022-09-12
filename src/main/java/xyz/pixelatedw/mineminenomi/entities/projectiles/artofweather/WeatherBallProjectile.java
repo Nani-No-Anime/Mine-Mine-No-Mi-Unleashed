@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.artofweather;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -9,12 +8,13 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.abilities.artofweather.tempos.WeatherCloudTempo;
-import xyz.pixelatedw.mineminenomi.api.abilities.TempoAbility;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.List;
 
 public class WeatherBallProjectile
   extends AbilityProjectileEntity {

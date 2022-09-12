@@ -1,14 +1,14 @@
 package xyz.pixelatedw.mineminenomi.api.helpers;
 
+import net.minecraft.entity.player.PlayerEntity;
+import xyz.pixelatedw.mineminenomi.challenges.Challenge;
+import xyz.pixelatedw.mineminenomi.init.ModChallenges;
+
+import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import javax.annotation.Nullable;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraftforge.fml.RegistryObject;
-import xyz.pixelatedw.mineminenomi.challenges.Challenge;
-import xyz.pixelatedw.mineminenomi.init.ModChallenges;
 
 
 

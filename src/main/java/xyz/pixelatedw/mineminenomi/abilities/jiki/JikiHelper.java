@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
@@ -13,6 +10,10 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.math.BlockPos;
 import xyz.pixelatedw.mineminenomi.init.ModTags;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class JikiHelper
 {

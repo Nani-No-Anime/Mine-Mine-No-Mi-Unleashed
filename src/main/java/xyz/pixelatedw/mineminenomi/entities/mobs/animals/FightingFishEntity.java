@@ -1,30 +1,12 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.animals;
-import javax.annotation.Nullable;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityPredicate;
-import net.minecraft.entity.EntitySize;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.MoverType;
-import net.minecraft.entity.Pose;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.controller.DolphinLookController;
 import net.minecraft.entity.ai.controller.LookController;
 import net.minecraft.entity.ai.controller.MovementController;
-import net.minecraft.entity.ai.goal.FindWaterGoal;
-import net.minecraft.entity.ai.goal.FollowBoatGoal;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.passive.WaterMobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
@@ -45,6 +27,8 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.ImprovedMeleeAttackGoal;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 
+import javax.annotation.Nullable;
+
 public class FightingFishEntity extends WaterMobEntity {
   private static final DataParameter<Float> SIZE = EntityDataManager.createKey(FightingFishEntity.class, DataSerializers.FLOAT);
   public static final EntityPredicate TARGET_PREDICATE = (new EntityPredicate()).setDistance(20.0D).allowFriendlyFire().allowInvulnerable().setLineOfSiteRequired();
@@ -54,7 +38,7 @@ public class FightingFishEntity extends WaterMobEntity {
     super(ModEntities.FIGHTING_FISH, world);
     
     this.moveController = new MoveHelperController(this);
-    this.lookController = (LookController)new DolphinLookController((MobEntity)this, 10);
+    this.lookController = (LookController)new DolphinLookController(this, 10);
   }
 
 
@@ -63,14 +47,14 @@ public class FightingFishEntity extends WaterMobEntity {
     this.goalSelector.addGoal(0, (Goal)new FindWaterGoal(this));
     this.goalSelector.addGoal(1, (Goal)new ImprovedMeleeAttackGoal(this, 1.7999999523162842D, true));
     this.goalSelector.addGoal(2, (Goal)new RandomSwimmingGoal(this, 1.0D, 10));
-    this.goalSelector.addGoal(2, (Goal)new LookRandomlyGoal((MobEntity)this));
-    this.goalSelector.addGoal(2, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 12.0F));
+    this.goalSelector.addGoal(2, (Goal)new LookRandomlyGoal(this));
+    this.goalSelector.addGoal(2, (Goal)new LookAtGoal(this, PlayerEntity.class, 12.0F));
     this.goalSelector.addGoal(4, (Goal)new FollowBoatGoal(this));
     this.goalSelector.addGoal(5, (Goal)new BreakBoatGoal(this));
     
     this.targetSelector.addGoal(1, (Goal)new HurtByTargetGoal(this, new Class[0]));
-    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, PlayerEntity.class, true));
-    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, YagaraBullEntity.class, 10, true, true, living -> !(living instanceof FightingFishEntity)));
+    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, PlayerEntity.class, true));
+    this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, YagaraBullEntity.class, 10, true, true, living -> !(living instanceof FightingFishEntity)));
   }
 
 
@@ -208,7 +192,7 @@ public class FightingFishEntity extends WaterMobEntity {
 
   
   protected PathNavigator createNavigator(World worldIn) {
-    return (PathNavigator)new SwimmerPathNavigator((MobEntity)this, worldIn);
+    return (PathNavigator)new SwimmerPathNavigator(this, worldIn);
   }
 
 
@@ -236,7 +220,7 @@ public class FightingFishEntity extends WaterMobEntity {
     private final FightingFishEntity fish;
     
     public MoveHelperController(FightingFishEntity fish) {
-      super((MobEntity)fish);
+      super(fish);
       this.fish = fish;
     }
 

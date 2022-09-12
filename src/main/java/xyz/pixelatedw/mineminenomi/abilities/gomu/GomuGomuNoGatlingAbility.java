@@ -18,10 +18,10 @@ import xyz.pixelatedw.mineminenomi.entities.projectiles.gomu.GomuGomuNoKongProje
 import xyz.pixelatedw.mineminenomi.entities.projectiles.gomu.GomuGomuNoPistolProjectile;
 import xyz.pixelatedw.mineminenomi.init.ModSounds;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
-import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
 
 public class GomuGomuNoGatlingAbility extends RepeaterAbility {
   public static final GomuGomuNoGatlingAbility INSTANCE = new GomuGomuNoGatlingAbility();

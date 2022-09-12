@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.mera;
 
-import java.util.List;
-import java.util.Objects;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,6 +13,9 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.particles.effects.mera.HibashiraParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.util.List;
+import java.util.Objects;
 
 public class HibashiraAbility extends ContinuousAbility implements IMultiTargetAbility {
   public static final HibashiraAbility INSTANCE = new HibashiraAbility();

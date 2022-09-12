@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
 import com.google.common.collect.Iterables;
-
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
@@ -19,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.init.ModTags;
 import xyz.pixelatedw.mineminenomi.particles.effects.jiki.AttractParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class AttractAbility extends Ability {
   public static final AttractAbility INSTANCE = new AttractAbility();
@@ -59,7 +59,7 @@ public class AttractAbility extends Ability {
           if (target instanceof MobEntity) {
             
             EquipmentSlotType slot = MobEntity.getSlotForItemStack(stack);
-            ((MobEntity)target).setItemStackToSlot(slot, ItemStack.EMPTY);
+            (target).setItemStackToSlot(slot, ItemStack.EMPTY);
           } 
           
           if (target instanceof PlayerEntity)

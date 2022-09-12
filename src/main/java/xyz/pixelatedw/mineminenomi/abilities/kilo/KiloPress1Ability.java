@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.kilo;
 
 
-import java.util.UUID;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityAttributeModifier;
@@ -9,6 +8,8 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.util.UUID;
 
 public class KiloPress1Ability extends ContinuousAbility {
   public static final KiloPress1Ability INSTANCE = new KiloPress1Ability();

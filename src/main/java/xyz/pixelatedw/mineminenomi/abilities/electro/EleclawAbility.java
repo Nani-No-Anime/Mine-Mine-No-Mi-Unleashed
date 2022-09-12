@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.electro;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -17,6 +16,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.UUID;
 
 public class EleclawAbility extends PunchAbility implements IParallelContinuousAbility {
   public static final EleclawAbility INSTANCE = new EleclawAbility();

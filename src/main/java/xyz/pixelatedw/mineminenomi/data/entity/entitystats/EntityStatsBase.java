@@ -1,10 +1,11 @@
 package xyz.pixelatedw.mineminenomi.data.entity.entitystats;
 
-import javax.annotation.Nullable;
 import net.minecraft.util.math.MathHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
 
 
 public class EntityStatsBase

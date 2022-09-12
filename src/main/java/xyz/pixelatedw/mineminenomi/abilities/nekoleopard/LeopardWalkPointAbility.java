@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.nekoleopard;
 
-import java.util.UUID;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityAttributeModifier;
@@ -10,6 +9,8 @@ import xyz.pixelatedw.mineminenomi.api.morph.ZoanInfo;
 import xyz.pixelatedw.mineminenomi.entities.zoan.LeopardWalkZoanInfo;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.UUID;
 
 public class LeopardWalkPointAbility
   extends ZoanAbility {

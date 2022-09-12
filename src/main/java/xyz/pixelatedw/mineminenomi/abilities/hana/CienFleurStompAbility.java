@@ -1,9 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.hana;
-import com.google.common.collect.ImmutableList;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.function.Predicate;
+import com.google.common.collect.ImmutableList;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -21,6 +18,10 @@ import xyz.pixelatedw.mineminenomi.particles.effects.zou.GreatStompParticleEffec
 import xyz.pixelatedw.mineminenomi.renderers.animations.CrossedArmsAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.Predicate;
 
 public class CienFleurStompAbility extends RepeaterAbility implements IAnimatedAbility {
   public static final CienFleurStompAbility INSTANCE = new CienFleurStompAbility();

@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.yami;
 
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,6 +20,9 @@ import xyz.pixelatedw.mineminenomi.particles.effects.yami.KurouzuParticleEffect;
 import xyz.pixelatedw.mineminenomi.renderers.animations.PointArmAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class KurouzuAbility
   extends ChargeableAbility implements IAnimatedAbility {

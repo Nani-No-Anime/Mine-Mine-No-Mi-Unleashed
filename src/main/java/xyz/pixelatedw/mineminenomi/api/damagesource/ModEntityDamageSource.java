@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.api.damagesource;
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
@@ -8,6 +7,8 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import xyz.pixelatedw.mineminenomi.init.ModDamageSource;
+
+import javax.annotation.Nullable;
 
 
 public class ModEntityDamageSource

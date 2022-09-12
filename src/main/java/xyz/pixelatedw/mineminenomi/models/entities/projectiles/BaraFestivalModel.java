@@ -5,7 +5,6 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.Model;
 import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.entity.Entity;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.bara.BaraFestivalEntity;
 
 public class BaraFestivalModel<T extends BaraFestivalEntity>

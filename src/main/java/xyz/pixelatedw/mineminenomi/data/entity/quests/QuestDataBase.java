@@ -1,11 +1,12 @@
 package xyz.pixelatedw.mineminenomi.data.entity.quests;
 
+import xyz.pixelatedw.mineminenomi.api.quests.Quest;
+import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import xyz.pixelatedw.mineminenomi.api.quests.Quest;
-import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
 
 
 public class QuestDataBase

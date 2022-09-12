@@ -1,18 +1,10 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.marines;
 
-import java.util.function.Predicate;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.OpenDoorGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -26,6 +18,8 @@ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.ImprovedHurtByTargetGoal;
 import xyz.pixelatedw.mineminenomi.init.ModWeapons;
+
+import java.util.function.Predicate;
 
 public abstract class AbstractMarineEntity
   extends OPEntity {
@@ -49,11 +43,11 @@ public abstract class AbstractMarineEntity
     
     ((GroundPathNavigator)getNavigator()).setBreakDoors(true);
     
-    this.goalSelector.addGoal(0, (Goal)new SwimGoal((MobEntity)this));
-    this.goalSelector.addGoal(0, (Goal)new OpenDoorGoal((MobEntity)this, true));
+    this.goalSelector.addGoal(0, (Goal)new SwimGoal(this));
+    this.goalSelector.addGoal(0, (Goal)new OpenDoorGoal(this, true));
     this.goalSelector.addGoal(2, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-    this.goalSelector.addGoal(3, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 8.0F));
-    this.goalSelector.addGoal(3, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(3, (Goal)new LookAtGoal(this, PlayerEntity.class, 8.0F));
+    this.goalSelector.addGoal(3, (Goal)new LookRandomlyGoal(this));
     
     Predicate<Entity> factionScope = FactionHelper.getOutsideGroupPredicate((LivingEntity)this);
     Predicate<Entity> invisibleEntity = entity -> (entity instanceof LivingEntity) ? (!((LivingEntity)entity).isPotionActive(Effects.INVISIBILITY)) : false;
@@ -62,9 +56,9 @@ public abstract class AbstractMarineEntity
 
     
     this.targetSelector.addGoal(1, (Goal)new ImprovedHurtByTargetGoal(this, factionScope, new Class[0]));
-    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, OPEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
-    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, PlayerEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
-    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, MonsterEntity.class, true, true));
+    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, OPEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
+    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, PlayerEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
+    this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, MonsterEntity.class, true, true));
   }
 
 

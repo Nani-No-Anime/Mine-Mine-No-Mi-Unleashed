@@ -1,11 +1,12 @@
 package xyz.pixelatedw.mineminenomi.quests.objectives;
 
-import java.util.Arrays;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.ICureEffectObjective;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
+
+import java.util.Arrays;
 
 public class CureEffectObjective
   extends Objective

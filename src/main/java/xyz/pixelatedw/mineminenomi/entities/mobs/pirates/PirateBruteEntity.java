@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.pirates;
 
-import javax.annotation.Nullable;
-
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -27,6 +24,8 @@ import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
 
 public class PirateBruteEntity extends AbstractPirateEntity implements IBrawler, IHakiUser {
 	private static final String[] DEFAULT_TEXTURES = new String[] { "pirate1", "pirate2", "pirate3", "pirate4", "pirate5" };

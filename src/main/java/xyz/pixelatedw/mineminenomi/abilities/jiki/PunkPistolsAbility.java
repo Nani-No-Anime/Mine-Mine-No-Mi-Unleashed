@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -18,6 +16,9 @@ import xyz.pixelatedw.mineminenomi.renderers.animations.PointArmAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PunkPistolsAbility extends RepeaterAbility implements IAnimatedAbility {
   public static final PunkPistolsAbility INSTANCE = new PunkPistolsAbility();

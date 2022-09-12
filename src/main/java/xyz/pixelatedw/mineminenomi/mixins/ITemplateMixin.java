@@ -1,10 +1,11 @@
 package xyz.pixelatedw.mineminenomi.mixins;
 
-import java.util.List;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.gen.feature.template.Template;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
+
+import java.util.List;
 
 @Mixin({Template.class})
 public interface ITemplateMixin {

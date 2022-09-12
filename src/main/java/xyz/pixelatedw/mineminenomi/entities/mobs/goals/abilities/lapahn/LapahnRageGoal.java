@@ -1,10 +1,11 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.lapahn;
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.Goal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.animals.LapahnEntity;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 
 public class LapahnRageGoal

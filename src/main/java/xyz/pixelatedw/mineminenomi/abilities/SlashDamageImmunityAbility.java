@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities;
 
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -15,6 +14,8 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.init.ModDamageSource;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import javax.annotation.Nullable;
 
 public class SlashDamageImmunityAbility
   extends DamagedPassiveAbility {

@@ -1,11 +1,5 @@
 package xyz.pixelatedw.mineminenomi.api.quests;
 
-import java.io.Serializable;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import javax.annotation.Nullable;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
@@ -18,6 +12,12 @@ import net.minecraftforge.registries.ForgeRegistryEntry;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
 import xyz.pixelatedw.mineminenomi.data.entity.quests.IQuestData;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class Quest
   extends ForgeRegistryEntry<Quest> {

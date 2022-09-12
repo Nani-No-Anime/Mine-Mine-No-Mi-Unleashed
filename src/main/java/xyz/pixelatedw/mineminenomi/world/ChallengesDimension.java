@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.world;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import java.util.Random;
-import javax.annotation.Nullable;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.util.math.BlockPos;
@@ -12,7 +10,6 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.provider.BiomeProviderType;
-import net.minecraft.world.biome.provider.IBiomeProviderSettings;
 import net.minecraft.world.biome.provider.SingleBiomeProvider;
 import net.minecraft.world.biome.provider.SingleBiomeProviderSettings;
 import net.minecraft.world.dimension.Dimension;
@@ -25,6 +22,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.IRenderHandler;
 import net.minecraftforge.client.SkyRenderHandler;
+
+import javax.annotation.Nullable;
+import java.util.Random;
 
 public class ChallengesDimension
   extends Dimension

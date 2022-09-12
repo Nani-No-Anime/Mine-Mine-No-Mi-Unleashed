@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals;
 
-import java.util.List;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -9,6 +8,8 @@ import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.item.BoatEntity;
 import net.minecraft.util.DamageSource;
+
+import java.util.List;
 
 
 public class BreakBoatGoal

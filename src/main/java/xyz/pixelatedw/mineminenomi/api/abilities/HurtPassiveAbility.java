@@ -1,10 +1,11 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
-import java.io.Serializable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PassiveAbility;
+
+import java.io.Serializable;
 
 
 

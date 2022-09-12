@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.yuki;
-import java.util.function.Function;
+
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import xyz.pixelatedw.mineminenomi.models.entities.projectiles.YukiRabiModel;
 import xyz.pixelatedw.mineminenomi.wypi.WyRegistry;
-         import xyz.pixelatedw.mineminenomi.wypi.abilities.renderers.AbilityProjectileRenderer;
+import xyz.pixelatedw.mineminenomi.wypi.abilities.renderers.AbilityProjectileRenderer;
 
 @EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class YukiProjectiles {

@@ -1,14 +1,11 @@
 package xyz.pixelatedw.mineminenomi.abilities.toriphoenix;
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.play.server.SEntityVelocityPacket;
-
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -27,6 +24,9 @@ import xyz.pixelatedw.mineminenomi.particles.data.GenericParticleData;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BlueBirdAbility extends ChargeableAbility implements IFormRequiredAbility {
   public static final BlueBirdAbility INSTANCE = new BlueBirdAbility();

@@ -1,11 +1,12 @@
 package xyz.pixelatedw.mineminenomi.quests.objectives;
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.IHealEntityObjective;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
+
+import javax.annotation.Nullable;
 
 public class HealEntityObjective
   extends Objective

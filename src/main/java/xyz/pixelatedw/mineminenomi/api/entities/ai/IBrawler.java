@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.api.entities.ai;
 
-import java.util.ArrayList;
-import java.util.List;
-import net.minecraft.entity.ai.goal.Goal;
 import xyz.pixelatedw.mineminenomi.abilities.brawler.GenkotsuMeteorAbility;
 import xyz.pixelatedw.mineminenomi.abilities.brawler.HakaiHoAbility;
 import xyz.pixelatedw.mineminenomi.abilities.brawler.JishinHoAbility;
@@ -12,6 +9,9 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.HakaiHo
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.JishinHoGoal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler.TatsuMakiGoal;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public interface IBrawler
 {

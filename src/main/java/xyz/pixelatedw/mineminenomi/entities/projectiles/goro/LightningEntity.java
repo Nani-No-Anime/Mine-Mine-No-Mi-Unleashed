@@ -1,9 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.goro;
 
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -38,6 +34,11 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.goro.LightningExplosionParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class LightningEntity extends Entity {
   protected static final DataParameter<Float> LENGTH = EntityDataManager.createKey(LightningEntity.class, DataSerializers.FLOAT);

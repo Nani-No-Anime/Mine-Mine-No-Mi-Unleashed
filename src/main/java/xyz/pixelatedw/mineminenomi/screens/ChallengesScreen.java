@@ -1,15 +1,11 @@
 package xyz.pixelatedw.mineminenomi.screens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.IGuiEventListener;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.inventory.InventoryScreen;
 import net.minecraft.client.gui.widget.Widget;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.ITextComponent;
@@ -30,6 +26,10 @@ import xyz.pixelatedw.mineminenomi.screens.extra.ChallengeButton;
 import xyz.pixelatedw.mineminenomi.screens.extra.TexturedIconButton;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 @OnlyIn(Dist.CLIENT)
 public class ChallengesScreen

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.ope;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,7 +13,6 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import xyz.pixelatedw.mineminenomi.api.abilities.IAnimatedAbility;
 import xyz.pixelatedw.mineminenomi.api.abilities.IMultiTargetAbility;
-import xyz.pixelatedw.mineminenomi.api.animations.IAnimation;
 import xyz.pixelatedw.mineminenomi.api.animations.IHeldItemAnimation;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.ItemsHelper;
@@ -26,6 +24,8 @@ import xyz.pixelatedw.mineminenomi.renderers.animations.ope.InjectionShotAnimati
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.List;
 
 public class InjectionShotAbility extends ChargeableAbility implements IMultiTargetAbility, IAnimatedAbility {
   public static final Ability INSTANCE = (Ability)new InjectionShotAbility();

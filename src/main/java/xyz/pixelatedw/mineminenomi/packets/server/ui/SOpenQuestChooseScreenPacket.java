@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.server.ui;
 
-import java.util.function.Supplier;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
 import net.minecraft.client.gui.screen.Screen;
@@ -13,6 +12,8 @@ import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 import xyz.pixelatedw.mineminenomi.api.entities.TrainerEntity;
 import xyz.pixelatedw.mineminenomi.screens.TrainerScreen;
+
+import java.util.function.Supplier;
 
 
 

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.zoan;
 
-import java.util.UUID;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.resources.DefaultPlayerSkin;
 import net.minecraft.entity.LivingEntity;
@@ -16,6 +15,8 @@ import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
 import xyz.pixelatedw.mineminenomi.renderers.entities.zoans.ManeManeMemoryRenderer;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.UUID;
 
 public class ManeManeMemoryZoanInfo
   extends ZoanInfo {

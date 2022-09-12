@@ -1,12 +1,13 @@
 package xyz.pixelatedw.mineminenomi.api.helpers;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
+
+import java.util.UUID;
 
 public class FightingStyleHelper
 {
