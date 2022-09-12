@@ -7,7 +7,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
@@ -84,7 +84,7 @@ public class TrampleAbility extends PassiveAbility implements IFormRequiredAbili
             double offsetY = WyHelper.randomDouble();
             double offsetZ = WyHelper.randomDouble();
             
-            ((ServerWorld)player.world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState), pos
+            ((ServerWorld)player.world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState), pos
                 
                 .getX() + offsetX, pos
                 .getY() + offsetY, pos

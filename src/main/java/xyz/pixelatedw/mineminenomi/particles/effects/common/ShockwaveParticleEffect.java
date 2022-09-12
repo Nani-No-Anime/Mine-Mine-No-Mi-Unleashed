@@ -2,7 +2,7 @@ package xyz.pixelatedw.mineminenomi.particles.effects.common;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -20,7 +20,7 @@ public class ShockwaveParticleEffect
       
       BlockState blockState = world.getBlockState((new BlockPos(posX, posY, posZ)).down());
       
-      ((ServerWorld)world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState), posX + 
+      ((ServerWorld)world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState), posX + 
           WyHelper.randomWithRange(-1, 1) + WyHelper.randomDouble() / 20.0D, posY + y + 0.5D, posZ + 
           
           WyHelper.randomWithRange(-1, 1) + WyHelper.randomDouble() / 20.0D, 1, 0.0D, 0.0D, 0.0D, 0.0D);

@@ -7,7 +7,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleType;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;

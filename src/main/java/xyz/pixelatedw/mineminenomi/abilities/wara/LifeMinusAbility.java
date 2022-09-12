@@ -4,7 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.api.abilities.HurtPassiveAbility;
@@ -78,7 +78,7 @@ public class LifeMinusAbility extends HurtPassiveAbility {
       double offsetX = WyHelper.randomDouble() / 2.0D;
       double offsetY = WyHelper.randomDouble() / 2.0D;
       double offsetZ = WyHelper.randomDouble() / 2.0D;
-      world.spawnParticle((IParticleData)ParticleTypes.DRAGON_BREATH, posX + offsetX, posY + offsetY, posZ + offsetZ, 25, 0.0D, 0.0D, 0.0D, 0.1D);
+      world.spawnParticle(ParticleTypes.DRAGON_BREATH, posX + offsetX, posY + offsetY, posZ + offsetZ, 25, 0.0D, 0.0D, 0.0D, 0.1D);
     } 
   }
 }

@@ -2,6 +2,8 @@ package xyz.pixelatedw.mineminenomi;
 
 import java.util.Locale;
 import java.util.function.Function;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -10,16 +12,12 @@ import net.minecraft.world.storage.loot.conditions.ILootCondition;
 import net.minecraft.world.storage.loot.conditions.LootConditionManager;
 import net.minecraft.world.storage.loot.functions.ILootFunction;
 import net.minecraft.world.storage.loot.functions.LootFunctionManager;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import xyz.pixelatedw.mineminenomi.api.helpers.DevilFruitHelper;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.data.conditions.RandomizedFruitsCondition;
@@ -35,13 +33,11 @@ import xyz.pixelatedw.mineminenomi.data.functions.SetInfiniteStockFunction;
 import xyz.pixelatedw.mineminenomi.data.functions.SetPriceFunction;
 import xyz.pixelatedw.mineminenomi.init.ModChallenges;
 import xyz.pixelatedw.mineminenomi.init.ModJollyRogers;
-import xyz.pixelatedw.mineminenomi.setup.ClientProxy;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.APIDefaults;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.WyPatreon;
 import xyz.pixelatedw.mineminenomi.wypi.WyRegistry;
-import xyz.pixelatedw.mineminenomi.wypi.WyServerProtection;
 
 @Mod("mineminenomi")
 public class ModMain {

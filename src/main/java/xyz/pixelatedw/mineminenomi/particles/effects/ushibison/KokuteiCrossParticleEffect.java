@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.ushibison;
 
 import java.util.Random;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -30,8 +30,8 @@ public class KokuteiCrossParticleEffect
         motionY = -0.1D + rand.nextDouble() / 10.0D;
         motionZ = z / 6.0D;
         
-        ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.CLOUD, posX + x * 1.85D, posY + 1.2D, posZ + z * 1.85D, 1, motionX, motionY, motionZ, 0.02D);
-        ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.CLOUD, posX + x * 1.85D, posY + 2.2D, posZ + z * 1.85D, 1, motionX, motionY, motionZ, 0.02D);
+        ((ServerWorld)world).spawnParticle(ParticleTypes.CLOUD, posX + x * 1.85D, posY + 1.2D, posZ + z * 1.85D, 1, motionX, motionY, motionZ, 0.02D);
+        ((ServerWorld)world).spawnParticle(ParticleTypes.CLOUD, posX + x * 1.85D, posY + 2.2D, posZ + z * 1.85D, 1, motionX, motionY, motionZ, 0.02D);
       } 
     } 
   }

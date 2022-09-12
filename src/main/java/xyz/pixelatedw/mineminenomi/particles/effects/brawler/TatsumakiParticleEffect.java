@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.brawler;
 
 import java.util.Random;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -32,7 +32,7 @@ public class TatsumakiParticleEffect
         motionY = 0.3D + rand.nextDouble() / 10.0D;
         motionZ = -Math.cos(theta) / 10.0D;
         for (int i = -10; i < 10; i++)
-          ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.SNEEZE, posX + x * size + WyHelper.randomDouble() / 2.0D, posY + i, posZ + z * size + WyHelper.randomDouble() / 2.0D, 1, motionX, motionY, motionZ, 0.03D); 
+          ((ServerWorld)world).spawnParticle(ParticleTypes.SNEEZE, posX + x * size + WyHelper.randomDouble() / 2.0D, posY + i, posZ + z * size + WyHelper.randomDouble() / 2.0D, 1, motionX, motionY, motionZ, 0.03D); 
       } 
     } 
   }

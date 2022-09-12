@@ -26,7 +26,7 @@ import net.minecraft.item.UseAction;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.NBTUtil;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ItemParticleData;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.IItemProvider;
@@ -71,9 +71,9 @@ public class ItemsHelper
       vec3d1 = vec3d1.rotateYaw(-entity.rotationYaw * 0.017453292F);
       vec3d1 = vec3d1.add(entity.getPosX(), entity.getPosYEye(), entity.getPosZ());
       if (entity.world instanceof ServerWorld) {
-        ((ServerWorld)entity.world).spawnParticle((IParticleData)new ItemParticleData(ParticleTypes.ITEM, stack), vec3d1.x, vec3d1.y, vec3d1.z, 1, vec3d.x, vec3d.y + 0.05D, vec3d.z, 0.2D);
+        ((ServerWorld)entity.world).spawnParticle(new ItemParticleData(ParticleTypes.ITEM, stack), vec3d1.x, vec3d1.y, vec3d1.z, 1, vec3d.x, vec3d.y + 0.05D, vec3d.z, 0.2D);
       } else {
-        entity.world.addParticle((IParticleData)new ItemParticleData(ParticleTypes.ITEM, stack), vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z);
+        entity.world.addParticle(new ItemParticleData(ParticleTypes.ITEM, stack), vec3d1.x, vec3d1.y, vec3d1.z, vec3d.x, vec3d.y + 0.05D, vec3d.z);
       } 
     } 
   }

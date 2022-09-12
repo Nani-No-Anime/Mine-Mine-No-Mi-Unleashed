@@ -2,7 +2,7 @@ package xyz.pixelatedw.mineminenomi.particles.effects.common;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -31,7 +31,7 @@ public class GroundParticlesEffect
       for (int j = 0; j < 2; j++) {
         
         BlockState blockState = world.getBlockState((new BlockPos(posX + offsetX, posY - j, posZ + offsetZ)).down());
-        ((ServerWorld)world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState), posX + offsetX, posY, posZ + offsetZ, 1, 0.0D, 0.5D, 0.0D, 0.0D);
+        ((ServerWorld)world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState), posX + offsetX, posY, posZ + offsetZ, 1, 0.0D, 0.5D, 0.0D, 0.0D);
       } 
     } 
   }

@@ -4,7 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.FallingBlockEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -52,7 +52,7 @@ public class GekishinProjectile extends AbilityProjectileEntity {
       if (i % 2 == 0) {
         
         ((ServerWorld)this.world)
-          .spawnParticle((IParticleData)ParticleTypes.EXPLOSION, 
+          .spawnParticle(ParticleTypes.EXPLOSION, 
             
             getPosX() + WyHelper.randomDouble() * 1.5D, 
             getPosY() + WyHelper.randomDouble() * 1.5D, 

@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.goro;
 
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleType;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;

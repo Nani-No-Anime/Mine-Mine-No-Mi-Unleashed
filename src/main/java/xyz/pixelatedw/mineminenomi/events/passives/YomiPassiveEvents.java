@@ -20,7 +20,7 @@ import net.minecraft.network.IPacket;
 import net.minecraft.network.play.server.SEntityVelocityPacket;
 import net.minecraft.network.play.server.SPlayEntityEffectPacket;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -140,7 +140,7 @@ public class YomiPassiveEvents
         double newPosY = player.getPosY();
         double newPosZ = player.getPosZ() + WyHelper.randomDouble();
         
-        ((ServerWorld)player.world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState), newPosX, newPosY, newPosZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+        ((ServerWorld)player.world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState), newPosX, newPosY, newPosZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
       } 
     } 
   }

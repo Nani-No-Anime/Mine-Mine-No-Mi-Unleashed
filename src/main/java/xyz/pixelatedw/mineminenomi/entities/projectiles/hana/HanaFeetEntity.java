@@ -7,7 +7,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
@@ -66,7 +66,7 @@ public class HanaFeetEntity extends AbilityProjectileEntity {
         double offsetY = WyHelper.randomDouble();
         double offsetZ = WyHelper.randomDouble();
         
-        ((ServerWorld)this.world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState1), p
+        ((ServerWorld)this.world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState1), p
             
             .getX() + offsetX, p
             .getY() + offsetY, p
@@ -84,7 +84,7 @@ public class HanaFeetEntity extends AbilityProjectileEntity {
         double x = WyHelper.randomDouble();
         double z = WyHelper.randomDouble();
         
-        ((ServerWorld)this.world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState), pos
+        ((ServerWorld)this.world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState), pos
             .getX() + WyHelper.randomWithRange(-3, 3) + x, (pos
             .getY() + 1), pos
             .getZ() + WyHelper.randomWithRange(-3, 3) + z, 1, 0.0D, 0.0D, 0.0D, 0.0D);

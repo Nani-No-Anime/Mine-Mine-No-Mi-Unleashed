@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.hie;
 
 import java.util.Random;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;

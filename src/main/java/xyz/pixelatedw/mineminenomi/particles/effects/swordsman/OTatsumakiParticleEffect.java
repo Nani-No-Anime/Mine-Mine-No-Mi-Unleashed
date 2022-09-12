@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.swordsman;
 
 import java.util.Random;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;

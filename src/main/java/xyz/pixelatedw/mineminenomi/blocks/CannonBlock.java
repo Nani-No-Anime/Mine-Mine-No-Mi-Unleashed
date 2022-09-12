@@ -15,7 +15,7 @@ import net.minecraft.fluid.IFluidState;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.DirectionProperty;
@@ -126,7 +126,7 @@ public class CannonBlock extends Block implements IWaterLoggable {
         double offsetY = WyHelper.randomDouble();
         double offsetZ = WyHelper.randomDouble();
         
-        ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.POOF, pos.getX() + offsetX, (pos.getY() + 1) + offsetY, pos.getZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+        ((ServerWorld)world).spawnParticle(ParticleTypes.POOF, pos.getX() + offsetX, (pos.getY() + 1) + offsetY, pos.getZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
       } 
       
       tileEntity.emptyGunpoweder();

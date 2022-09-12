@@ -9,7 +9,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
-import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -146,7 +145,7 @@ public class HanaHandsEntity
             double d3 = (this.rand.nextDouble() * 2.0D - 1.0D) * 0.3D;
             double d4 = 0.3D + this.rand.nextDouble() * 0.3D;
             double d5 = (this.rand.nextDouble() * 2.0D - 1.0D) * 0.3D;
-            this.world.addParticle((IParticleData)ParticleTypes.CRIT, d0, d1 + 1.0D, d2, d3, d4, d5);
+            this.world.addParticle(ParticleTypes.CRIT, d0, d1 + 1.0D, d2, d3, d4, d5);
           }
         
         }

@@ -16,6 +16,7 @@ import xyz.pixelatedw.mineminenomi.api.crew.Crew;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
 import xyz.pixelatedw.mineminenomi.data.world.ExtendedWorldData;
+import xyz.pixelatedw.mineminenomi.entities.mobs.pirates.AbstractPirateEntity;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncWorldDataPacket;
@@ -162,7 +163,7 @@ public class FactionHelper
           }
 
           
-          if (entity instanceof xyz.pixelatedw.mineminenomi.entities.mobs.pirates.AbstractPirateEntity && target instanceof xyz.pixelatedw.mineminenomi.entities.mobs.pirates.AbstractPirateEntity) {
+          if (entity instanceof AbstractPirateEntity && target instanceof AbstractPirateEntity) {
             return true;
           }
           

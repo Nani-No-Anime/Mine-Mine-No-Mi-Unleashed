@@ -2,7 +2,7 @@ package xyz.pixelatedw.mineminenomi.abilities.ryuallosaurus;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.math.Vec3d;
@@ -34,7 +34,7 @@ public class AncientBiteAbility extends PunchAbility implements IFormRequiredAbi
     double x = WyHelper.randomDouble() * 2.0D;
     double y = WyHelper.randomDouble() * 0.3D;
     double z = WyHelper.randomDouble() * 2.0D;
-    player.world.addParticle((IParticleData)ParticleTypes.CRIT, target.getPosX(), target.getPosY() + 1.0D, target.getPosZ(), x, y, z);
+    player.world.addParticle(ParticleTypes.CRIT, target.getPosX(), target.getPosY() + 1.0D, target.getPosZ(), x, y, z);
     target.addPotionEffect(new EffectInstance(ModEffects.BLEEDING, 20, 0));
     
     for (int i = 0; i < 50; i++) {
@@ -42,7 +42,7 @@ public class AncientBiteAbility extends PunchAbility implements IFormRequiredAbi
       Vec3d vec3d = new Vec3d((player.getRNG().nextFloat() - 0.5D) * 0.1D, Math.random() * 0.1D + 0.1D, 0.0D);
       vec3d = vec3d.rotatePitch(-player.rotationPitch * 0.017453292F);
       vec3d = vec3d.rotateYaw(-player.rotationYaw * 0.017453292F);
-      ((ServerWorld)player.world).spawnParticle((IParticleData)ParticleTypes.CRIT, target.getPosX(), target.getPosY() + 1.5D, target.getPosZ(), 1, vec3d.x, vec3d.y, vec3d.z, 0.8D);
+      ((ServerWorld)player.world).spawnParticle(ParticleTypes.CRIT, target.getPosX(), target.getPosY() + 1.5D, target.getPosZ(), 1, vec3d.x, vec3d.y, vec3d.z, 0.8D);
     } 
   }
 

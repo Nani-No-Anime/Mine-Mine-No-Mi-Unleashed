@@ -3,7 +3,7 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.cyborg;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
@@ -69,9 +69,9 @@ public class CoupDeVentProjectile extends AbilityProjectileEntity {
       double offsetY = WyHelper.randomDouble() * 1.2D;
       double offsetZ = WyHelper.randomDouble() * 1.2D;
       
-      ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.END_ROD, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.1D);
+      ((ServerWorld)this.world).spawnParticle(ParticleTypes.END_ROD, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.1D);
       if (i % 5 == 0)
-        ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.FLASH, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.1D); 
+        ((ServerWorld)this.world).spawnParticle(ParticleTypes.FLASH, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.1D); 
     } 
   }
 }

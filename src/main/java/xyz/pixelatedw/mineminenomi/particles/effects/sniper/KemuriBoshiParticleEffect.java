@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.sniper;
 
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -19,9 +19,9 @@ public class KemuriBoshiParticleEffect
       double offsetZ = WyHelper.randomWithRange(-4, 4) + WyHelper.randomDouble();
       
       if (i % 2 == 0) {
-        ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.CLOUD, posX + offsetX + WyHelper.randomWithRange(-7, 7), posY + 0.5D + offsetY + WyHelper.randomWithRange(-1, 3), posZ + offsetZ + WyHelper.randomWithRange(-7, 7), 1, 0.0D, 0.0D, 0.0D, 0.05D);
+        ((ServerWorld)world).spawnParticle(ParticleTypes.CLOUD, posX + offsetX + WyHelper.randomWithRange(-7, 7), posY + 0.5D + offsetY + WyHelper.randomWithRange(-1, 3), posZ + offsetZ + WyHelper.randomWithRange(-7, 7), 1, 0.0D, 0.0D, 0.0D, 0.05D);
       } else {
-        ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.POOF, posX + offsetX + WyHelper.randomWithRange(-7, 7), posY + 0.5D + offsetY + WyHelper.randomWithRange(-1, 3), posZ + offsetZ + WyHelper.randomWithRange(-7, 7), 1, 0.0D, 0.0D, 0.0D, 0.05D);
+        ((ServerWorld)world).spawnParticle(ParticleTypes.POOF, posX + offsetX + WyHelper.randomWithRange(-7, 7), posY + 0.5D + offsetY + WyHelper.randomWithRange(-1, 3), posZ + offsetZ + WyHelper.randomWithRange(-7, 7), 1, 0.0D, 0.0D, 0.0D, 0.05D);
       } 
     } 
   }

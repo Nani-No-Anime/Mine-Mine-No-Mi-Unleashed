@@ -3,7 +3,7 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.artofweather;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleType;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;

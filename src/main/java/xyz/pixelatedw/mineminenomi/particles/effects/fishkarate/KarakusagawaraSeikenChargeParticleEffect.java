@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.fishkarate;
 
 import java.util.Random;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -43,7 +43,7 @@ public class KarakusagawaraSeikenChargeParticleEffect
         double offsetY = 1.0D;
         double offsetZ = world.rand.nextDouble() * WyHelper.randomWithRange(7, 9);
         
-        ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.DRIPPING_WATER, posX - 4.0D + offsetX, posY - 1.0D + offsetY, posZ - 4.0D + offsetZ, 1, 0.0D, 1.2D, 0.0D, 1.2D);
+        ((ServerWorld)world).spawnParticle(ParticleTypes.DRIPPING_WATER, posX - 4.0D + offsetX, posY - 1.0D + offsetY, posZ - 4.0D + offsetZ, 1, 0.0D, 1.2D, 0.0D, 1.2D);
 
 
 

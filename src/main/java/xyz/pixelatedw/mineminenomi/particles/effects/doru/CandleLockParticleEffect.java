@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.doru;
 
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -26,7 +26,7 @@ public class CandleLockParticleEffect
       WyHelper.spawnParticles(data, (ServerWorld)world, posX + offsetX, posY, posZ + offsetZ);
       
       if (i % 5 == 0)
-        ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.END_ROD, posX + offsetX, posY, posZ + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.2D); 
+        ((ServerWorld)world).spawnParticle(ParticleTypes.END_ROD, posX + offsetX, posY, posZ + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.2D); 
     } 
   }
 }

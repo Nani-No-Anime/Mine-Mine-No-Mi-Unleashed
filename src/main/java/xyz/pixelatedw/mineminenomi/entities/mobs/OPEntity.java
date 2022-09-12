@@ -52,6 +52,7 @@ public abstract class OPEntity extends CreatureEntity implements IDynamicRendere
 			.setSaved(false);
 	private int doriki;
 	protected int threat = 2;
+	protected int TrueThreat = 2;
 	private int belly;
 	private Goal currentGoal;
 	private Goal previousGoal;
@@ -249,9 +250,11 @@ public abstract class OPEntity extends CreatureEntity implements IDynamicRendere
 
 	public void setPreviousGoal(Goal goal) { this.previousGoal = goal; }
 
-	public void addThreat(int threat) { this.threat += threat; }
+	public void addThreat(int threat) { this.TrueThreat += threat; this.threat += threat; }
 
 	public int getThreat() { return this.threat; }
+
+	public int getTrueThreat()  { return this.TrueThreat; }
 
 	public void setThreat(int threat) { this.threat = threat; }
 

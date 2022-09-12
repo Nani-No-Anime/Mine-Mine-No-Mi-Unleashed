@@ -3,7 +3,7 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.awa;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.world.World;

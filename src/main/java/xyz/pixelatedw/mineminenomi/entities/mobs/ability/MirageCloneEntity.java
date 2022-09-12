@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.ability;
 import java.util.Optional;
 import java.util.UUID;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.goal.Goal;
@@ -11,7 +10,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -68,9 +67,9 @@ public class MirageCloneEntity extends OPEntity {
         double offsetZ = WyHelper.randomDouble();
         
         if (i % 2 == 0) {
-          ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.CLOUD, getPosX() + offsetX, getPosY() + 1.5D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.05D);
+          ((ServerWorld)this.world).spawnParticle(ParticleTypes.CLOUD, getPosX() + offsetX, getPosY() + 1.5D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.05D);
         } else {
-          ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.POOF, getPosX() + offsetX, getPosY() + 1.5D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.05D);
+          ((ServerWorld)this.world).spawnParticle(ParticleTypes.POOF, getPosX() + offsetX, getPosY() + 1.5D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.05D);
         } 
       }  } 
     super.remove();

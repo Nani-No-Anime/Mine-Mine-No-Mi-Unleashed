@@ -9,7 +9,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.DamageSource;
@@ -96,7 +96,7 @@ public class AncientStompAbility extends RepeaterAbility implements IFormRequire
         double offsetY = WyHelper.randomDouble();
         double offsetZ = WyHelper.randomDouble();
         
-        ((ServerWorld)player.world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState1), p
+        ((ServerWorld)player.world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState1), p
             
             .getX() + offsetX, p
             .getY() + offsetY, p
@@ -114,7 +114,7 @@ public class AncientStompAbility extends RepeaterAbility implements IFormRequire
         double x = WyHelper.randomDouble();
         double z = WyHelper.randomDouble();
         
-        ((ServerWorld)player.world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState), pos
+        ((ServerWorld)player.world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState), pos
             .getX() + WyHelper.randomWithRange(-3, 3) + x, (pos
             .getY() + 1), pos
             .getZ() + WyHelper.randomWithRange(-3, 3) + z, 1, 0.0D, 0.0D, 0.0D, 0.0D);

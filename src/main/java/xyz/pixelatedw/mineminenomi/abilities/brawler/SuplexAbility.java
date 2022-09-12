@@ -1,6 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.brawler;
 
 import java.util.List;
+import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -104,8 +105,8 @@ public class SuplexAbility extends ChargeableAbility implements IAnimatedAbility
 
 
   
-  public IAnimation getAnimation() {
-    return (IAnimation)PointBothArmsAnimation.INSTANCE;
+  public IAnimation<?> getAnimation() {
+    return PointBothArmsAnimation.INSTANCE;
   }
 
 

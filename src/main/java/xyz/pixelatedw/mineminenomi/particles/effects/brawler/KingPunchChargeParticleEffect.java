@@ -3,7 +3,7 @@ package xyz.pixelatedw.mineminenomi.particles.effects.brawler;
 import java.util.Random;
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -49,7 +49,7 @@ public class KingPunchChargeParticleEffect
         
         BlockState blockState = world.getBlockState((new BlockPos(posX + offsetX, posY, posZ + offsetZ)).down());
         
-        ((ServerWorld)world).spawnParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, blockState), posX - 4.0D + offsetX, posY - 1.0D + offsetY, posZ - 4.0D + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+        ((ServerWorld)world).spawnParticle(new BlockParticleData(ParticleTypes.BLOCK, blockState), posX - 4.0D + offsetX, posY - 1.0D + offsetY, posZ - 4.0D + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
 
 
 

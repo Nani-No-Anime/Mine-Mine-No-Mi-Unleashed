@@ -28,7 +28,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.DamageSource;
@@ -179,7 +179,7 @@ public class KungFuDugongEntity extends AnimalEntity {
               double offsetY = this.rand.nextGaussian() * 0.02D;
               double offsetZ = this.rand.nextGaussian() * 0.02D;
               
-              ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.ANGRY_VILLAGER, getPosX() + offsetX, getPosY() + 1.0D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+              ((ServerWorld)this.world).spawnParticle(ParticleTypes.ANGRY_VILLAGER, getPosX() + offsetX, getPosY() + 1.0D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
             
             }
           
@@ -192,7 +192,7 @@ public class KungFuDugongEntity extends AnimalEntity {
               double offsetY = this.rand.nextGaussian() * 0.02D;
               double offsetZ = this.rand.nextGaussian() * 0.02D;
               
-              ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.HEART, getPosX() + offsetX, getPosY() + 1.0D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+              ((ServerWorld)this.world).spawnParticle(ParticleTypes.HEART, getPosX() + offsetX, getPosY() + 1.0D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
             } 
             setOwner(player.getUniqueID());
           } 
@@ -225,7 +225,7 @@ public class KungFuDugongEntity extends AnimalEntity {
             double offsetY = this.rand.nextGaussian() * 0.02D;
             double offsetZ = this.rand.nextGaussian() * 0.02D;
             
-            ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.HEART, getPosX() + offsetX, getPosY() + 1.0D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
+            ((ServerWorld)this.world).spawnParticle(ParticleTypes.HEART, getPosX() + offsetX, getPosY() + 1.0D + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.0D);
           } 
           return true;
         }

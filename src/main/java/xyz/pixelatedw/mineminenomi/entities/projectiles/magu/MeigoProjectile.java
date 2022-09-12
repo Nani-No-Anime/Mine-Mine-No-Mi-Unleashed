@@ -4,7 +4,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
@@ -91,7 +91,7 @@ public class MeigoProjectile extends AbilityProjectileEntity {
         double offsetY = WyHelper.randomDouble() / 2.0D;
         double offsetZ = WyHelper.randomDouble() / 2.0D;
         
-        ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.LAVA, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.5D);
+        ((ServerWorld)this.world).spawnParticle(ParticleTypes.LAVA, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.5D);
       } 
     } 
   }

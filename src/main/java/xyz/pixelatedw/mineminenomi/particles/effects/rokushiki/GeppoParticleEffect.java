@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.rokushiki;
 
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -15,7 +15,7 @@ public class GeppoParticleEffect
     double offsetX = WyHelper.randomDouble() / 2.0D;
     double offsetY = WyHelper.randomDouble() / 2.0D;
     double offsetZ = WyHelper.randomDouble() / 2.0D;
-    ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.CLOUD, (int)posX, (int)posY, (int)posZ, 9, offsetX, offsetY, offsetZ, 0.01D);
+    ((ServerWorld)world).spawnParticle(ParticleTypes.CLOUD, (int)posX, (int)posY, (int)posZ, 9, offsetX, offsetY, offsetZ, 0.01D);
   }
 }
 

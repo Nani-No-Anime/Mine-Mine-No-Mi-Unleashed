@@ -2,7 +2,7 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.rokushiki;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -65,8 +65,8 @@ public class RokuoganProjectile extends AbilityProjectileEntity {
         double offsetY = WyHelper.randomDouble() / 1.25D;
         double offsetZ = WyHelper.randomDouble() / 1.25D;
         
-        ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.POOF, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.1D);
-        ((ServerWorld)this.world).spawnParticle((IParticleData)ParticleTypes.EXPLOSION_EMITTER, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.1D);
+        ((ServerWorld)this.world).spawnParticle(ParticleTypes.POOF, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, -0.1D);
+        ((ServerWorld)this.world).spawnParticle(ParticleTypes.EXPLOSION_EMITTER, getPosX() + offsetX, getPosY() + offsetY, getPosZ() + offsetZ, 1, 0.0D, 0.0D, 0.0D, 0.1D);
       } 
     }
     

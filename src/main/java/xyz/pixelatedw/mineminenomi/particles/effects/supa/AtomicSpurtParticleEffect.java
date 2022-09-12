@@ -2,7 +2,7 @@ package xyz.pixelatedw.mineminenomi.particles.effects.supa;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -21,7 +21,7 @@ public class AtomicSpurtParticleEffect
       
       BlockState BlockState = world.getBlockState((new BlockPos(posX, posY, posZ)).down());
       
-      world.addParticle((IParticleData)new BlockParticleData(ParticleTypes.BLOCK, BlockState), posX + offsetX, posY, posZ + offsetZ, 0.0D, 0.0D, 0.0D);
+      world.addParticle(new BlockParticleData(ParticleTypes.BLOCK, BlockState), posX + offsetX, posY, posZ + offsetZ, 0.0D, 0.0D, 0.0D);
     } 
   }
 }

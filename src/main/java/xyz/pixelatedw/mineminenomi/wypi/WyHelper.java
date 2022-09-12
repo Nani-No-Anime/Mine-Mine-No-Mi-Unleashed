@@ -1,10 +1,5 @@
 package xyz.pixelatedw.mineminenomi.wypi;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Lists;
-import com.google.gson.Gson;
-import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.systems.RenderSystem;
 import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -42,6 +37,11 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;
 import javax.annotation.Nullable;
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.Lists;
+import com.google.gson.Gson;
+import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -307,7 +307,7 @@ public class WyHelper
 
   
   public static <T extends Entity> List<T> getEntitiesNear(BlockPos pos, World world, double radius) {
-    return getEntitiesNear(pos, world, radius, (Class<? extends T>[])new Class[] { LivingEntity.class });
+    return  getEntitiesNear(pos, world, radius, new Class[] { LivingEntity.class });
   }
 
   

@@ -1,7 +1,7 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.artofweather;
 
 import java.awt.Color;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleType;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;

@@ -8,7 +8,7 @@ import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.math.BlockPos;
@@ -66,7 +66,7 @@ public class RustBreakAbility extends Ability {
         data.setSize(4.0F);
         WyHelper.spawnParticles(data, (ServerWorld)player.world, pos.getX() + offsetX, pos.getY() + offsetY, pos.getZ() + offsetZ);
         
-        ((ServerWorld)player.world).spawnParticle((IParticleData)ParticleTypes.POOF, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, 1, motionX, motionY, motionZ, 0.05000000074505806D);
+        ((ServerWorld)player.world).spawnParticle(ParticleTypes.POOF, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, 1, motionX, motionY, motionZ, 0.05000000074505806D);
       } 
       
       boolean isIngot = this.random.nextBoolean();

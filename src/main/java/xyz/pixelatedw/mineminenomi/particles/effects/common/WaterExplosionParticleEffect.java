@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.common;
 
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -25,8 +25,8 @@ public class WaterExplosionParticleEffect
       motionY *= middlePoint / 2.0D;
       motionZ *= middlePoint / 2.0D;
       
-      ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.FISHING, posX, posY, posZ, 1, motionX, motionY, motionZ, 0.1D);
-      ((ServerWorld)world).spawnParticle((IParticleData)ParticleTypes.FISHING, posX, posY, posZ, 1, motionX, motionY, motionZ, 0.1D);
+      ((ServerWorld)world).spawnParticle(ParticleTypes.FISHING, posX, posY, posZ, 1, motionX, motionY, motionZ, 0.1D);
+      ((ServerWorld)world).spawnParticle(ParticleTypes.FISHING, posX, posY, posZ, 1, motionX, motionY, motionZ, 0.1D);
     } 
   }
 }

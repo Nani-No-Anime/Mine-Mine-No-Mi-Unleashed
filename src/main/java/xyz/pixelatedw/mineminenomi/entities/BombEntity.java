@@ -6,7 +6,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.IPacket;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.world.World;
@@ -33,7 +33,7 @@ public class BombEntity
     this.prevPosZ = getPosZ();
     
     if (this.ticksExisted % 3 == 0) {
-      this.world.addParticle((IParticleData)ParticleTypes.FLAME, getPosX(), getPosY() + 1.0D, getPosZ(), 0.0D, 0.0D, 0.0D);
+      this.world.addParticle(ParticleTypes.FLAME, getPosX(), getPosY() + 1.0D, getPosZ(), 0.0D, 0.0D, 0.0D);
     }
     if (!this.world.isRemote) {
       

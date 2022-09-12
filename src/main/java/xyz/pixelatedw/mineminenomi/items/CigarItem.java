@@ -9,7 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.particles.IParticleData;
+
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.ActionResultType;
@@ -59,7 +59,7 @@ public class CigarItem extends Item {
     if (player.ticksExisted % this.smokeFreqency == 0 && !player.canSwim()) {
       
       Vec3d vec = player.getLookVec().scale(0.5D + (player.getWidth() / 2.0F)).rotateYaw((float)Math.toRadians(-20.0D));
-      world.addParticle((IParticleData)ParticleTypes.CAMPFIRE_COSY_SMOKE, player.getPosX() + vec.x, vec.y + player.getPosYEye(), player.getPosZ() + vec.z, 0.0D, 0.04D, 0.0D);
+      world.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, player.getPosX() + vec.x, vec.y + player.getPosYEye(), player.getPosZ() + vec.z, 0.0D, 0.04D, 0.0D);
       
       if (!world.isRemote) {
         
