@@ -20,7 +20,8 @@ import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 public class WyNetwork
 {
   private static int packet = 0;
-  private static final String PROTOCOL_VERSION = Integer.toString(1);
+  //private static final String PROTOCOL_VERSION = "1U1";
+  private static final String PROTOCOL_VERSION = "1";
   public static final SimpleChannel INSTANCE = NetworkRegistry.newSimpleChannel(new ResourceLocation(APIConfig.projectId, "main_channel"), () -> PROTOCOL_VERSION, PROTOCOL_VERSION
 
       

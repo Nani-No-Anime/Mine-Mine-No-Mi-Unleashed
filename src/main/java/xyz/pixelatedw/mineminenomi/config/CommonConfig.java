@@ -220,7 +220,7 @@ public class CommonConfig
     this.destroySpawner = builder.comment("Destroys the spawner after all its spawns are killed\nDefault: true").define("Destroy Spawner", true);
     this.destroyWater = builder.comment("Allows big explosions to destroy water \nDefault: false").define("Explosions can destroy water", false);
     this.despawnWithNametags = builder.comment("Normally despawns traders and trainers even if they're nametagged \nDefault: false").define("Despawn NPCs with Nametags", false);
-    this.dorikiLimit = builder.comment("Sets a new limit for maximum doriki a player may obtain \nDefault: 10000").defineInRange("Doriki Limit", 10000, 0, 100000);
+    this.dorikiLimit = builder.comment("Sets a new limit for maximum doriki a player may obtain \nDefault: 10000").defineInRange("Doriki Limit", 10000, 0, 100000000);
     this.hakiExpLimit = builder.comment("Sets a new limit for maximum haki exp a player may obtain \nDefault: 100").defineInRange("Haki Exp Limit", 100, 0, 300);
     this.randomizeRace = builder.comment("Randomizes the player's race at spawn (making the player unable to choose a race themselves) \nDefault: false").define("Race Randomizer", false);
     this.combatPickup = builder.comment("Allows the players to pickup items while the combat bar is active \nDefault: true").define("Combat Bar Pickup", true);
@@ -571,7 +571,10 @@ public class CommonConfig
     return ((Integer)this.hakiExpLimit.get()).intValue();
   }
 
-  
+  public void setDorikiLimit(Integer value) {
+    this.dorikiLimit.set(value);
+  }
+
   public int getDorikiLimit() {
     return ((Integer)this.dorikiLimit.get()).intValue();
   }

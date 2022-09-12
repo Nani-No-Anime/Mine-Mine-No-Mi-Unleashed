@@ -34,6 +34,7 @@ public class CToggleCombatModePacket
 
   
   public static void handle(CToggleCombatModePacket message, Supplier<NetworkEvent.Context> ctx) {
+    
     if (((NetworkEvent.Context)ctx.get()).getDirection() == NetworkDirection.PLAY_TO_SERVER)
     {
       ((NetworkEvent.Context)ctx.get()).enqueueWork(() -> {

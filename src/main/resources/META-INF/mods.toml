@@ -3,7 +3,7 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="mineminenomi"
-version="0.8.1"
+version="0.8.1-U-0.2.1"
 displayName="Mine Mine no Mi"
 displayURL="https://www.pixelatedw.xyz/mine-mine-no-mi"
 logoFile="mine-mine-no-mi.png"
@@ -252,7 +252,7 @@ Other Credits :
 [[dependencies.mineminenomi]]
     modId="forge"
     mandatory=true
-    versionRange="[31.2.47,)"
+    versionRange="[31,)"
     ordering="NONE"
     side="BOTH"
     

@@ -40,9 +40,6 @@ public class MobsHelper
       IAbilityData abilityProps = AbilityDataCapability.get(entity);
       
       int threat = (int)((statsProps.getDoriki() / 2000) + hakiProps.getTotalHakiExp() / 60.0F);
-      System.out.println("threat "+threat);
-      System.out.println(dfProps.hasDevilFruit());
-      System.out.println(dfProps.isLogia());
       if (dfProps.hasDevilFruit()) {
         
         threat += 2;

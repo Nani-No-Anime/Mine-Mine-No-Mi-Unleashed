@@ -1,0 +1,65 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "runClient",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.userdev.LaunchTesting",
+      "projectName": "project",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES,REGISTRYDUMP -Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp\u003dC:\\Users\\4tuto\\Documents\\Minecraft\\mineminenomi\\project\\build\\createSrgToMcp\\output.srg -Dmixin.env.remapRefMap\u003dtrue -Dmixin.env.refMapRemappingFile\u003dC:\\Users\\4tuto\\Documents\\Minecraft\\mineminenomi\\project\\build\\createSrgToMcp\\output.srg -XX:HeapDumpPath\u003dMojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump \"-Dos.name\u003dWindows 10\" -Dos.version\u003d10.0",
+      "args": "--mixin.config mine-mine-no-mi.mixins.json",
+      "env": {
+        "MOD_CLASSES": "examplemod%%${workspaceFolder}\\bin\\main;examplemod%%${workspaceFolder}\\bin\\main",
+        "MCP_MAPPINGS": "snapshot_20211108-1.15.1",
+        "MCP_VERSION": "20200515.085601",
+        "FORGE_VERSION": "31.2.57",
+        "assetIndex": "1.15",
+        "assetDirectory": "C:\\Users\\4tuto\\.gradle\\caches\\forge_gradle\\assets",
+        "nativesDirectory": "${workspaceFolder}\\build\\natives",
+        "FORGE_GROUP": "net.minecraftforge",
+        "target": "fmluserdevclient",
+        "MC_VERSION": "1.15.2"
+      }
+    },
+    {
+      "type": "java",
+      "name": "runData",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.userdev.LaunchTesting",
+      "projectName": "project",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES,REGISTRYDUMP -Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp\u003dC:\\Users\\4tuto\\Documents\\Minecraft\\mineminenomi\\project\\build\\createSrgToMcp\\output.srg -Dmixin.env.remapRefMap\u003dtrue -Dmixin.env.refMapRemappingFile\u003dC:\\Users\\4tuto\\Documents\\Minecraft\\mineminenomi\\project\\build\\createSrgToMcp\\output.srg",
+      "args": "--mod mineminenomi --all --output C:\\Users\\4tuto\\Documents\\Minecraft\\mineminenomi\\project\\src\\generated\\resources --mixin.config mine-mine-no-mi.mixins.json",
+      "env": {
+        "MOD_CLASSES": "examplemod%%${workspaceFolder}\\bin\\main;examplemod%%${workspaceFolder}\\bin\\main",
+        "MCP_MAPPINGS": "snapshot_20211108-1.15.1",
+        "MCP_VERSION": "20200515.085601",
+        "FORGE_VERSION": "31.2.57",
+        "FORGE_GROUP": "net.minecraftforge",
+        "target": "fmluserdevdata",
+        "MC_VERSION": "1.15.2"
+      }
+    },
+    {
+      "type": "java",
+      "name": "runServer",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.userdev.LaunchTesting",
+      "projectName": "project",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES,REGISTRYDUMP -Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp\u003dC:\\Users\\4tuto\\Documents\\Minecraft\\mineminenomi\\project\\build\\createSrgToMcp\\output.srg -Dmixin.env.remapRefMap\u003dtrue -Dmixin.env.refMapRemappingFile\u003dC:\\Users\\4tuto\\Documents\\Minecraft\\mineminenomi\\project\\build\\createSrgToMcp\\output.srg",
+      "args": "--mixin.config mine-mine-no-mi.mixins.json",
+      "env": {
+        "MOD_CLASSES": "examplemod%%${workspaceFolder}\\bin\\main;examplemod%%${workspaceFolder}\\bin\\main",
+        "MCP_MAPPINGS": "snapshot_20211108-1.15.1",
+        "MCP_VERSION": "20200515.085601",
+        "FORGE_VERSION": "31.2.57",
+        "FORGE_GROUP": "net.minecraftforge",
+        "target": "fmluserdevserver",
+        "MC_VERSION": "1.15.2"
+      }
+    }
+  ]
+}

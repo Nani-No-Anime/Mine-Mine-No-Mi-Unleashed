@@ -60,6 +60,7 @@ import xyz.pixelatedw.mineminenomi.packets.server.ui.SOpenTraderScreenPacket;
 import xyz.pixelatedw.mineminenomi.packets.server.ui.SOpenWantedPosterScreenPacket;
 import xyz.pixelatedw.mineminenomi.wypi.APIDefaults;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncConfigDataPacket;
 
 
 public class ModNetwork
@@ -128,6 +129,9 @@ public class ModNetwork
     WyNetwork.registerPacket(SUpdateExtraDataPacket.class, SUpdateExtraDataPacket::encode, SUpdateExtraDataPacket::decode, SUpdateExtraDataPacket::handle);
     WyNetwork.registerPacket(SUpdateCustomTexturePacket.class, SUpdateCustomTexturePacket::encode, SUpdateCustomTexturePacket::decode, SUpdateCustomTexturePacket::handle);
     WyNetwork.registerPacket(SOpenAbilitySelectionScreenPacket.class, SOpenAbilitySelectionScreenPacket::encode, SOpenAbilitySelectionScreenPacket::decode, SOpenAbilitySelectionScreenPacket::handle);
+
+    WyNetwork.registerPacket(SSyncConfigDataPacket.class, SSyncConfigDataPacket::encode, SSyncConfigDataPacket::decode, SSyncConfigDataPacket::handle);
+
   }
 }
 
