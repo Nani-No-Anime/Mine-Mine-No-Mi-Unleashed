@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities;
 
-import java.util.Optional;
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -21,6 +18,10 @@ import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import javax.annotation.Nullable;
+import java.util.Optional;
+import java.util.UUID;
 
 public class PhysicalBodyEntity
   extends OPEntity

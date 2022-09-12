@@ -2,8 +2,6 @@ package xyz.pixelatedw.mineminenomi.renderers.entities;
 
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import xyz.pixelatedw.mineminenomi.entities.mobs.animals.LapahnEntity;

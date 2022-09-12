@@ -1,11 +1,11 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.ushibison;
 
-import java.util.Random;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
+
+import java.util.Random;
 
 
 

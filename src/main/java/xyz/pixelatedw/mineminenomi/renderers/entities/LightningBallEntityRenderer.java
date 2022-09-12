@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.renderers.entities;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import java.awt.Color;
-import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.culling.ClippingHelperImpl;
@@ -13,6 +11,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.goro.LightningBallEntity;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
+import java.util.List;
 
 public class LightningBallEntityRenderer
   extends EntityRenderer<LightningBallEntity>

@@ -8,7 +8,6 @@ import net.minecraft.item.Items;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.doctor.DopingAbility;
 import xyz.pixelatedw.mineminenomi.abilities.doctor.MedicBagExplosionAbility;
 import xyz.pixelatedw.mineminenomi.api.quests.Quest;

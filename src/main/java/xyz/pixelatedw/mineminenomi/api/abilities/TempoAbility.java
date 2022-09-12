@@ -1,10 +1,10 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
-import java.io.Serializable;
-
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.io.Serializable;
 
 public abstract class TempoAbility
   extends Ability

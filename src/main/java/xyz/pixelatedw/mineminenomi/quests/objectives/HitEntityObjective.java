@@ -1,12 +1,13 @@
 package xyz.pixelatedw.mineminenomi.quests.objectives;
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.IHitEntityObjective;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
+
+import javax.annotation.Nullable;
 
 public class HitEntityObjective
   extends Objective

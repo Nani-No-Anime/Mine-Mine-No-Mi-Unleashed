@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.challenges;
 
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import java.util.concurrent.atomic.AtomicBoolean;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.IPacket;
@@ -10,6 +9,8 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextComponentUtils;
 import net.minecraft.util.text.TextFormatting;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ChallengeFailMessageThread
   implements Runnable {

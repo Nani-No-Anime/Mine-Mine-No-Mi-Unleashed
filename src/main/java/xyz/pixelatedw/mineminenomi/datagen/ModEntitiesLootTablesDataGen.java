@@ -1,25 +1,21 @@
 package xyz.pixelatedw.mineminenomi.datagen;
-import java.util.HashMap;
-import java.util.Map;
+
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DirectoryCache;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Items;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.storage.loot.ConstantRange;
-import net.minecraft.world.storage.loot.IRandomRange;
-import net.minecraft.world.storage.loot.ItemLootEntry;
-import net.minecraft.world.storage.loot.LootEntry;
-import net.minecraft.world.storage.loot.LootPool;
-import net.minecraft.world.storage.loot.LootTable;
-import net.minecraft.world.storage.loot.RandomValueRange;
+import net.minecraft.world.storage.loot.*;
 import net.minecraft.world.storage.loot.functions.ILootFunction;
 import net.minecraft.world.storage.loot.functions.SetCount;
 import xyz.pixelatedw.mineminenomi.data.functions.SetBellyInPouchFunction;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.init.ModItems;
 import xyz.pixelatedw.mineminenomi.wypi.datagen.LootTablesDataGen;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ModEntitiesLootTablesDataGen extends LootTablesDataGen {
   private final Map<EntityType, LootTable.Builder> lootTables = new HashMap<>();

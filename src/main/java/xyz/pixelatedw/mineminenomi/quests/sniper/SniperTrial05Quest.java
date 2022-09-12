@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.quests.sniper;
 
 
-import java.util.function.Predicate;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -18,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.quests.objectives.ObtainItemObjective;
 import xyz.pixelatedw.mineminenomi.quests.objectives.SharedKillChecks;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.function.Predicate;
 
 public class SniperTrial05Quest
   extends Quest

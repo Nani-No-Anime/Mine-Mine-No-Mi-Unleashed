@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.client.crew;
 
-import java.util.UUID;
-import java.util.function.Supplier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.PacketBuffer;
@@ -12,6 +10,9 @@ import xyz.pixelatedw.mineminenomi.api.crew.JollyRoger;
 import xyz.pixelatedw.mineminenomi.data.world.ExtendedWorldData;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncWorldDataPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
+import java.util.function.Supplier;
 
 public class CUpdateJollyRogerPacket
 {

@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.suna;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -16,6 +14,9 @@ import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.IItemProvider;
 import net.minecraft.world.biome.Biome;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class SunaHelper

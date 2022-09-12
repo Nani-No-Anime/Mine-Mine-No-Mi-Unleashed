@@ -2,7 +2,6 @@ package xyz.pixelatedw.mineminenomi.entities.projectiles.rokushiki;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

@@ -1,8 +1,9 @@
 package xyz.pixelatedw.mineminenomi.data.entity.quests;
 
-import java.util.List;
 import xyz.pixelatedw.mineminenomi.api.quests.Quest;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
+
+import java.util.List;
 
 public interface IQuestData {
   boolean addInProgressQuest(Quest paramQuest);

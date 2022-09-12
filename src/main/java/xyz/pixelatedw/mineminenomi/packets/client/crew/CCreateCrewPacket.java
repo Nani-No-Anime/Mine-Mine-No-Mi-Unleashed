@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.client.crew;
 
-import java.util.function.Supplier;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -20,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.init.ModItems;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncWorldDataPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.function.Supplier;
 
 
 public class CCreateCrewPacket

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.screens.config;
 
-import net.minecraft.client.GameSettings;
 import net.minecraft.client.settings.SliderPercentageOption;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.TranslationTextComponent;

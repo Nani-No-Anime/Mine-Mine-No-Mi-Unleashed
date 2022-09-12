@@ -1,13 +1,11 @@
 package xyz.pixelatedw.mineminenomi.abilities.hiso;
 
 
-import java.util.List;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.ListNBT;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.text.ITextComponent;
@@ -16,6 +14,8 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class LookoutAbility extends Ability {
 	public static final LookoutAbility INSTANCE = new LookoutAbility();

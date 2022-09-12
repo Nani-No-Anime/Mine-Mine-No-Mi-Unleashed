@@ -1,13 +1,13 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.artofweather;
 
-import java.awt.Color;
-
 import net.minecraft.particles.ParticleType;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.particles.data.GenericParticleData;
 import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
 
 public class ChargedWeatherBallParticleEffect extends ParticleEffect {
   private float red;

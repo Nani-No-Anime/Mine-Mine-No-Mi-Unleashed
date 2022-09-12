@@ -1,9 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.kage;
+
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-
-import java.util.Map;
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -26,6 +24,9 @@ import xyz.pixelatedw.mineminenomi.packets.server.ability.SRecalculateEyeHeightP
 import xyz.pixelatedw.mineminenomi.packets.server.ability.SUpdateExtraDataPacket;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.Map;
+import java.util.UUID;
 
 public class ShadowsAsgardAbility extends ZoanAbility implements IExtraUpdateData {
   public static final ShadowsAsgardAbility INSTANCE = new ShadowsAsgardAbility();

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
-import java.util.UUID;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
 import net.minecraft.entity.LivingEntity;
@@ -28,6 +27,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.UUID;
 
 
 

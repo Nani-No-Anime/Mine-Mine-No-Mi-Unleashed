@@ -1,7 +1,8 @@
 package xyz.pixelatedw.mineminenomi.api;
 
-import java.util.HashSet;
 import net.minecraft.util.math.BlockPos;
+
+import java.util.HashSet;
 
 public class SphereThread
   extends Thread

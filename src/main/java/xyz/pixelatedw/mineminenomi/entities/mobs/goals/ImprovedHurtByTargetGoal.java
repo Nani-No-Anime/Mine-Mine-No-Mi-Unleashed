@@ -1,12 +1,13 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals;
 
-import java.util.function.Predicate;
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityPredicate;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
+
+import javax.annotation.Nullable;
+import java.util.function.Predicate;
 
 
 public class ImprovedHurtByTargetGoal

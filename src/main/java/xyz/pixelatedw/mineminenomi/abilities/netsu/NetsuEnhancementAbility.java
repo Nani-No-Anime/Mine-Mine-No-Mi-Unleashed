@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.netsu;
 
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -8,7 +7,6 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityAttributeModifier;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityOverlay;
 import xyz.pixelatedw.mineminenomi.api.abilities.IBodyOverlayAbility;
@@ -21,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IChangeDamageSourceAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.events.SetOnFireEvent;
+
+import java.util.UUID;
 
 public class NetsuEnhancementAbility extends ContinuousAbility implements IParallelContinuousAbility, IChangeDamageSourceAbility, IBodyOverlayAbility {
   public static final NetsuEnhancementAbility INSTANCE = new NetsuEnhancementAbility();

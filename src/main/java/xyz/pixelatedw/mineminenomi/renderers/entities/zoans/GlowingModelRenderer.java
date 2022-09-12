@@ -3,8 +3,6 @@ package xyz.pixelatedw.mineminenomi.renderers.entities.zoans;
 import com.google.common.base.Function;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import java.awt.Color;
-import java.util.Random;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.Matrix4f;
@@ -14,8 +12,6 @@ import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.IEntityRenderer;
 import net.minecraft.client.renderer.entity.layers.LayerRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
@@ -24,6 +20,9 @@ import xyz.pixelatedw.mineminenomi.api.helpers.RendererHelper;
 import xyz.pixelatedw.mineminenomi.api.morph.ZoanInfo;
 import xyz.pixelatedw.mineminenomi.api.morph.ZoanMorphModel;
 import xyz.pixelatedw.mineminenomi.renderers.layers.BodyCoatingLayer;
+
+import java.awt.*;
+import java.util.Random;
 
 public class GlowingModelRenderer<T extends AbstractClientPlayerEntity, M extends ZoanMorphModel>
   extends ZoanMorphRenderer<T, M> {

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items.armors;
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -13,6 +12,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import xyz.pixelatedw.mineminenomi.init.ModArmors;
 import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
 import xyz.pixelatedw.mineminenomi.models.armors.StrawHatModel;
+
+import javax.annotation.Nullable;
 
 
 

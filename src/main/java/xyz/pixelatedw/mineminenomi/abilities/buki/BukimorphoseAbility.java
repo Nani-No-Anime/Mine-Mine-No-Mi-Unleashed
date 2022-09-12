@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.buki;
 
-import java.util.Arrays;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,6 +20,8 @@ import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
+
+import java.util.Arrays;
 
 public class BukimorphoseAbility extends PunchTriggerAbility {
   public static final BukimorphoseAbility INSTANCE = new BukimorphoseAbility();

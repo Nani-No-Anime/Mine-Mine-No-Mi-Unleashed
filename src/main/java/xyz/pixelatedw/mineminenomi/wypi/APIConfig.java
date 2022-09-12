@@ -1,11 +1,12 @@
 package xyz.pixelatedw.mineminenomi.wypi;
 
-import java.util.function.Function;
-import javax.annotation.Nullable;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.IExtensibleEnum;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import javax.annotation.Nullable;
+import java.util.function.Function;
 
 
 

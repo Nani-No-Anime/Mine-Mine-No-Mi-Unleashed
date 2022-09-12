@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.beta;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -10,11 +7,7 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.blackleg.DiableJambeAbility;
-import xyz.pixelatedw.mineminenomi.api.abilities.AbilityAttributeModifier;
-import xyz.pixelatedw.mineminenomi.api.abilities.AbilityOverlay;
-import xyz.pixelatedw.mineminenomi.api.abilities.DamagedContinuousAbility;
-import xyz.pixelatedw.mineminenomi.api.abilities.ExplosionAbility;
-import xyz.pixelatedw.mineminenomi.api.abilities.IBodyOverlayAbility;
+import xyz.pixelatedw.mineminenomi.api.abilities.*;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.init.ModParticleTypes;
 import xyz.pixelatedw.mineminenomi.init.ModResources;
@@ -25,6 +18,10 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.UUID;
 
 public class BetaCoatingAbility extends DamagedContinuousAbility implements IParallelContinuousAbility, IBodyOverlayAbility {
   public static final BetaCoatingAbility INSTANCE = new BetaCoatingAbility();

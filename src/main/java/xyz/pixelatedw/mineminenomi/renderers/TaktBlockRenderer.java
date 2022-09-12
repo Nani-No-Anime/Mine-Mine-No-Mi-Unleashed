@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.renderers;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import java.util.Random;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.Minecraft;
@@ -21,6 +20,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.ForgeHooksClient;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.ope.TaktBlockEntity;
+
+import java.util.Random;
 
 public class TaktBlockRenderer extends EntityRenderer<TaktBlockEntity> {
   public TaktBlockRenderer(EntityRendererManager renderManager) {

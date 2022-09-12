@@ -1,10 +1,7 @@
 package xyz.pixelatedw.mineminenomi.abilities.karu;
+
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-
-import java.util.Map;
-import java.util.Optional;
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -30,6 +27,10 @@ import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
+
+import java.util.Map;
+import java.util.Optional;
+import java.util.UUID;
 
 public class IngaZarashiAbility extends ZoanAbility {
   public static final IngaZarashiAbility INSTANCE = new IngaZarashiAbility();

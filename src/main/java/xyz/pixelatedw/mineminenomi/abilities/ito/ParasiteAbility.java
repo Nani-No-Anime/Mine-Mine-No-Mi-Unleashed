@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.ito;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,6 +14,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.List;
 
 public class ParasiteAbility
   extends Ability {

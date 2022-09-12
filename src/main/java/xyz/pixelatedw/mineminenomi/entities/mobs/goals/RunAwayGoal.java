@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals;
 
-import java.util.EnumSet;
-import java.util.Optional;
-import java.util.function.Predicate;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.Goal;
@@ -14,6 +11,10 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.marines.MarineCaptainEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.pirates.PirateCaptainEntity;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.EnumSet;
+import java.util.Optional;
+import java.util.function.Predicate;
 
 public class RunAwayGoal extends Goal {
   private OPEntity entity;

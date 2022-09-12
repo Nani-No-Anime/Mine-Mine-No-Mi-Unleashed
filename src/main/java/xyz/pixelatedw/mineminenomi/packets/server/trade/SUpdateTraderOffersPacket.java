@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.server.trade;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Supplier;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketBuffer;
@@ -13,6 +10,10 @@ import net.minecraftforge.fml.network.NetworkEvent;
 import xyz.pixelatedw.mineminenomi.api.TradeEntry;
 import xyz.pixelatedw.mineminenomi.api.entities.TraderEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.SkypieanTraderEntity;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Supplier;
 
 
 

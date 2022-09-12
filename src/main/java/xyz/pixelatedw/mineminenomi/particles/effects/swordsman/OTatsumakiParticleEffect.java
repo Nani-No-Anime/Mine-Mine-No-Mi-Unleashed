@@ -1,12 +1,12 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.swordsman;
 
-import java.util.Random;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.Random;
 
 
 public class OTatsumakiParticleEffect

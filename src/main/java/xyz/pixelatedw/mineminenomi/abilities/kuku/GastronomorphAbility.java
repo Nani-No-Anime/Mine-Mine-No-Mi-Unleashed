@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.kuku;
 
 
-import java.util.HashSet;
-import java.util.Iterator;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.math.BlockPos;
@@ -18,6 +16,9 @@ import xyz.pixelatedw.mineminenomi.particles.effects.baku.BakuMunchParticleEffec
 import xyz.pixelatedw.mineminenomi.wypi.BlockPlacingHelper;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.HashSet;
+import java.util.Iterator;
 
 public class GastronomorphAbility extends ChargeableAbility {
   public static final GastronomorphAbility INSTANCE = new GastronomorphAbility();

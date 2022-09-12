@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.pirates.kriegpirates;
 
-import javax.annotation.Nullable;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
@@ -31,6 +29,8 @@ import xyz.pixelatedw.mineminenomi.init.ModArmors;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
 
 public class DonKriegEntity extends AbstractKriegPirateEntity {
   private ServerBossInfo bossInfo = null;

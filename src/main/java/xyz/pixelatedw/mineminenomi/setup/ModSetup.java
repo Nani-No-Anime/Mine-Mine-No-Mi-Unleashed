@@ -14,13 +14,7 @@ import xyz.pixelatedw.mineminenomi.api.commands.AbilityArgument;
 import xyz.pixelatedw.mineminenomi.api.commands.AbilityGroupArgument;
 import xyz.pixelatedw.mineminenomi.api.commands.HakiTypeArgument;
 import xyz.pixelatedw.mineminenomi.api.commands.QuestArgument;
-import xyz.pixelatedw.mineminenomi.init.ModCapabilities;
-import xyz.pixelatedw.mineminenomi.init.ModFeatures;
-import xyz.pixelatedw.mineminenomi.init.ModI18n;
-import xyz.pixelatedw.mineminenomi.init.ModI18nConfig;
-import xyz.pixelatedw.mineminenomi.init.ModKeybindings;
-import xyz.pixelatedw.mineminenomi.init.ModNetwork;
-import xyz.pixelatedw.mineminenomi.init.ModRenderers;
+import xyz.pixelatedw.mineminenomi.init.*;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
 

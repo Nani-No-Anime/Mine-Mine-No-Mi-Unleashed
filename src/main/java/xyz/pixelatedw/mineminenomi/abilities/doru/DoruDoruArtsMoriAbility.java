@@ -8,8 +8,8 @@ import xyz.pixelatedw.mineminenomi.entities.projectiles.doru.ChampFightProjectil
 import xyz.pixelatedw.mineminenomi.entities.projectiles.doru.DoruDoruArtsMoriProjectile;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
-import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
+import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 
 public class DoruDoruArtsMoriAbility extends RepeaterAbility {
   public static final DoruDoruArtsMoriAbility INSTANCE = new DoruDoruArtsMoriAbility();

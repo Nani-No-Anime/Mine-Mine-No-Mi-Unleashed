@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.renderers.animations.swordsman;
 
 import net.minecraft.client.renderer.entity.model.BipedModel;
-import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.renderers.animations.BodyRotateAnimation;
 

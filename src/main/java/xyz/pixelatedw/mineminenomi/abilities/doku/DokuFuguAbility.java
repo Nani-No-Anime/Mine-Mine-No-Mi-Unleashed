@@ -1,5 +1,4 @@
 package xyz.pixelatedw.mineminenomi.abilities.doku;
-import java.awt.Color;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +11,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
+
+import java.awt.*;
 
 public class DokuFuguAbility extends ContinuousAbility implements IParallelContinuousAbility, IBodyOverlayAbility {
   public static final DokuFuguAbility INSTANCE = new DokuFuguAbility();

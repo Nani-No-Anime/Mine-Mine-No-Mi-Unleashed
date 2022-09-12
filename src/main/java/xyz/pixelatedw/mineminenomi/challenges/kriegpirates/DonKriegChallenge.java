@@ -1,10 +1,6 @@
 package xyz.pixelatedw.mineminenomi.challenges.kriegpirates;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -17,11 +13,7 @@ import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.challenges.ArenaData;
 import xyz.pixelatedw.mineminenomi.challenges.Challenge;
 import xyz.pixelatedw.mineminenomi.entities.mobs.pirates.kriegpirates.DonKriegEntity;
-import xyz.pixelatedw.mineminenomi.init.ModArenas;
-import xyz.pixelatedw.mineminenomi.init.ModArmors;
-import xyz.pixelatedw.mineminenomi.init.ModChallenges;
-import xyz.pixelatedw.mineminenomi.init.ModEffects;
-import xyz.pixelatedw.mineminenomi.init.ModEntities;
+import xyz.pixelatedw.mineminenomi.init.*;
 
 public class DonKriegChallenge extends Challenge {
   public DonKriegChallenge() {

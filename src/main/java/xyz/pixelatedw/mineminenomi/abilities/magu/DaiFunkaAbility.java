@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.magu;
 
-import java.awt.Color;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,6 +12,8 @@ import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.init.ModSounds;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.awt.*;
 
 public class DaiFunkaAbility extends ChargeableAbility implements IPunchOverlayAbility {
   public static final Ability INSTANCE = (Ability)new DaiFunkaAbility();

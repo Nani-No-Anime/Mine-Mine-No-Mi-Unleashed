@@ -1,5 +1,4 @@
 package xyz.pixelatedw.mineminenomi.abilities.goro;
-import java.awt.Color;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -14,6 +13,8 @@ import xyz.pixelatedw.mineminenomi.entities.zoan.VoltAmaruZoanInfo;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
+
+import java.awt.*;
 
 public class SangoAbility extends RepeaterAbility {
   public static final Ability INSTANCE = (Ability)new SangoAbility();

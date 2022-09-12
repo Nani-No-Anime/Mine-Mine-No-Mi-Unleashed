@@ -1,13 +1,11 @@
 package xyz.pixelatedw.mineminenomi.events;
 
-import java.util.Objects;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Items;
-import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.Hand;
 import net.minecraftforge.api.distmarker.Dist;
@@ -25,8 +23,9 @@ import xyz.pixelatedw.mineminenomi.effects.GuardingEffect;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.mixins.EffectInstanceMixin;
 import xyz.pixelatedw.mineminenomi.packets.server.SSetEffectDetailsPacket;
-import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.Objects;
 
 public class EffectsEvents
 {

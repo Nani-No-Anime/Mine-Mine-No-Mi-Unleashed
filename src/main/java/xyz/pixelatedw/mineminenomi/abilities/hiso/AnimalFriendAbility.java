@@ -1,21 +1,21 @@
 package xyz.pixelatedw.mineminenomi.abilities.hiso;
 
 
-import java.lang.reflect.Method;
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.OcelotEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.passive.horse.AbstractHorseEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particles.BasicParticleType;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.lang.reflect.Method;
+import java.util.List;
 
 public class AnimalFriendAbility extends Ability {
   public static final AnimalFriendAbility INSTANCE = new AnimalFriendAbility();

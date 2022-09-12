@@ -1,10 +1,5 @@
 package xyz.pixelatedw.mineminenomi.blocks.tileentities;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -21,6 +16,12 @@ import xyz.pixelatedw.mineminenomi.challenges.Challenge;
 import xyz.pixelatedw.mineminenomi.challenges.ChallengeFailMessageThread;
 import xyz.pixelatedw.mineminenomi.init.ModTileEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.UUID;
 
 public class ChallengeArenaTileEntity
   extends TileEntity

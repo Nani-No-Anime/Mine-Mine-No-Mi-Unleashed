@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.item.ItemStack;
@@ -13,6 +10,10 @@ import xyz.pixelatedw.mineminenomi.api.morph.ZoanInfo;
 import xyz.pixelatedw.mineminenomi.entities.zoan.PunkCornaDioZoanInfo;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 public class PunkRottenAbility
   extends ZoanAbility {

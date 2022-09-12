@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.suna;
 
-import java.util.ArrayList;
-import java.util.stream.IntStream;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -15,13 +13,15 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import xyz.pixelatedw.mineminenomi.api.protection.DefaultProtectionRules;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.particles.effects.suna.SablesParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.events.ProjectileShootEvent;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.ArrayList;
+import java.util.stream.IntStream;
 
 public class SablesProjectile extends AbilityProjectileEntity {
   public Vec3d firstVector = null;

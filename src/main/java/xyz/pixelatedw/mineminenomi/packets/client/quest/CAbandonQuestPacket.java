@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.client.quest;
 
-import java.util.function.Supplier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.PacketBuffer;
@@ -11,6 +10,8 @@ import xyz.pixelatedw.mineminenomi.data.entity.quests.IQuestData;
 import xyz.pixelatedw.mineminenomi.data.entity.quests.QuestDataCapability;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncQuestDataPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.function.Supplier;
 
 
 public class CAbandonQuestPacket

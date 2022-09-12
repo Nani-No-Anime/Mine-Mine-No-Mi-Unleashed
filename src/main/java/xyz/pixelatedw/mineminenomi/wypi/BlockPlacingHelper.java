@@ -1,7 +1,8 @@
 package xyz.pixelatedw.mineminenomi.wypi;
 
-import java.util.HashSet;
 import net.minecraft.util.math.BlockPos;
+
+import java.util.HashSet;
 
 
 public class BlockPlacingHelper

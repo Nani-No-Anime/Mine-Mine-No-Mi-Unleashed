@@ -1,9 +1,5 @@
 package xyz.pixelatedw.mineminenomi;
 
-import java.util.Locale;
-import java.util.function.Function;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -18,6 +14,8 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import xyz.pixelatedw.mineminenomi.api.helpers.DevilFruitHelper;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.data.conditions.RandomizedFruitsCondition;
@@ -25,19 +23,13 @@ import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.DevilFruitCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.IDevilFruit;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
-import xyz.pixelatedw.mineminenomi.data.functions.EncyclopediaCompletionFunction;
-import xyz.pixelatedw.mineminenomi.data.functions.FakeWeaponFunction;
-import xyz.pixelatedw.mineminenomi.data.functions.SetBellyInPouchFunction;
-import xyz.pixelatedw.mineminenomi.data.functions.SetFruitClueFunction;
-import xyz.pixelatedw.mineminenomi.data.functions.SetInfiniteStockFunction;
-import xyz.pixelatedw.mineminenomi.data.functions.SetPriceFunction;
+import xyz.pixelatedw.mineminenomi.data.functions.*;
 import xyz.pixelatedw.mineminenomi.init.ModChallenges;
 import xyz.pixelatedw.mineminenomi.init.ModJollyRogers;
-import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
-import xyz.pixelatedw.mineminenomi.wypi.APIDefaults;
-import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
-import xyz.pixelatedw.mineminenomi.wypi.WyPatreon;
-import xyz.pixelatedw.mineminenomi.wypi.WyRegistry;
+import xyz.pixelatedw.mineminenomi.wypi.*;
+
+import java.util.Locale;
+import java.util.function.Function;
 
 @Mod("mineminenomi")
 public class ModMain {

@@ -1,17 +1,9 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.animals;
-import javax.annotation.Nullable;
-import net.minecraft.entity.CreatureEntity;
+
 import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
@@ -28,6 +20,7 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.api.entities.ai.ISwordsman;
+import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.bandits.AbstractBanditEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.ImprovedMeleeAttackGoal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.GapCloserGoal;
@@ -37,14 +30,15 @@ import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
-import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
+
+import javax.annotation.Nullable;
 
 public class HumandrillEntity extends OPEntity implements ISwordsman {
   private static final DataParameter<Float> SIZE = EntityDataManager.createKey(HumandrillEntity.class, DataSerializers.FLOAT);
   private static final DataParameter<Boolean> ARMOR = EntityDataManager.createKey(HumandrillEntity.class, DataSerializers.BOOLEAN);
   
   protected static final Item[] SWORDS = new Item[] { (Item)ModWeapons.MARINE_SWORD, Items.IRON_SWORD, Items.STONE_SWORD, (Item)ModWeapons.SANDAI_KITETSU, (Item)ModWeapons.NIDAI_KITETSU, (Item)ModWeapons.WADO_ICHIMONJI, Items.DIAMOND_SWORD };
-  AxisAlignedBB finalBox; protected void registerGoals() { super.registerGoals(); this.goalSelector.addGoal(0, (Goal)new SwimGoal((MobEntity)this)); this.goalSelector.addGoal(0, (Goal)new ImprovedMeleeAttackGoal(this, 1.25D, true)); this.goalSelector.addGoal(2, (Goal)new GapCloserGoal(this)); this.goalSelector.addGoal(3, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D)); this.goalSelector.addGoal(4, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 8.0F)); this.goalSelector.addGoal(4, (Goal)new LookRandomlyGoal((MobEntity)this)); this.targetSelector.addGoal(1, (Goal)new HurtByTargetGoal(this, new Class[0])); this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, PlayerEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractPirateEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractBanditEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, AbstractMarineEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal((MobEntity)this, LapahnEntity.class, true));
+  AxisAlignedBB finalBox; protected void registerGoals() { super.registerGoals(); this.goalSelector.addGoal(0, (Goal)new SwimGoal(this)); this.goalSelector.addGoal(0, (Goal)new ImprovedMeleeAttackGoal(this, 1.25D, true)); this.goalSelector.addGoal(2, (Goal)new GapCloserGoal(this)); this.goalSelector.addGoal(3, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D)); this.goalSelector.addGoal(4, (Goal)new LookAtGoal(this, PlayerEntity.class, 8.0F)); this.goalSelector.addGoal(4, (Goal)new LookRandomlyGoal(this)); this.targetSelector.addGoal(1, (Goal)new HurtByTargetGoal(this, new Class[0])); this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, PlayerEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, AbstractPirateEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, AbstractBanditEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, AbstractMarineEntity.class, true)); this.targetSelector.addGoal(3, (Goal)new NearestAttackableTargetGoal(this, LapahnEntity.class, true));
     addSwordsmanAbilities(this, 2);
     setDoriki(20.0D + WyHelper.randomWithRange(0, 10) + getThreat());
     setBelly(30.0D + WyHelper.randomWithRange(0, 20)); } public HumandrillEntity(World world) { super(ModEntities.HUMANDRILL, world);

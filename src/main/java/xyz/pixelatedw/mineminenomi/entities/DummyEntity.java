@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities;
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.LivingEntity;
@@ -15,6 +14,8 @@ import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.init.ModWeapons;
+
+import javax.annotation.Nullable;
 
 public class DummyEntity
   extends OPEntity

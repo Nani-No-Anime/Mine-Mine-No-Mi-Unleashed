@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.screens;
+
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.Screen;
@@ -34,13 +33,12 @@ import xyz.pixelatedw.mineminenomi.init.ModKeybindings;
 import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.packets.client.trade.CBuyFromTraderPacket;
 import xyz.pixelatedw.mineminenomi.packets.client.trade.CSellToTraderPacket;
-import xyz.pixelatedw.mineminenomi.screens.extra.FlickeringString;
-import xyz.pixelatedw.mineminenomi.screens.extra.ItemListScreenPanel;
-import xyz.pixelatedw.mineminenomi.screens.extra.NewButton;
-import xyz.pixelatedw.mineminenomi.screens.extra.SequencedString;
-import xyz.pixelatedw.mineminenomi.screens.extra.TexturedIconButton;
+import xyz.pixelatedw.mineminenomi.screens.extra.*;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @OnlyIn(Dist.CLIENT)
 public class TraderScreen extends Screen {

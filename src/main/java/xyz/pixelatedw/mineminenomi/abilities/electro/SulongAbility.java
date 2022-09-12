@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.electro;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -23,6 +22,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import java.util.UUID;
 
 public class SulongAbility extends ContinuousAbility implements IParallelContinuousAbility {
   public static final SulongAbility INSTANCE = new SulongAbility();

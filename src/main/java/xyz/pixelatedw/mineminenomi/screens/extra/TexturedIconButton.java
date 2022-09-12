@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.screens.extra;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.Arrays;
-import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.widget.button.Button;
@@ -11,6 +9,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.lwjgl.opengl.GL11;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 

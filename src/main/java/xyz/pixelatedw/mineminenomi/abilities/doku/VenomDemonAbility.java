@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.doku;
 
-import java.util.UUID;
 import net.minecraft.block.Block;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -25,6 +24,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 public class VenomDemonAbility extends ZoanAbility {
   public static final VenomDemonAbility INSTANCE = new VenomDemonAbility();

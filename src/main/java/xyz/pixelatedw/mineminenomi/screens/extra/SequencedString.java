@@ -1,9 +1,10 @@
 package xyz.pixelatedw.mineminenomi.screens.extra;
 
-import java.awt.Color;
-import java.util.List;
 import net.minecraft.client.Minecraft;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
+import java.util.List;
 
 
 public class SequencedString

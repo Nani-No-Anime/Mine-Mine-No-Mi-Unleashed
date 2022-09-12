@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
@@ -15,6 +14,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 
 

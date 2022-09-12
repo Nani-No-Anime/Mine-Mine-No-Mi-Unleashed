@@ -1,23 +1,10 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.ability;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
-import java.util.stream.Collectors;
+
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -42,6 +29,9 @@ import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.init.ModItems;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
 public class DoppelmanEntity extends OPEntity {
   private static final DataParameter<Optional<UUID>> OWNER = EntityDataManager.createKey(DoppelmanEntity.class, DataSerializers.OPTIONAL_UNIQUE_ID);
   private static final DataParameter<Integer> SHADOWS = EntityDataManager.createKey(DoppelmanEntity.class, DataSerializers.VARINT);
@@ -56,14 +46,14 @@ public class DoppelmanEntity extends OPEntity {
 
   
   protected void registerGoals() {
-    this.goalSelector.addGoal(1, (Goal)new SwimGoal((MobEntity)this));
+    this.goalSelector.addGoal(1, (Goal)new SwimGoal(this));
     this.goalSelector.addGoal(1, (Goal)new MeleeAttackGoal(this, 1.0D, true));
     this.goalSelector.addGoal(3, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-    this.goalSelector.addGoal(5, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 8.0F));
-    this.goalSelector.addGoal(5, (Goal)new LookAtGoal((MobEntity)this, AbstractMarineEntity.class, 8.0F));
-    this.goalSelector.addGoal(5, (Goal)new LookAtGoal((MobEntity)this, AbstractPirateEntity.class, 8.0F));
-    this.goalSelector.addGoal(5, (Goal)new LookAtGoal((MobEntity)this, AbstractBanditEntity.class, 8.0F));
-    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(5, (Goal)new LookAtGoal(this, PlayerEntity.class, 8.0F));
+    this.goalSelector.addGoal(5, (Goal)new LookAtGoal(this, AbstractMarineEntity.class, 8.0F));
+    this.goalSelector.addGoal(5, (Goal)new LookAtGoal(this, AbstractPirateEntity.class, 8.0F));
+    this.goalSelector.addGoal(5, (Goal)new LookAtGoal(this, AbstractBanditEntity.class, 8.0F));
+    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal(this));
     
     this.targetSelector.addGoal(0, (Goal)new HurtByTargetGoal(this, new Class[0]));
   }

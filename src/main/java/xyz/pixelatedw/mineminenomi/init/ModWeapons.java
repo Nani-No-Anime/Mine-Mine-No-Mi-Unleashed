@@ -1,4 +1,5 @@
 package xyz.pixelatedw.mineminenomi.init;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
@@ -15,18 +16,7 @@ import xyz.pixelatedw.mineminenomi.abilities.pika.AmaNoMurakumoAbility;
 import xyz.pixelatedw.mineminenomi.abilities.wara.WarabideSwordAbility;
 import xyz.pixelatedw.mineminenomi.abilities.yuki.TabiraYukiAbility;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityItemTier;
-import xyz.pixelatedw.mineminenomi.items.weapons.AbilityColoredPickaxeItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.AbilityColoredSwordItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.AbilityPickaxeItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.AbilitySwordItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.ClimaTactItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.CoreSwordItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.GunItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.KujaBowItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.PopGreenBowItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.ScissorsItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.UmbrellaItem;
-import xyz.pixelatedw.mineminenomi.items.weapons.WarabideSwordItem;
+import xyz.pixelatedw.mineminenomi.items.weapons.*;
 import xyz.pixelatedw.mineminenomi.wypi.WyRegistry;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 

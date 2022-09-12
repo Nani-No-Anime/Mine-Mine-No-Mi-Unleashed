@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.suna;
 
-import java.util.HashSet;
-import java.util.Iterator;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -23,6 +21,9 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.HashSet;
+import java.util.Iterator;
 
 public class DesertGirasoleAbility extends ChargeableAbility {
   public static final Ability INSTANCE = (Ability)new DesertGirasoleAbility();

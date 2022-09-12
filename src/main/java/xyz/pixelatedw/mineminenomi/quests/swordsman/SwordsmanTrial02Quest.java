@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.quests.swordsman;
 
-import java.util.function.Predicate;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
@@ -16,6 +15,8 @@ import xyz.pixelatedw.mineminenomi.quests.objectives.SharedKillChecks;
 import xyz.pixelatedw.mineminenomi.quests.objectives.TimedHitEntityObjective;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.function.Predicate;
 
 public class SwordsmanTrial02Quest extends Quest {
   static {

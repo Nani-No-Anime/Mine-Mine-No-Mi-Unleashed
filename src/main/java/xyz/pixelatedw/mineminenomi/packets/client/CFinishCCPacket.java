@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.client;
 
-import java.util.Random;
-import java.util.function.Supplier;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -24,6 +22,9 @@ import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
+
+import java.util.Random;
+import java.util.function.Supplier;
 
 public class CFinishCCPacket
 {

@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.blocks.tileentities;
 
 import com.mojang.authlib.GameProfile;
-import javax.annotation.Nullable;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.NBTUtil;
@@ -9,6 +8,8 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.tileentity.TileEntity;
 import xyz.pixelatedw.mineminenomi.init.ModTileEntities;
+
+import javax.annotation.Nullable;
 
 
 

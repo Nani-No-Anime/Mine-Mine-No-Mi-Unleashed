@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.bari;
 
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
@@ -15,6 +13,9 @@ import xyz.pixelatedw.mineminenomi.api.protection.block.AirBlockProtectionRule;
 import xyz.pixelatedw.mineminenomi.api.protection.block.FoliageBlockProtectionRule;
 import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BarrierAbility extends ContinuousAbility {
   public static final BarrierAbility INSTANCE = new BarrierAbility();

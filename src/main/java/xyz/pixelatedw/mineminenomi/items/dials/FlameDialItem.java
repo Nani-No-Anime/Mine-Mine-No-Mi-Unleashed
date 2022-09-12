@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items.dials;
 
-import javax.annotation.Nullable;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -17,6 +16,8 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
+
+import javax.annotation.Nullable;
 
 public class FlameDialItem extends BlockItem {
   public FlameDialItem() {

@@ -1,13 +1,7 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.pirates;
 
-import javax.annotation.Nullable;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.IRangedAttackMob;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -29,6 +23,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import javax.annotation.Nullable;
 
 public class PirateWithGunEntity extends AbstractPirateEntity implements IRangedAttackMob {
 	private static final String[] DEFAULT_TEXTURES = new String[] { "pirate1", "pirate2", "pirate3", "pirate4", "pirate5" };

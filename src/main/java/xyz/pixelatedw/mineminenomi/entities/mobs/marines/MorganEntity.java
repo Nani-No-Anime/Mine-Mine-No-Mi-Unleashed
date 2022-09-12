@@ -1,17 +1,12 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.marines;
-import javax.annotation.Nullable;
-import net.minecraft.entity.CreatureEntity;
+
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.world.BossInfo;
-import net.minecraft.world.Difficulty;
-import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.World;
+import net.minecraft.world.*;
 import net.minecraft.world.server.ServerBossInfo;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.ImprovedMeleeAttackGoal;
@@ -20,6 +15,8 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.ShockwaveAttack
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
 
 public class MorganEntity extends AbstractMarineEntity {
   private ServerBossInfo bossInfo = null;

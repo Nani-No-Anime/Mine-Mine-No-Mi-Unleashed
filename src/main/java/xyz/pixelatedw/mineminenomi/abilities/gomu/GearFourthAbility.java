@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.gomu;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -34,6 +33,8 @@ import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
+
+import java.util.UUID;
 
 public class GearFourthAbility extends ZoanAbility implements IBodyOverlayAbility {
   public static final GearFourthAbility INSTANCE = new GearFourthAbility();

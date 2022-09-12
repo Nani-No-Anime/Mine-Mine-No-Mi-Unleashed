@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items.armors;
 
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,6 +20,8 @@ import xyz.pixelatedw.mineminenomi.init.ModItems;
 import xyz.pixelatedw.mineminenomi.models.armors.ColaBackpackModel;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncEntityStatsPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import javax.annotation.Nullable;
 
 
 

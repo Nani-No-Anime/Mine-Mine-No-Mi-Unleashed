@@ -1,11 +1,12 @@
 package xyz.pixelatedw.mineminenomi.quests.objectives;
 
-import java.util.ArrayList;
-import java.util.function.Predicate;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.IObtainItemObjective;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
 
 public class ObtainItemObjective
   extends Objective

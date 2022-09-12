@@ -4,11 +4,7 @@ import net.minecraft.client.settings.AbstractOption;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
-import xyz.pixelatedw.mineminenomi.screens.config.ConfigCategoryList;
-import xyz.pixelatedw.mineminenomi.screens.config.ConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.ModBooleanOption;
-import xyz.pixelatedw.mineminenomi.screens.config.ModIteratableOption;
-import xyz.pixelatedw.mineminenomi.screens.config.ModSliderOption;
+import xyz.pixelatedw.mineminenomi.screens.config.*;
 
 public class DevilFruitsConfigPage
   extends ConfigPage {

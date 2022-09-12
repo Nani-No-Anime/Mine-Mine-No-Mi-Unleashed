@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.ori;
 
 
-import java.util.List;
-import javax.annotation.Nullable;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
@@ -11,6 +9,9 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.api.protection.DefaultProtectionRules;
 import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 
 public class AwaseBaoriProjectile

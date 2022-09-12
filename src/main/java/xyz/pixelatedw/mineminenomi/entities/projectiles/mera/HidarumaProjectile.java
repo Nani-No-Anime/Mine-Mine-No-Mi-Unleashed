@@ -1,12 +1,9 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.mera;
 
 
-import java.util.List;
-import java.util.Optional;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.DamageSource;
@@ -15,13 +12,15 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import xyz.pixelatedw.mineminenomi.api.helpers.FactionHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.MobsHelper;
 import xyz.pixelatedw.mineminenomi.init.ModDamageSource;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.events.SetOnFireEvent;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.List;
+import java.util.Optional;
 
 public class HidarumaProjectile
   extends AbilityProjectileEntity {

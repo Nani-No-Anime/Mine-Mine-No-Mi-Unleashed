@@ -3,7 +3,6 @@ package xyz.pixelatedw.mineminenomi.events.passives;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import xyz.pixelatedw.mineminenomi.abilities.LogiaInvulnerabilityAbility;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;

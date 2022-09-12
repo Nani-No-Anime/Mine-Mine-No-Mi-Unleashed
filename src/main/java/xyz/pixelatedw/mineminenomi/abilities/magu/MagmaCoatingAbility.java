@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.magu;
 
-import java.awt.Color;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityOverlay;
@@ -11,6 +9,8 @@ import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchAbility;
+
+import java.awt.*;
 
 public class MagmaCoatingAbility
   extends PunchAbility implements IPunchOverlayAbility, IParallelContinuousAbility {

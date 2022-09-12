@@ -2,17 +2,6 @@ package xyz.pixelatedw.mineminenomi.api.helpers;
 
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Multimap;
-import java.text.SimpleDateFormat;
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import javax.annotation.Nullable;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.Entity;
@@ -26,7 +15,6 @@ import net.minecraft.item.UseAction;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.NBTUtil;
-
 import net.minecraft.particles.ItemParticleData;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.IItemProvider;
@@ -38,18 +26,19 @@ import xyz.pixelatedw.mineminenomi.abilities.ZoomAbility;
 import xyz.pixelatedw.mineminenomi.api.DFEncyclopediaEntry;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.data.world.ExtendedWorldData;
-import xyz.pixelatedw.mineminenomi.init.ModArmors;
-import xyz.pixelatedw.mineminenomi.init.ModBlocks;
-import xyz.pixelatedw.mineminenomi.init.ModEnchantments;
-import xyz.pixelatedw.mineminenomi.init.ModItems;
-import xyz.pixelatedw.mineminenomi.init.ModTags;
-import xyz.pixelatedw.mineminenomi.init.ModWeapons;
+import xyz.pixelatedw.mineminenomi.init.*;
 import xyz.pixelatedw.mineminenomi.items.DFEncyclopediaItem;
 import xyz.pixelatedw.mineminenomi.items.weapons.CoreSwordItem;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import javax.annotation.Nullable;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class ItemsHelper
 {

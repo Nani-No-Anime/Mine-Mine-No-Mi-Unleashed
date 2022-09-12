@@ -11,8 +11,8 @@ import xyz.pixelatedw.mineminenomi.entities.projectiles.blackleg.ExtraHachisProj
 import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.blackleg.ExtraHachiParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
-import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.RepeaterAbility;
+import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 
 public class ExtraHachisAbility extends RepeaterAbility {
   public static final ExtraHachisAbility INSTANCE = new ExtraHachisAbility();

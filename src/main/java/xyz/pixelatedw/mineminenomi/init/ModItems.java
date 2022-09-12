@@ -3,27 +3,7 @@ package xyz.pixelatedw.mineminenomi.init;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import xyz.pixelatedw.mineminenomi.items.AkumaNoMiBoxItem;
-import xyz.pixelatedw.mineminenomi.items.BellyPouchItem;
-import xyz.pixelatedw.mineminenomi.items.BottleOfRumItem;
-import xyz.pixelatedw.mineminenomi.items.BubblyCoralItem;
-import xyz.pixelatedw.mineminenomi.items.CharacterCreatorItem;
-import xyz.pixelatedw.mineminenomi.items.CigarItem;
-import xyz.pixelatedw.mineminenomi.items.ColaItem;
-import xyz.pixelatedw.mineminenomi.items.ColorPaletteItem;
-import xyz.pixelatedw.mineminenomi.items.DFEncyclopediaItem;
-import xyz.pixelatedw.mineminenomi.items.DandelionItem;
-import xyz.pixelatedw.mineminenomi.items.GoldDenDenMushiItem;
-import xyz.pixelatedw.mineminenomi.items.HandcuffsItem;
-import xyz.pixelatedw.mineminenomi.items.HeartItem;
-import xyz.pixelatedw.mineminenomi.items.SakeBottleItem;
-import xyz.pixelatedw.mineminenomi.items.SakeCupItem;
-import xyz.pixelatedw.mineminenomi.items.SeaKingMeatItem;
-import xyz.pixelatedw.mineminenomi.items.ShadowItem;
-import xyz.pixelatedw.mineminenomi.items.StrawDollItem;
-import xyz.pixelatedw.mineminenomi.items.UltraColaItem;
-import xyz.pixelatedw.mineminenomi.items.VivreCardItem;
-import xyz.pixelatedw.mineminenomi.items.WateringCanItem;
+import xyz.pixelatedw.mineminenomi.items.*;
 import xyz.pixelatedw.mineminenomi.wypi.WyRegistry;
 
 

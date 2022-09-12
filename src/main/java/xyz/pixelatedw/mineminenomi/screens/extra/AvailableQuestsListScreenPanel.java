@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.screens.extra;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.Tessellator;
@@ -19,6 +17,9 @@ import xyz.pixelatedw.mineminenomi.packets.client.quest.CUpdateQuestStatePacket;
 import xyz.pixelatedw.mineminenomi.screens.TrainerScreen;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.nagi;
 
-import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,6 +18,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.List;
 
 public class SilentAbility extends ContinuousAbility implements IParallelContinuousAbility {
   public static final SilentAbility INSTANCE = new SilentAbility();

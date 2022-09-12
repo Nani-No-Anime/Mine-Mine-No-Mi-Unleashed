@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.world.features.structures.training.brawlerring;
 
-import java.util.Random;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
@@ -15,7 +14,6 @@ import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.Structure;
 import net.minecraft.world.gen.feature.structure.StructureStart;
 import net.minecraft.world.gen.feature.template.TemplateManager;
-import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.NoPlacementConfig;
 import net.minecraft.world.gen.placement.Placement;
 import xyz.pixelatedw.mineminenomi.api.helpers.StructuresHelper;
@@ -24,6 +22,8 @@ import xyz.pixelatedw.mineminenomi.init.ModFeatures;
 import xyz.pixelatedw.mineminenomi.world.features.structures.OPStructure;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import java.util.Random;
 
 
 

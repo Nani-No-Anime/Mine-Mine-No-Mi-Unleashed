@@ -1,20 +1,9 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.ability;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
-import java.util.function.Predicate;
-import net.minecraft.entity.CreatureEntity;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
@@ -38,6 +27,11 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+import java.util.function.Predicate;
 
 public class NightmareSoldierEntity extends OPEntity {
   private static final DataParameter<Optional<UUID>> OWNER = EntityDataManager.createKey(NightmareSoldierEntity.class, DataSerializers.OPTIONAL_UNIQUE_ID);
@@ -163,9 +157,9 @@ public class NightmareSoldierEntity extends OPEntity {
     if (factionScope != null) {
       
       this.targetSelector.addGoal(1, (Goal)new ImprovedHurtByTargetGoal(this, factionScope, new Class[0]));
-      this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, OPEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
-      this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, MonsterEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
-      this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal((MobEntity)this, PlayerEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
+      this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, OPEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
+      this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, MonsterEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
+      this.targetSelector.addGoal(2, (Goal)new NearestAttackableTargetGoal(this, PlayerEntity.class, 10, true, true, factionScope.and(invisibleEntity)));
     } 
   }
 

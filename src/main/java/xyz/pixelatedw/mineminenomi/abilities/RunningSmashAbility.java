@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities;
 
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
@@ -9,6 +8,8 @@ import net.minecraft.util.math.Vec3d;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PassiveAbility;
+
+import java.util.List;
 
 public abstract class RunningSmashAbility
   extends PassiveAbility {

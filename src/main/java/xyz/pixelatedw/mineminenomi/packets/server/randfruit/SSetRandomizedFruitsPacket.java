@@ -1,12 +1,13 @@
 package xyz.pixelatedw.mineminenomi.packets.server.randfruit;
 
-import java.util.function.Supplier;
 import net.minecraft.network.PacketBuffer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 import xyz.pixelatedw.mineminenomi.events.devilfruits.RandomFruitEvents;
+
+import java.util.function.Supplier;
 
 
 

@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.supa;
 
-import java.awt.Color;
-
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityOverlay;
@@ -11,6 +9,8 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.awt.*;
 
 public class SpiderAbility
   extends ContinuousAbility implements IBodyOverlayAbility {

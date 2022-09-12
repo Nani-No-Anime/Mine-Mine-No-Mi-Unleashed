@@ -1,13 +1,13 @@
 package xyz.pixelatedw.mineminenomi.abilities.supa;
 
-import java.awt.Color;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityOverlay;
 import xyz.pixelatedw.mineminenomi.api.abilities.IPunchOverlayAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchAbility;
+
+import java.awt.*;
 
 public class SparClawAbility
   extends PunchAbility implements IPunchOverlayAbility {

@@ -1,12 +1,13 @@
 package xyz.pixelatedw.mineminenomi.api;
 
-import java.util.function.Supplier;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+
+import java.util.function.Supplier;
 
 public class GenericArmorMaterial
   implements IArmorMaterial

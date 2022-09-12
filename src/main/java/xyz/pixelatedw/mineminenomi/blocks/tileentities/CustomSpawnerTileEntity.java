@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.blocks.tileentities;
 
-import java.util.ArrayList;
-import java.util.UUID;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -18,6 +16,9 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.server.ServerWorld;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.init.ModTileEntities;
+
+import java.util.ArrayList;
+import java.util.UUID;
 
 public class CustomSpawnerTileEntity
   extends TileEntity

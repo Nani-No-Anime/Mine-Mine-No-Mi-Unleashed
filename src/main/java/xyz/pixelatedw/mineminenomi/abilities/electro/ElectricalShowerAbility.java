@@ -20,8 +20,8 @@ import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.particles.effects.electro.ElectroChargingParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
-import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 
 public class ElectricalShowerAbility extends ChargeableAbility implements IFallDamageBlockingAbility {
   public static final ElectricalShowerAbility INSTANCE = new ElectricalShowerAbility();

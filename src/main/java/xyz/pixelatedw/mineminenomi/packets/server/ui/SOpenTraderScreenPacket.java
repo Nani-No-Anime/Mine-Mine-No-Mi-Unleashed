@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.server.ui;
 
-import java.util.function.Supplier;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.network.PacketBuffer;
@@ -10,6 +9,8 @@ import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 import xyz.pixelatedw.mineminenomi.api.entities.TraderEntity;
 import xyz.pixelatedw.mineminenomi.screens.TraderScreen;
+
+import java.util.function.Supplier;
 
 
 

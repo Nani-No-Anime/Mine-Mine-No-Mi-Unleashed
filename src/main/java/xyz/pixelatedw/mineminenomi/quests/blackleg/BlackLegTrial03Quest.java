@@ -2,7 +2,6 @@ package xyz.pixelatedw.mineminenomi.quests.blackleg;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.blackleg.AntiMannerKickCourseAbility;
 import xyz.pixelatedw.mineminenomi.abilities.blackleg.ConcasseAbility;
 import xyz.pixelatedw.mineminenomi.abilities.blackleg.PartyTableKickCourseAbility;

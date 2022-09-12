@@ -1,13 +1,14 @@
 package xyz.pixelatedw.mineminenomi.api.quests.objectives;
 
-import java.util.ArrayList;
-import java.util.List;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.TranslationTextComponent;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public abstract class Objective

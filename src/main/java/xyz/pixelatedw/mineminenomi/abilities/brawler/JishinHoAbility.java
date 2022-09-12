@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.brawler;
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
@@ -14,6 +13,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.common.GroundParticlesEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class JishinHoAbility extends Ability {
   public static final JishinHoAbility INSTANCE = new JishinHoAbility();

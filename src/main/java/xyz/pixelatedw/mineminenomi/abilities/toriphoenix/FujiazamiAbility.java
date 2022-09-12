@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.toriphoenix;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,6 +21,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.toriphoenix.FujizamiParticl
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
+
+import java.util.List;
 
 public class FujiazamiAbility
   extends ContinuousAbility

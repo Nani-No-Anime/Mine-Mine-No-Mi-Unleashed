@@ -10,6 +10,8 @@ import net.minecraft.network.play.server.SEntityVelocityPacket;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import xyz.pixelatedw.mineminenomi.api.abilities.IExtraUpdateData;
+import xyz.pixelatedw.mineminenomi.api.abilities.IOutOfBodyAbility;
+import xyz.pixelatedw.mineminenomi.api.abilities.ZoanAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.api.morph.ZoanInfo;
 import xyz.pixelatedw.mineminenomi.entities.BottomHalfBodyEntity;
@@ -17,8 +19,6 @@ import xyz.pixelatedw.mineminenomi.entities.zoan.BaraSplitZoanInfo;
 import xyz.pixelatedw.mineminenomi.packets.server.ability.SUpdateEquippedAbilityPacket;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
-import xyz.pixelatedw.mineminenomi.api.abilities.ZoanAbility;
-import xyz.pixelatedw.mineminenomi.api.abilities.IOutOfBodyAbility;
 
 public class BaraSplitAbility extends ZoanAbility implements IOutOfBodyAbility, IExtraUpdateData {
   public static final BaraSplitAbility INSTANCE = new BaraSplitAbility();

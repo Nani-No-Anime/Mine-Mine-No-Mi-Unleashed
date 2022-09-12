@@ -1,14 +1,8 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs;
+
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.LookAtGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.OpenDoorGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.WaterAvoidingRandomWalkingGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
@@ -29,11 +23,11 @@ public class SkypieanCivilianEntity extends OPEntity {
     IEntityStats props = EntityStatsCapability.get((LivingEntity)this);
     props.setFaction("civilian");
     
-    this.goalSelector.addGoal(1, (Goal)new SwimGoal((MobEntity)this));
-    this.goalSelector.addGoal(2, (Goal)new OpenDoorGoal((MobEntity)this, false));
+    this.goalSelector.addGoal(1, (Goal)new SwimGoal(this));
+    this.goalSelector.addGoal(2, (Goal)new OpenDoorGoal(this, false));
     this.goalSelector.addGoal(3, (Goal)new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-    this.goalSelector.addGoal(5, (Goal)new LookAtGoal((MobEntity)this, PlayerEntity.class, 8.0F));
-    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal((MobEntity)this));
+    this.goalSelector.addGoal(5, (Goal)new LookAtGoal(this, PlayerEntity.class, 8.0F));
+    this.goalSelector.addGoal(5, (Goal)new LookRandomlyGoal(this));
     
     this.targetSelector.addGoal(0, (Goal)new HurtByTargetGoal(this, new Class[0]));
   }

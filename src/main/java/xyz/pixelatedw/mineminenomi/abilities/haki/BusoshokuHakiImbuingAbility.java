@@ -2,9 +2,6 @@ package xyz.pixelatedw.mineminenomi.abilities.haki;
 
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Multimap;
-
-import java.util.Map;
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -30,6 +27,9 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
+
+import java.util.Map;
+import java.util.UUID;
 
 public class BusoshokuHakiImbuingAbility extends ContinuousAbility implements IHakiAbility, IParallelContinuousAbility {
   public static final BusoshokuHakiImbuingAbility INSTANCE = new BusoshokuHakiImbuingAbility();

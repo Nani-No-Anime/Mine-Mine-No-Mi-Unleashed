@@ -3,22 +3,22 @@ package xyz.pixelatedw.mineminenomi.data.functions;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Optional;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.storage.loot.LootFunction;
 import net.minecraft.world.storage.loot.conditions.ILootCondition;
-import net.minecraft.world.storage.loot.functions.ILootFunction;
 import xyz.pixelatedw.mineminenomi.api.DFEncyclopediaEntry;
 import xyz.pixelatedw.mineminenomi.api.helpers.DevilFruitHelper;
 import xyz.pixelatedw.mineminenomi.init.ModValues;
 import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
 import xyz.pixelatedw.mineminenomi.items.DFEncyclopediaItem;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Optional;
 
 
 public class EncyclopediaCompletionFunction

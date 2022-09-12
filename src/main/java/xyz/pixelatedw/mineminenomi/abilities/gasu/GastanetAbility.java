@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.gasu;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -17,6 +16,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.gasu.GastanetParticleEffect
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.List;
 
 public class GastanetAbility extends Ability {
   public static final GastanetAbility INSTANCE = new GastanetAbility();

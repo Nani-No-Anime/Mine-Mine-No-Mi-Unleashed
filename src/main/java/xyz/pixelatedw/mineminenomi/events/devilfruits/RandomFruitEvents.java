@@ -1,13 +1,11 @@
 package xyz.pixelatedw.mineminenomi.events.devilfruits;
 
-import java.util.HashMap;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.TextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -26,6 +24,8 @@ import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
 import xyz.pixelatedw.mineminenomi.packets.server.randfruit.SSetFruitSeedsPacket;
 import xyz.pixelatedw.mineminenomi.packets.server.randfruit.SSetRandomizedFruitsPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.HashMap;
 
 
 

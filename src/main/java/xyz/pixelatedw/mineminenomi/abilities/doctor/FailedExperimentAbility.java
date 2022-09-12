@@ -1,6 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.doctor;
-import com.google.common.collect.Lists;
 
+import com.google.common.collect.Lists;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

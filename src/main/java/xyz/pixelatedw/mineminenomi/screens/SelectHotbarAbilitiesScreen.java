@@ -1,12 +1,10 @@
 package xyz.pixelatedw.mineminenomi.screens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.IGuiEventListener;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.Widget;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ResourceLocation;
@@ -28,6 +26,8 @@ import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.client.CSyncAbilityDataPacket;
+
+import java.util.List;
 
 @OnlyIn(Dist.CLIENT)
 public class SelectHotbarAbilitiesScreen extends Screen {

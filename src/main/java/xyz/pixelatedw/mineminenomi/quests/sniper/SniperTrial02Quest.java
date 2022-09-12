@@ -4,7 +4,6 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.DamageSource;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.KemuriBoshiAbility;
 import xyz.pixelatedw.mineminenomi.api.quests.Quest;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;

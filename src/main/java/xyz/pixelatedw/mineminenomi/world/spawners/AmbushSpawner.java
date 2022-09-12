@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.world.spawners;
-import java.util.List;
-import java.util.Random;
+
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SpawnReason;
@@ -20,6 +19,9 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import java.util.List;
+import java.util.Random;
 
 public class AmbushSpawner {
   private Random random = new Random();

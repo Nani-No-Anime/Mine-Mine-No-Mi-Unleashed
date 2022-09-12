@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.toriphoenix;
 
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
@@ -16,6 +15,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.toriphoenix.BlueFlamesParti
 import xyz.pixelatedw.mineminenomi.particles.effects.toriphoenix.TenseiNoSoen2ParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchAbility;
+
+import java.util.List;
 
 public class SaiseiNoHonoAbility
   extends PunchAbility implements IFormRequiredAbility {

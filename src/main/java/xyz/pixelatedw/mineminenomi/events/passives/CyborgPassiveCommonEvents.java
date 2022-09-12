@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.passives;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -11,6 +10,8 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
+
+import java.util.UUID;
 
 
 

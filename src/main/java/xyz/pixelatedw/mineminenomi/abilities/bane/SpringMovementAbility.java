@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.bane;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -17,6 +16,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PassiveAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.UUID;
 
 public class SpringMovementAbility extends PassiveAbility {
   public static final SpringMovementAbility INSTANCE = new SpringMovementAbility();

@@ -1,12 +1,12 @@
 package xyz.pixelatedw.mineminenomi.wypi.abilities;
 
-import java.io.Serializable;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.io.Serializable;
 
 public abstract class PassiveAbility
   extends Ability {

@@ -1,12 +1,9 @@
 package xyz.pixelatedw.mineminenomi.abilities.gasu;
 
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
-
 import net.minecraft.particles.ParticleType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Potion;
@@ -26,6 +23,9 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.haki.HaoshokuHakiParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
+import java.util.UUID;
 
 public class ShinokuniAbility extends ZoanAbility {
   public static final ShinokuniAbility INSTANCE = new ShinokuniAbility();

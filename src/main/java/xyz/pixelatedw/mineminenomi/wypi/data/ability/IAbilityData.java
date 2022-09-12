@@ -1,9 +1,10 @@
 package xyz.pixelatedw.mineminenomi.wypi.data.ability;
 
-import java.util.List;
-import java.util.function.Predicate;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
+import java.util.function.Predicate;
 
 public interface IAbilityData {
   boolean addUnlockedAbility(Ability paramAbility);

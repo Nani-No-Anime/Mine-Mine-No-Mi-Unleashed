@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.rokushiki;
 
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -11,6 +10,8 @@ import net.minecraft.potion.Effects;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.CooldownGoal;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.UUID;
 
 public class TekkaiGoal extends CooldownGoal {
   private OPEntity entity;

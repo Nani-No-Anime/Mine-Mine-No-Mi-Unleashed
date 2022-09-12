@@ -2,9 +2,10 @@ package xyz.pixelatedw.mineminenomi.init;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
+
 import java.util.ArrayList;
 import java.util.UUID;
-import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
 
 
 

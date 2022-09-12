@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.particles.effects.toriphoenix;
 
-import java.util.Random;
-
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -9,6 +7,8 @@ import xyz.pixelatedw.mineminenomi.init.ModParticleTypes;
 import xyz.pixelatedw.mineminenomi.particles.data.GenericParticleData;
 import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.Random;
 
 
 public class TenseiNoSoen2ParticleEffect

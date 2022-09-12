@@ -1,12 +1,13 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
-import java.util.function.Predicate;
-import javax.annotation.Nullable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import javax.annotation.Nullable;
+import java.util.function.Predicate;
 
 public interface IOutOfBodyAbility {
   public static final Predicate<Ability> IS_ACTIVE= (ability -> !(ability instanceof IOutOfBodyAbility) ? false : ability.isContinuous());

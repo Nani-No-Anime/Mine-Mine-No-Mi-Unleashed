@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.ability;
-import java.util.Optional;
-import java.util.UUID;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.goal.Goal;
@@ -10,7 +9,6 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
-
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -18,6 +16,9 @@ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.Optional;
+import java.util.UUID;
 
 public class WaxCloneEntity extends OPEntity {
   private static final DataParameter<Optional<UUID>> OWNER = EntityDataManager.createKey(WaxCloneEntity.class, DataSerializers.OPTIONAL_UNIQUE_ID);

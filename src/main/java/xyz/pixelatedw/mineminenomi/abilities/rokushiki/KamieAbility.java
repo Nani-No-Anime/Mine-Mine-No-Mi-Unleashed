@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.rokushiki;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.DamageSource;
@@ -10,6 +8,9 @@ import xyz.pixelatedw.mineminenomi.api.abilities.IOnDamageAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class KamieAbility
   extends ContinuousAbility implements IOnDamageAbility {

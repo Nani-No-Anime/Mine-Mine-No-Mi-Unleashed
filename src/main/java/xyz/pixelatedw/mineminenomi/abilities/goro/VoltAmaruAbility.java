@@ -1,5 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.goro;
-import java.util.UUID;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -38,6 +38,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.IChangeDamageSourceAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 public class VoltAmaruAbility extends ZoanAbility implements IBodyOverlayAbility, IChangeDamageSourceAbility {
   public static final VoltAmaruAbility INSTANCE = new VoltAmaruAbility();

@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.goro;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.nbt.CompoundNBT;
@@ -15,6 +12,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.network.NetworkHooks;
 import xyz.pixelatedw.mineminenomi.renderers.entities.LightningBallEntityRenderer;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class LightningBallEntity
   extends Entity

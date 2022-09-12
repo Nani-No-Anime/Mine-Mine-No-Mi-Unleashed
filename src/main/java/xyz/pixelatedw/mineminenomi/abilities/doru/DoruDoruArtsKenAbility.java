@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.doru;
 
-import java.awt.Color;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -14,6 +13,8 @@ import xyz.pixelatedw.mineminenomi.init.ModWeapons;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ItemAbility;
+
+import java.awt.*;
 
 public class DoruDoruArtsKenAbility extends ItemAbility implements IParallelContinuousAbility {
   public static final Ability INSTANCE = (Ability)new DoruDoruArtsKenAbility();

@@ -1,10 +1,11 @@
 package xyz.pixelatedw.mineminenomi.blocks.tileentities;
 
-import javax.annotation.Nullable;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.tileentity.TileEntity;
 import xyz.pixelatedw.mineminenomi.init.ModTileEntities;
+
+import javax.annotation.Nullable;
 
 public class CannonTileEntity
   extends TileEntity

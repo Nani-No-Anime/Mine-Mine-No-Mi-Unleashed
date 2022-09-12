@@ -1,9 +1,5 @@
  package xyz.pixelatedw.mineminenomi.wypi;
- 
- import java.io.IOException;
- import java.util.Timer;
- import java.util.TimerTask;
- import java.util.function.Function;
+
  import net.minecraft.client.Minecraft;
  import net.minecraft.client.entity.player.ClientPlayerEntity;
  import net.minecraft.client.multiplayer.ServerData;
@@ -14,6 +10,11 @@
  import net.minecraftforge.event.TickEvent;
  import net.minecraftforge.eventbus.api.SubscribeEvent;
  import org.apache.commons.lang3.tuple.Pair;
+
+ import java.io.IOException;
+ import java.util.Timer;
+ import java.util.TimerTask;
+ import java.util.function.Function;
  
  
  

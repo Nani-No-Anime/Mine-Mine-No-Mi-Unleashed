@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.screens.config;
 
-import net.minecraft.client.GameSettings;
 import net.minecraft.client.settings.BooleanOption;
 import net.minecraftforge.common.ForgeConfigSpec;
 

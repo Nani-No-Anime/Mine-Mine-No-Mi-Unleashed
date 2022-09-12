@@ -13,6 +13,7 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import xyz.pixelatedw.mineminenomi.api.abilities.DamagedContinuousAbility;
 import xyz.pixelatedw.mineminenomi.api.abilities.IExtraUpdateData;
+import xyz.pixelatedw.mineminenomi.api.abilities.IOutOfBodyAbility;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.entities.PhysicalBodyEntity;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
@@ -20,7 +21,6 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
 import xyz.pixelatedw.mineminenomi.wypi.network.packets.server.SSyncAbilityDataPacket;
-import xyz.pixelatedw.mineminenomi.api.abilities.IOutOfBodyAbility;
 
 public class YomiNoReikiAbility extends DamagedContinuousAbility implements IOutOfBodyAbility, IExtraUpdateData {
   public static final YomiNoReikiAbility INSTANCE = new YomiNoReikiAbility();

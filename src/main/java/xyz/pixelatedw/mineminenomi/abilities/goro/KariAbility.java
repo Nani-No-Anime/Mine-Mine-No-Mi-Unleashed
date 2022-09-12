@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.goro;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -17,6 +16,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.goro.KariParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.List;
 
 public class KariAbility
   extends ChargeableAbility

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.zou;
 
-import java.util.UUID;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,6 +10,8 @@ import xyz.pixelatedw.mineminenomi.api.morph.ZoanInfo;
 import xyz.pixelatedw.mineminenomi.entities.zoan.ZouGuardZoanInfo;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.UUID;
 
 public class ZouGuardPointAbility
   extends ZoanAbility {

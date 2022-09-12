@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.screens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.io.File;
 import net.minecraft.client.GameSettings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.SettingsScreen;
@@ -17,16 +16,9 @@ import net.minecraftforge.fml.ForgeI18n;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
 import xyz.pixelatedw.mineminenomi.screens.config.ConfigCategoryList;
 import xyz.pixelatedw.mineminenomi.screens.config.ConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.BountyConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.ChallengesConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.CrewsConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.DevilFruitsConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.GeneralConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.OresConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.QuestsConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.StructuresConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.SystemConfigPage;
-import xyz.pixelatedw.mineminenomi.screens.config.categories.WorldEventsConfigPage;
+import xyz.pixelatedw.mineminenomi.screens.config.categories.*;
+
+import java.io.File;
 
 @OnlyIn(Dist.CLIENT)
 public class ConfigScreen

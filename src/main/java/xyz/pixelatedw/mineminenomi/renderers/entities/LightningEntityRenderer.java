@@ -2,8 +2,6 @@ package xyz.pixelatedw.mineminenomi.renderers.entities;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import java.awt.Color;
-import java.util.Random;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.Matrix4f;
 import net.minecraft.client.renderer.Vector3f;
@@ -15,6 +13,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.goro.LightningEntity;
 import xyz.pixelatedw.mineminenomi.init.ModRenderTypes;
+
+import java.awt.*;
+import java.util.Random;
 
 
 

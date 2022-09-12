@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.bara;
 
 
-import java.util.UUID;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +11,8 @@ import xyz.pixelatedw.mineminenomi.api.morph.ZoanInfo;
 import xyz.pixelatedw.mineminenomi.entities.zoan.BaraCarZoanInfo;
 import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.UUID;
 
 public class BaraBaraCarAbility extends ZoanAbility {
   public static final BaraBaraCarAbility INSTANCE = new BaraBaraCarAbility();

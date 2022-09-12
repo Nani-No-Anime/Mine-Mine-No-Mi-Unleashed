@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.doku;
 
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
@@ -12,6 +11,8 @@ import xyz.pixelatedw.mineminenomi.entities.zoan.VenomDemonZoanInfo;
 import xyz.pixelatedw.mineminenomi.particles.effects.doku.DokuGumoParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.util.List;
 
 public class DokuGumoAbility
   extends ContinuousAbility {

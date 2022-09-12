@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.server.entities;
 
-import java.util.function.Supplier;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.Entity;
@@ -11,6 +10,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.hana.HanaHandsEntity;
+
+import java.util.function.Supplier;
 
 
 

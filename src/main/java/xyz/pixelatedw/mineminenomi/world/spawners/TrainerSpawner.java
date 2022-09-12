@@ -1,9 +1,5 @@
 package xyz.pixelatedw.mineminenomi.world.spawners;
 
-import java.util.List;
-import java.util.Random;
-import java.util.stream.Collectors;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -25,6 +21,10 @@ import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.init.ModQuests;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.debug.WyDebug;
+
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 public class TrainerSpawner
 {

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.pirates;
-import javax.annotation.Nullable;
-import net.minecraft.entity.CreatureEntity;
+
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -22,6 +21,8 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.ImprovedMeleeAttackGoal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.RunAwayGoal;
 import xyz.pixelatedw.mineminenomi.init.ModEntities;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
 
 public class PirateWithSwordEntity extends AbstractPirateEntity {
   private static final String[] DEFAULT_TEXTURES = new String[] { "pirate1", "pirate2", "pirate3", "pirate4", "pirate5" };

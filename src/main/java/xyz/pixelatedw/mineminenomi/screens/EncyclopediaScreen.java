@@ -2,11 +2,6 @@ package xyz.pixelatedw.mineminenomi.screens;
 
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.awt.Color;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.ReadBookScreen;
 import net.minecraft.client.gui.screen.Screen;
@@ -30,6 +25,12 @@ import xyz.pixelatedw.mineminenomi.api.helpers.DevilFruitHelper;
 import xyz.pixelatedw.mineminenomi.init.ModValues;
 import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @OnlyIn(Dist.CLIENT)
 public class EncyclopediaScreen extends Screen {

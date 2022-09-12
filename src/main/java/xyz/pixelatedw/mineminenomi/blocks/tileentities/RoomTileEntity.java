@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.blocks.tileentities;
 
-import java.util.Optional;
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -20,6 +17,10 @@ import xyz.pixelatedw.mineminenomi.init.ModBlocks;
 import xyz.pixelatedw.mineminenomi.init.ModTileEntities;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import javax.annotation.Nullable;
+import java.util.Optional;
+import java.util.UUID;
 
 public class RoomTileEntity
   extends TileEntity

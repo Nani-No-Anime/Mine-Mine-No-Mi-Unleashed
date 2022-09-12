@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.blackleg;
 
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -21,6 +20,8 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 public class DiableJambeAbility extends ContinuousAbility implements IParallelContinuousAbility, IPunchOverlayAbility {
   public static final DiableJambeAbility INSTANCE = new DiableJambeAbility();

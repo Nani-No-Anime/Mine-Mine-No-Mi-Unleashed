@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.kachi;
 
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -13,6 +12,8 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchAbility;
+
+import java.util.UUID;
 
 public class VulcanizationAbility extends PunchAbility implements IBodyOverlayAbility {
   public static final VulcanizationAbility INSTANCE = new VulcanizationAbility();

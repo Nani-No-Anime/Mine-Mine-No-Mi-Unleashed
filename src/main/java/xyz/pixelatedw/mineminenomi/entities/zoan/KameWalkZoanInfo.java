@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.zoan;
 
-import javax.annotation.Nullable;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -13,6 +12,8 @@ import xyz.pixelatedw.mineminenomi.items.AkumaNoMiItem;
 import xyz.pixelatedw.mineminenomi.models.entities.zoans.partial.KameWalkPartialModel;
 import xyz.pixelatedw.mineminenomi.renderers.entities.zoans.partial.KameWalkPartialMorphRenderer;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import javax.annotation.Nullable;
 
 public class KameWalkZoanInfo
   extends ZoanInfo

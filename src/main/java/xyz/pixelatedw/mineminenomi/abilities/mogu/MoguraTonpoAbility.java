@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.mogu;
 
-import java.util.List;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
@@ -28,6 +27,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.baku.BakuMunchParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
 
 public class MoguraTonpoAbility extends Ability implements IMultiTargetAbility, IFallDamageBlockingAbility, IFormRequiredAbility {
   public static final MoguraTonpoAbility INSTANCE = new MoguraTonpoAbility();

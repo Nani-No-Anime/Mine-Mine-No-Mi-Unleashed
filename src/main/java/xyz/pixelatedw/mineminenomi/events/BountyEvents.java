@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events;
 
-import java.util.HashMap;
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
@@ -32,6 +30,9 @@ import xyz.pixelatedw.mineminenomi.packets.server.SSyncEntityStatsPacket;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncWorldDataPacket;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.HashMap;
+import java.util.UUID;
 
 @EventBusSubscriber(modid = "mineminenomi")
 public class BountyEvents {

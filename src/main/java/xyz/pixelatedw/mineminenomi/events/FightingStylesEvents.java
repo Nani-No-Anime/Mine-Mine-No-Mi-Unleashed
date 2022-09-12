@@ -1,8 +1,6 @@
 package xyz.pixelatedw.mineminenomi.events;
 
 import com.google.common.collect.Multimap;
-import java.util.Map;
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -28,6 +26,9 @@ import xyz.pixelatedw.mineminenomi.api.helpers.ItemsHelper;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
+
+import java.util.Map;
+import java.util.UUID;
 
 
 

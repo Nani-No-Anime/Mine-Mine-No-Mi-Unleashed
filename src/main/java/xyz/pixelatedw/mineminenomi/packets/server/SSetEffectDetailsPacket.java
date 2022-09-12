@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.packets.server;
 
-import java.util.function.Supplier;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -12,6 +11,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkEvent;
 import xyz.pixelatedw.mineminenomi.mixins.EffectInstanceMixin;
+
+import java.util.function.Supplier;
 
 
 

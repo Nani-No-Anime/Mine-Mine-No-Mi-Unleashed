@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals;
 
-import java.util.EnumSet;
-import java.util.List;
-import java.util.stream.Collectors;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,6 +8,10 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.EnumSet;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class AvoidAoEGoal

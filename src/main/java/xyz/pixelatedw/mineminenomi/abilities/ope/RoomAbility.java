@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.ope;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
@@ -27,6 +24,10 @@ import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class RoomAbility extends ContinuousAbility implements IParallelContinuousAbility {
   public static final RoomAbility INSTANCE = new RoomAbility();

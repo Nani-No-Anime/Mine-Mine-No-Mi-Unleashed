@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items;
 
-import java.awt.Color;
-import java.util.List;
-import javax.annotation.Nullable;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -11,11 +8,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.Style;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.util.text.*;
 import net.minecraft.world.World;
 import xyz.pixelatedw.mineminenomi.api.DFEncyclopediaEntry;
 import xyz.pixelatedw.mineminenomi.config.CommonConfig;
@@ -23,6 +16,10 @@ import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.packets.server.ui.SOpenEncyclopediaScreenPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import javax.annotation.Nullable;
+import java.awt.*;
+import java.util.List;
 
 
 public class DFEncyclopediaItem

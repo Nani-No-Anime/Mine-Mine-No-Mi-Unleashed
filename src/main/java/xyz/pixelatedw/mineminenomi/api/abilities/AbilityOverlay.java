@@ -1,8 +1,9 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
-import java.awt.Color;
 import net.minecraft.util.ResourceLocation;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.awt.*;
 
 
 public class AbilityOverlay

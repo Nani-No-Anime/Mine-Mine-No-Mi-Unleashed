@@ -1,10 +1,6 @@
 package xyz.pixelatedw.mineminenomi.screens.extra;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.Tessellator;
@@ -17,6 +13,11 @@ import xyz.pixelatedw.mineminenomi.data.entity.challenges.IChallengesData;
 import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.screens.ChallengesScreen;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 
 public class AvailableChallengesListPanel
   extends ScrollPanel {

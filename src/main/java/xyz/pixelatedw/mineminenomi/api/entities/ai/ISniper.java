@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.api.entities.ai;
 
-import java.util.ArrayList;
-import java.util.List;
-import net.minecraft.entity.ai.goal.Goal;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.KaenBoshiAbility;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.KemuriBoshiAbility;
 import xyz.pixelatedw.mineminenomi.abilities.sniper.NemuriBoshiAbility;
@@ -13,6 +10,9 @@ import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.KemuriBo
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.NemuriBoshiGoal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.sniper.TetsuBoshiGoal;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public interface ISniper
 {

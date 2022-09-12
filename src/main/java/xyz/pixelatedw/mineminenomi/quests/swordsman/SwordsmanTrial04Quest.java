@@ -6,11 +6,7 @@ import xyz.pixelatedw.mineminenomi.abilities.swordsman.OTatsumakiAbility;
 import xyz.pixelatedw.mineminenomi.api.quests.Quest;
 import xyz.pixelatedw.mineminenomi.api.quests.objectives.Objective;
 import xyz.pixelatedw.mineminenomi.init.ModQuests;
-import xyz.pixelatedw.mineminenomi.quests.objectives.HitEntityObjective;
-import xyz.pixelatedw.mineminenomi.quests.objectives.KillEntityObjective;
-import xyz.pixelatedw.mineminenomi.quests.objectives.SharedHitChecks;
-import xyz.pixelatedw.mineminenomi.quests.objectives.SharedKillChecks;
-import xyz.pixelatedw.mineminenomi.quests.objectives.TimedKillEntityObjective;
+import xyz.pixelatedw.mineminenomi.quests.objectives.*;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
 

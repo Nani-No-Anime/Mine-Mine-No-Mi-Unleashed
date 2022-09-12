@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.hitodaibutsu;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -18,6 +17,8 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.IAbilityData;
+
+import java.util.UUID;
 
 public class HitoDaibutsuPointAbility extends ZoanAbility implements IBodyOverlayAbility {
   public static final HitoDaibutsuPointAbility INSTANCE = new HitoDaibutsuPointAbility();

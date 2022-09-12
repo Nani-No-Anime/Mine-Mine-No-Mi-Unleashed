@@ -1,14 +1,14 @@
 package xyz.pixelatedw.mineminenomi.api.entities.ai;
 
-import java.util.ArrayList;
-import java.util.List;
-import net.minecraft.entity.ai.goal.Goal;
 import xyz.pixelatedw.mineminenomi.abilities.swordsman.OTatsumakiAbility;
 import xyz.pixelatedw.mineminenomi.abilities.swordsman.YakkodoriAbility;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.OTatsumakiGoal;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.swordsman.YakkodoriGoal;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public interface ISwordsman
 {

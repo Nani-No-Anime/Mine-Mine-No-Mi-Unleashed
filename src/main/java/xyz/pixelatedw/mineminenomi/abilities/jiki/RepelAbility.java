@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
@@ -16,6 +15,8 @@ import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.List;
 
 public class RepelAbility extends ContinuousAbility {
   public static final RepelAbility INSTANCE = new RepelAbility();

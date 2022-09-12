@@ -1,14 +1,15 @@
 package xyz.pixelatedw.mineminenomi.effects;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import net.minecraft.block.Block;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.EffectType;
 import net.minecraft.util.ResourceLocation;
 import xyz.pixelatedw.mineminenomi.api.effects.OverlayEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class GuardingEffect
   extends OverlayEffect

@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.ryubrachiosaurus;
 
-import java.util.List;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.EffectInstance;
@@ -20,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.renderers.animations.PointBothArmsAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ChargeableAbility;
+
+import java.util.List;
 
 public class BrachioGrabAbility extends ChargeableAbility implements IFormRequiredAbility, IAnimatedAbility {
   public static final BrachioGrabAbility INSTANCE = new BrachioGrabAbility();

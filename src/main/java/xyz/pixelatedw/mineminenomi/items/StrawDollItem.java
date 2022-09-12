@@ -1,9 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items;
 
-import java.awt.Color;
-import java.util.Iterator;
-import java.util.UUID;
-import javax.annotation.Nullable;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,6 +18,11 @@ import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.IEntityStats;
 import xyz.pixelatedw.mineminenomi.packets.server.SSyncEntityStatsPacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import javax.annotation.Nullable;
+import java.awt.*;
+import java.util.Iterator;
+import java.util.UUID;
 
 
 public class StrawDollItem

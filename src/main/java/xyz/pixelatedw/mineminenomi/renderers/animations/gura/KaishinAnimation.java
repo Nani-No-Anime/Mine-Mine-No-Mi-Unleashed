@@ -3,7 +3,6 @@ package xyz.pixelatedw.mineminenomi.renderers.animations.gura;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.entity.model.BipedModel;
-import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.MathHelper;
 import xyz.pixelatedw.mineminenomi.api.animations.TimeAnimation;

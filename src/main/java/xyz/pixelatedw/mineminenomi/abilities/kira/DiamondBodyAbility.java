@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.kira;
 
-import java.awt.Color;
-
-import java.util.UUID;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
@@ -17,6 +14,9 @@ import xyz.pixelatedw.mineminenomi.init.ModResources;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.IParallelContinuousAbility;
+
+import java.awt.*;
+import java.util.UUID;
 
 public class DiamondBodyAbility extends ContinuousAbility implements IParallelContinuousAbility, IBodyOverlayAbility {
   public static final DiamondBodyAbility INSTANCE = new DiamondBodyAbility();

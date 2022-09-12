@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.jiki;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,6 +18,10 @@ import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.data.ability.AbilityDataCapability;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 public class PunkGibsonAbility extends ZoanAbility {
   public static final PunkGibsonAbility INSTANCE = new PunkGibsonAbility();

@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.abilities;
 
 
-import java.util.UUID;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import xyz.pixelatedw.mineminenomi.api.abilities.AbilityAttributeModifier;
@@ -10,6 +9,8 @@ import xyz.pixelatedw.mineminenomi.init.ModAttributes;
 import xyz.pixelatedw.mineminenomi.wypi.APIConfig;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PassiveAbility;
+
+import java.util.UUID;
 
 public class NoFallDamageAbility extends PassiveAbility {
   public static final NoFallDamageAbility INSTANCE = new NoFallDamageAbility();

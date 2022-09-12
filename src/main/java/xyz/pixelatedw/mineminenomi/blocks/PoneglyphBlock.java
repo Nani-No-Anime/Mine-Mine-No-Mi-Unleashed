@@ -1,11 +1,6 @@
 package xyz.pixelatedw.mineminenomi.blocks;
+
 import com.google.common.collect.ImmutableSet;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
-import javax.annotation.Nullable;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
@@ -27,12 +22,18 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.RegistryObject;
 import xyz.pixelatedw.mineminenomi.blocks.tileentities.PoneglyphTileEntity;
 import xyz.pixelatedw.mineminenomi.challenges.Challenge;
 import xyz.pixelatedw.mineminenomi.init.ModChallenges;
 import xyz.pixelatedw.mineminenomi.init.ModI18n;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class PoneglyphBlock extends Block {
   public static final IntegerProperty TEXTURE = IntegerProperty.create("texture", 0, 2);

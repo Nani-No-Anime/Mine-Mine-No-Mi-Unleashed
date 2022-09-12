@@ -2,15 +2,9 @@ package xyz.pixelatedw.mineminenomi.screens.config;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.systems.RenderSystem;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import javax.annotation.Nullable;
 import net.minecraft.client.GameSettings;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.IGuiEventListener;
 import net.minecraft.client.gui.widget.Widget;
-import net.minecraft.client.gui.widget.list.AbstractList;
 import net.minecraft.client.gui.widget.list.AbstractOptionList;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.settings.AbstractOption;
@@ -20,6 +14,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import xyz.pixelatedw.mineminenomi.config.ClientConfig;
 import xyz.pixelatedw.mineminenomi.screens.ConfigScreen;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 
 @OnlyIn(Dist.CLIENT)

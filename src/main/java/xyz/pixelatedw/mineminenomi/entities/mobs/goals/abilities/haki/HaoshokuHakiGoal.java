@@ -1,9 +1,8 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.haki;
-import java.util.List;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.PrioritizedGoal;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.play.server.SPlayEntityEffectPacket;
@@ -21,6 +20,8 @@ import xyz.pixelatedw.mineminenomi.init.ModSounds;
 import xyz.pixelatedw.mineminenomi.particles.effects.ParticleEffect;
 import xyz.pixelatedw.mineminenomi.particles.effects.haki.HaoshokuHakiParticleEffect;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 public class HaoshokuHakiGoal extends CooldownGoal {
   public static final ParticleEffect PARTICLES_1 = (ParticleEffect)new HaoshokuHakiParticleEffect(1);

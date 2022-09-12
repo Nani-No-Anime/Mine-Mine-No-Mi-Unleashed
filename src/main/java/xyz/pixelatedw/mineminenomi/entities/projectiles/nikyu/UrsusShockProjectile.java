@@ -1,7 +1,6 @@
 package xyz.pixelatedw.mineminenomi.entities.projectiles.nikyu;
 
 
-import java.util.List;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -20,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.init.ModDamageSource;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.AbilityProjectileEntity;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.projectiles.IFlexibleSizeProjectile;
+
+import java.util.List;
 
 public class UrsusShockProjectile
   extends AbilityProjectileEntity implements IFlexibleSizeProjectile {

@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.brawler;
 
-import java.util.List;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,6 +19,8 @@ import xyz.pixelatedw.mineminenomi.particles.effects.common.CommonExplosionParti
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.PunchAbility;
+
+import java.util.List;
 
 public class HakaiHoAbility extends PunchAbility implements IMultiTargetAbility {
   public static final HakaiHoAbility INSTANCE = new HakaiHoAbility();

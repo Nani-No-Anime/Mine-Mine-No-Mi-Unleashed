@@ -1,8 +1,9 @@
 package xyz.pixelatedw.mineminenomi.api.abilities;
 
-import java.util.function.Predicate;
 import xyz.pixelatedw.mineminenomi.api.animations.IAnimation;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.function.Predicate;
 
 public interface IAnimatedAbility
 {

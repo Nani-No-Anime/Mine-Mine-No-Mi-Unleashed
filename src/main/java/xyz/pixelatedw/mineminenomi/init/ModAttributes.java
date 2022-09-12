@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.init;
 
-import java.util.UUID;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -18,6 +17,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import xyz.pixelatedw.mineminenomi.packets.server.SStepHeightValuePacket;
 import xyz.pixelatedw.mineminenomi.wypi.network.WyNetwork;
+
+import java.util.UUID;
 
 
 

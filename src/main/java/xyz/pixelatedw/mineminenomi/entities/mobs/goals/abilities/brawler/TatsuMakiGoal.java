@@ -1,6 +1,5 @@
 package xyz.pixelatedw.mineminenomi.entities.mobs.goals.abilities.brawler;
 
-import java.util.List;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -13,6 +12,8 @@ import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
 import xyz.pixelatedw.mineminenomi.entities.mobs.OPEntity;
 import xyz.pixelatedw.mineminenomi.entities.mobs.goals.CooldownGoal;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
+
+import java.util.List;
 
 public class TatsuMakiGoal
   extends CooldownGoal {

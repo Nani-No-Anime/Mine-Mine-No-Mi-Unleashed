@@ -1,9 +1,5 @@
 package xyz.pixelatedw.mineminenomi.items.weapons;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Predicate;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
@@ -20,6 +16,11 @@ import net.minecraftforge.event.ForgeEventFactory;
 import xyz.pixelatedw.mineminenomi.entities.projectiles.extra.PopGreenProjectile;
 import xyz.pixelatedw.mineminenomi.init.ModCreativeTabs;
 import xyz.pixelatedw.mineminenomi.init.ModItems;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Predicate;
 
 public class PopGreenBowItem extends BowItem {
   List<Item> ammoItems;

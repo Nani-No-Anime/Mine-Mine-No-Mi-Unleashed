@@ -1,7 +1,5 @@
 package xyz.pixelatedw.mineminenomi.abilities.kilo;
 
-import java.util.List;
-import java.util.UUID;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -20,6 +18,9 @@ import xyz.pixelatedw.mineminenomi.particles.effects.zou.GreatStompParticleEffec
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
 import xyz.pixelatedw.mineminenomi.wypi.abilities.ContinuousAbility;
+
+import java.util.List;
+import java.util.UUID;
 
 public class KiloPress10000Ability extends ContinuousAbility {
   public static final KiloPress10000Ability INSTANCE = new KiloPress10000Ability();

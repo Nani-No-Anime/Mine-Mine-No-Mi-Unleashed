@@ -1,8 +1,5 @@
 package xyz.pixelatedw.mineminenomi.events.devilfruits;
 
-import java.util.List;
-import java.util.Objects;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -28,7 +25,9 @@ import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.IDevilFruit;
 import xyz.pixelatedw.mineminenomi.init.ModEffects;
 import xyz.pixelatedw.mineminenomi.init.ModItems;
 import xyz.pixelatedw.mineminenomi.wypi.WyHelper;
-import xyz.pixelatedw.mineminenomi.wypi.abilities.Ability;
+
+import java.util.List;
+import java.util.Objects;
 
 
 @EventBusSubscriber(modid = "mineminenomi")
