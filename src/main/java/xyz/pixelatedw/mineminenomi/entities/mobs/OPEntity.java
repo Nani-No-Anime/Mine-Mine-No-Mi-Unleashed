@@ -56,6 +56,7 @@ public abstract class OPEntity extends CreatureEntity implements IDynamicRendere
 	}
 	public OPEntity(EntityType type, World world, OPEntityTextureWeight[] textures) {
 		super(type, world);
+		this.addThreat(Math.round((CommonConfig.INSTANCE.getDorikiLimit() * 0.10F) / 2000));
 
 		this.experienceValue = this.threat;
 		this.textures = textures;

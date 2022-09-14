@@ -13,6 +13,7 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import xyz.pixelatedw.mineminenomi.api.crew.Crew;
 import xyz.pixelatedw.mineminenomi.api.helpers.BountyHelper;
+import xyz.pixelatedw.mineminenomi.api.helpers.MobsHelper;
 import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.DevilFruitCapability;
 import xyz.pixelatedw.mineminenomi.data.entity.devilfruit.IDevilFruit;
 import xyz.pixelatedw.mineminenomi.data.entity.entitystats.EntityStatsCapability;
@@ -65,6 +66,7 @@ public class CheckPlayerCommand {
       } 
       builder.append("Style: " + statsData.getFightingStyle() + "\n");
       builder.append("Doriki: " + statsData.getDoriki() + "\n");
+      builder.append("Threat: " +  MobsHelper.getEntityThreatLevel(player) + "\n");
       builder.append("Belly: " + statsData.getBelly() + "\n");
       builder.append("Extol: " + statsData.getExtol() + "\n");
       if (BountyHelper.canGainBounty((PlayerEntity)player)) {

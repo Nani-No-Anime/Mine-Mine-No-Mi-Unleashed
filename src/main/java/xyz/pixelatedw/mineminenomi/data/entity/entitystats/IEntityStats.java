@@ -6,6 +6,14 @@ public interface IEntityStats {
   boolean isInCombatMode();
   
   void setCombatMode(boolean paramBoolean);
+
+  void addThreat(int threat);
+
+  int getThreat();
+
+  int getTrueThreat();
+
+  void setThreat(int threat) ;
   
   int getDoriki();
   

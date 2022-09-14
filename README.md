@@ -11,7 +11,7 @@ then alot of the code broken by Java Decompiler and fixed with[FernFlower](https
 ## Modification Plans
 * ### Ability Use Log
 
-    have a toggle in the config so when a player uses an ability it will be logged. Allow for a blacklist to exclude non destructive abilites like gepo
+    have a toggle in the config so when a player uses an ability it will be logged. Allow for a blacklist to exclude non-destructive abilites like gepo
 
 * ### Doriki Cap
 
@@ -23,7 +23,7 @@ then alot of the code broken by Java Decompiler and fixed with[FernFlower](https
 
     Add commands to add/remove Abilities to a per zone whitelist
 
-* ### Marines Pirates custom spawn conditions
+* ### Marines/Pirates custom spawn conditions
 
     Allow Marines and Priates to spawn on more blocks. Also adding config option to add more blocks.
 

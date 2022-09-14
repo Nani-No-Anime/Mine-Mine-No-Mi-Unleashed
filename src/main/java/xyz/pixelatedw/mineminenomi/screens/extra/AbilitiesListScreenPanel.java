@@ -73,7 +73,7 @@ public class AbilitiesListScreenPanel
 
   
   protected int getContentHeight() {
-    int size = ((List)this.activeAbilities.stream().collect(Collectors.toList())).size();
+    int size = (this.activeAbilities.stream().collect(Collectors.toList())).size();
     if (this.passiveAbilities.size() > 0)
       size += this.passiveAbilities.size(); 
     return (int)(size * 25.0D + 2.0D);

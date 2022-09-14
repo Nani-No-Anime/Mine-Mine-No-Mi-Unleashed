@@ -3,7 +3,6 @@ package xyz.pixelatedw.mineminenomi.abilities.zushi;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.network.IPacket;
 import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
 import xyz.pixelatedw.mineminenomi.api.helpers.DevilFruitHelper;
 import xyz.pixelatedw.mineminenomi.api.helpers.abilities.AbilityHelper;
@@ -36,7 +35,7 @@ public class AbareHimatsuriAbility extends ContinuousAbility implements IParalle
       return true;
     }
     player.abilities.allowFlying = true;
-    ((ServerPlayerEntity)player).connection.sendPacket((IPacket)new SPlayerAbilitiesPacket(player.abilities));
+    ((ServerPlayerEntity)player).connection.sendPacket(new SPlayerAbilitiesPacket(player.abilities));
     
     return true;
   }
@@ -61,7 +60,7 @@ public class AbareHimatsuriAbility extends ContinuousAbility implements IParalle
       this.stateChanged = true;
     } 
     
-    ((ServerPlayerEntity)player).connection.sendPacket((IPacket)new SPlayerAbilitiesPacket(player.abilities));
+    ((ServerPlayerEntity)player).connection.sendPacket(new SPlayerAbilitiesPacket(player.abilities));
     
     boolean canFly = DevilFruitHelper.isFlyingAtMaxHeight(player, 48.0D);
     if (player.abilities.isFlying) {
@@ -86,7 +85,7 @@ public class AbareHimatsuriAbility extends ContinuousAbility implements IParalle
     }
     player.abilities.allowFlying = false;
     player.abilities.isFlying = false;
-    ((ServerPlayerEntity)player).connection.sendPacket((IPacket)new SPlayerAbilitiesPacket(player.abilities));
+    ((ServerPlayerEntity)player).connection.sendPacket(new SPlayerAbilitiesPacket(player.abilities));
     
     return true;
   }

@@ -55,7 +55,7 @@ public class StatsGainEvents {
            * if ( / 100 > ) { if (CommonConfig.INSTANCE.isMinimumDorikiPerKillEnabled()) { plusDoriki = 1.0D; } } else { plusDoriki =
            * entity.getDoriki(); }
            */
-          plusDoriki = dorikiCalculation(props.getDoriki(), CommonConfig.INSTANCE.isMinimumDorikiPerKillEnabled() ? Math.max(entity.getDoriki(), 1) : entity.getDoriki());
+          plusDoriki = dorikiCalculation(props.getDoriki(), CommonConfig.INSTANCE.isMinimumDorikiPerKillEnabled() ? Math.max(entity.getDoriki(), 1) : entity.getDoriki(),entity.getThreat());
           plusDoriki *= CommonConfig.INSTANCE.getDorikiRewardMultiplier();
           plusBounty = (entity.getDoriki() * 2);
           plusBelly = entity.getBelly();
@@ -71,7 +71,7 @@ public class StatsGainEvents {
            * if ((props.getDoriki() / 100.0F) > targetDoriki) { if (CommonConfig.INSTANCE.isMinimumDorikiPerKillEnabled()) { plusDoriki =
            * 1.0D; } } else { plusDoriki = targetDoriki; }
            */
-          plusDoriki = (double) dorikiCalculation(props.getDoriki(), targetDoriki);
+          plusDoriki = (double) dorikiCalculation(props.getDoriki(), targetDoriki, props.getThreat());
           plusDoriki *= CommonConfig.INSTANCE.getDorikiRewardMultiplier();
           plusBounty = (int) Math.round((i + j) / 10.0D);
           plusBelly = 1L;
@@ -122,18 +122,18 @@ public class StatsGainEvents {
     }
   }
 
-  private static Integer dorikiCalculation(Integer playerDoriki, Integer mobDoriki) { return dorikiCalculation(playerDoriki, mobDoriki, 600); }
+  private static Integer dorikiCalculation(Integer playerDoriki, Integer mobDoriki, Integer mobThreat) { return dorikiCalculation(playerDoriki, mobDoriki, mobThreat, 600); }
 
-  private static Integer dorikiCalculation(Integer playerDoriki, Integer mobDoriki, Integer base) {
+  private static Integer dorikiCalculation(Integer playerDoriki, Integer mobDoriki, Integer mobThreat, Integer base) {
 
     Integer doriki = 0;
-    if (playerDoriki >= mobDoriki) {
-      doriki = Math.round(mobDoriki / (float) ((Math.log(playerDoriki - mobDoriki) / Math.log(base)) + 1));
-    } else {
-      doriki = mobDoriki;
+    if(mobThreat > playerDoriki / 2000 || mobThreat == -1 ){
+      if (playerDoriki >= mobDoriki) {
+        doriki = Math.round(mobDoriki / (float) ((Math.log(playerDoriki - mobDoriki) / Math.log(base)) + 1));
+      } else {
+        doriki = mobDoriki;
+      }
     }
-    //LOGGER.log(Level.INFO, "playerDoriki " + playerDoriki + " mobDoriki " + mobDoriki + " base " + base + " doriki " + doriki);
-
     return doriki;
   }
 }
