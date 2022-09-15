@@ -14,9 +14,14 @@ public class OPEntityTextureWeight {
 	}
 	
 	public static OPEntityTextureWeight[] fromList(String[] textures) {
+		if(textures.length > 0){
 		return Arrays.stream(textures).<OPEntityTextureWeight>map(texture -> {
 			return new OPEntityTextureWeight(texture, 1);
 		}).<OPEntityTextureWeight>toArray(OPEntityTextureWeight[]::new);
+	}else{
+		return new OPEntityTextureWeight[]{};
+	}
+
 	}
 
 	public static String getRandomTexture(OPEntityTextureWeight[] textures, Random rand) {

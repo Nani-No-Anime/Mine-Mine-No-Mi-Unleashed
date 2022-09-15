@@ -35,7 +35,7 @@ public abstract class AbstractPirateEntity extends OPEntity {
 
   
   protected AbstractPirateEntity(EntityType<? extends MobEntity> type, World world) {
-    this(type, world, (String[])null);
+    this(type, world, new String[]{});
   }
 
   

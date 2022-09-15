@@ -77,10 +77,11 @@ public class SSyncEntityStatsPacket
         
         IAttributeInstance maxHpAttribute = ((LivingEntity)target).getAttribute(SharedMonsterAttributes.MAX_HEALTH);
         
-        if (props.getDoriki() / 100 <= 20) {
+        if (Math.round(props.getDoriki() / 1000) <= 0) {
           maxHpAttribute.setBaseValue(20.0D);
         } else {
-          maxHpAttribute.setBaseValue((props.getDoriki() / 100));
+          System.out.println("hp to doriki "  + (props.getDoriki() / 1000)+20.0D );
+          maxHpAttribute.setBaseValue((props.getDoriki() / 1000)+20);
         } 
       } 
     }

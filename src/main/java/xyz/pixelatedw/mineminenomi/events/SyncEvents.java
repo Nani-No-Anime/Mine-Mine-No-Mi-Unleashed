@@ -44,11 +44,14 @@ public class SyncEvents
       IAttributeInstance maxHpAttribute = event.getPlayer().getAttribute(SharedMonsterAttributes.MAX_HEALTH);
       IEntityStats props = EntityStatsCapability.get((LivingEntity)event.getPlayer());
       
-      if (props.getDoriki() / 100 <= 20) {
+
+      if (Math.round(props.getDoriki() / 1000) <= 0) {
         maxHpAttribute.setBaseValue(20.0D);
       } else {
-        maxHpAttribute.setBaseValue((props.getDoriki() / 100));
+        System.out.println("hp to doriki "  + (props.getDoriki() / 1000)+20.0D );
+        maxHpAttribute.setBaseValue((props.getDoriki() / 1000)+20.0D);
       } 
+
       ((ServerPlayerEntity)event.getPlayer()).connection.sendPacket(new SUpdateHealthPacket(event.getPlayer().getHealth(), event.getPlayer().getFoodStats().getFoodLevel(), event.getPlayer().getFoodStats().getSaturationLevel()));
     } 
   }

@@ -28,7 +28,7 @@ public abstract class AbstractKriegPirateEntity
 
   
   public AbstractKriegPirateEntity(EntityType<? extends MobEntity> type, World world) {
-    super(type, world, null);
+    super(type, world);
     
     setCrew("Krieg Pirates");
   }
